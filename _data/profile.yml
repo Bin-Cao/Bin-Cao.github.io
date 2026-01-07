@@ -1,0 +1,127 @@
+primary_name: "Bin Cao (曹斌)"
+secondary_name: "曹斌"
+navbar_name: "Bin Cao"
+
+positions:
+- name: Phd Student
+  logo: /assets/images/badges/hkust.png
+- name: The Hong Kong University of Science and Technology (Guangzhou)
+  logo: /assets/images/badges/hkust.png  # Logo is optional
+
+
+email: "bcao686@connect.hkust-gz.edu.cn"
+# cv_link: link-to-your-cv-file
+gscholar: XXCuRdoAAAAJ&hl  # This is an example, replace it with your own Google Scholar ID
+github: Bin-Cao
+twitter: barniecao  # Do not include the '@' symbol
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+linkedin: binjacobcao
+orcid: 0000-0001-7273-6779
+
+short_bio_text_justify: false
+short_bio: >-
+      <p>
+      I am a PhD student at
+      <a href="https://www.hkust-gz.edu.cn/" style="color: #66bb6a;">HKUST (Guangzhou)</a>,
+      working with
+      <a href="https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html" style="color: #66bb6a;">Prof. ZHANG Tong-Yi</a>.
+      My research focuses on <strong>artificial intelligence for materials science</strong>, with particular emphasis on algorithm development for <strong>crystallography and spectroscopy</strong>.
+      During my PhD, I also served as a visiting student at
+      <a href="https://www.cityu.edu.hk/" style="color: #66bb6a;">City University of Hong Kong</a>,
+      working with
+      <a href="https://scholars.cityu.edu.hk/en/persons/yangren/" style="color: #66bb6a;">Prof. REN Yang</a>,
+      and an intern at
+      <a href="https://www.shlab.org.cn/" style="color: #66bb6a;">Shanghai AI Lab</a>
+      (AI4S team), working with Dr.
+      <a href="https://hongxiahao91.github.io/" style="color: #66bb6a;">HAO Hong Xia</a>.
+      </p>
+
+      <p>
+      Before joining HKUST (Guangzhou), I earned an <strong>MPhil in Mechanics</strong> at
+      <a href="https://www.shu.edu.cn/" style="color: #66bb6a;">Shanghai University</a>,
+      working with
+      <a href="https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html" style="color: #66bb6a;">Prof. ZHANG Tong-Yi</a>.
+      During this period, I also interned at
+      <a href="https://www.zhejianglab.org/" style="color: #66bb6a;">Zhejiang Laboratory</a>,
+      where I worked on <strong>transfer learning for materials science</strong>.
+      I received my <strong>BEng in Chemical Machinery</strong> from
+      <a href="https://www.buct.edu.cn/main.htm" style="color: #66bb6a;">Beijing University of Chemical Technology</a>,
+      where my work focused on <strong>finite element and chemistry</strong>.
+      </p>
+
+      <p>
+      In recent years, I developed a series of machine-learning algorithms for
+      <strong>crystal structure determination</strong>
+      (<a href="https://github.com/Bin-Cao/XQueryer" style="color: #66bb6a;">XQueryer</a>),
+      <strong>crystal property prediction</strong> (PRDNet), and
+      <strong>novel crystal discovery</strong>
+      (<a href="https://github.com/Bin-Cao/SimXRD" style="color: #66bb6a;">SimXRD</a>).
+      My first-author papers have appeared in materials science journals (e.g., <em>National Science Review</em> and <em>Science Bulletin</em>) and AI conferences such as ICLR.
+      </p>
+
+      <p>
+      One of my long-term projects, <strong>Bgolearn</strong>, received support from the
+      <em>Shanghai Artificial Intelligence Open Source Award Project Support Plan</em>,
+      where I serve as the
+      <a href="https://github.com/Bin-Cao/Bgolearn/blob/main/figures/funding.png" style="color: #66bb6a;">principal developer</a>.
+      The project was awarded <strong>RMB 500,000</strong> to support the development of the open-source
+      <a href="https://github.com/Bin-Cao/Bgolearn" style="color: #66bb6a;">Bgolearn</a> platform.
+      Outside of research, I enjoy <strong>jogging</strong> and <strong>watching movies</strong>.
+      </p>
+
+
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+
+education:
+- name: The Hong Kong University of Science and Technology (Guangzhou) 
+  logo: /assets/images/badges/hkust.png
+  position: >- 
+    AMAT Thrust <br/>
+    Ph.D. Student
+  date: Sep. 2023 - present (2026 expected)
+- name: City University of Hong Kong
+  logo: /assets/images/badges/cityu.png
+  position: >- 
+    Department of Physics <br/>
+    Visiting Research Student
+  date: Jun. 2025 - Dec. 2025
+- name: Shanghai University
+  logo: /assets/images/badges/shu.png
+  position: MPhil in Mechanics
+  date: Sep. 2016 - Jun. 2023
+- name: Beijing University of Chemical Technology
+  logo: /assets/images/badges/buct.png
+  position: B.S. in Chemical Machinery
+  date: Sep. 2016 - Jun. 2020
+
+
+
+
+
+experience:
+- name: Shanghai AI Lab
+  logo: /assets/images/badges/ailab.png
+  position: Research Intern
+  date: Jan. 2026 - Jul. 2026
+
+- name: Zhejiang Lab
+  logo: /assets/images/badges/zjlab.png
+  position: Research Intern
+  date: Mar. 2023 - Sep. 2023
+
+
+awards:
+- name: Invited Academic Talk by Promising Young Talent Award (CMC)
+  date: 2025
+- name: Outstanding Young Academic Presentation Award (CMC)
+  date: 2024
+- name: Outstanding Graduate of Shanghai University 
+  date: 2023
+- name: China National Scholarship
+  date: 2022
+
+

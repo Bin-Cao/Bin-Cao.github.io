@@ -1,5 +1,5 @@
 ---
-title:          "XQueryer: an intelligent crystal structure identifier for powder X-ray diffraction"
+title:          "Spatial-adaptive active learning identifies ultra-durable and highly active catalysts for acidic oxygen evolution reaction"
 date:           2025-12-12 00:01:00 +0800
 selected:       true
 pub:            "Science Bulletin"

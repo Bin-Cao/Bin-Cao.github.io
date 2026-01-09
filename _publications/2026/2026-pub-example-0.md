@@ -1,6 +1,6 @@
 ---
 title:          "Spatial-adaptive active learning identifies ultra-durable and highly active catalysts for acidic oxygen evolution reaction"
-date:           2025-1-2 00:01:00 +0800
+date:           2026-1-2 00:01:00 +0800
 selected:       true
 pub:            "Science Bulletin"
 pub_date:       "2026"

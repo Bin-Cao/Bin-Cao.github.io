@@ -1,5 +1,5 @@
 ---
-title:          "SimXRD-4M: Big Simulated X-ray Diffraction Data and Crystal Symmetry Classification Benchmark"
+title:          "Beyond Structure: Invariant Crystal Property Prediction with Pseudo-Particle Ray Diffraction"
 date:           2026-01-21 00:01:00 +0800
 selected:       true
 pub:            "arXiv "

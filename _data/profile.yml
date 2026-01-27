@@ -54,7 +54,7 @@ short_bio: >-
       In recent years, I developed a series of machine-learning algorithms for
       <strong>crystal structure determination</strong>
       (<a href="https://github.com/Bin-Cao/XQueryer" style="color: #66bb6a;">XQueryer</a>),
-      <strong>crystal property prediction</strong> (PRDNet), and
+      <strong>crystal property prediction</strong> (<a href="https://github.com/Bin-Cao/PRDNet" style="color: #66bb6a;">PRDNet</a>), and
       <strong>novel crystal discovery</strong>
       (<a href="https://github.com/Bin-Cao/SimXRD" style="color: #66bb6a;">SimXRD</a>).
       My first-author papers have appeared in materials science journals (e.g., <em>National Science Review</em> and <em>Science Bulletin</em>) and AI conferences such as ICLR.

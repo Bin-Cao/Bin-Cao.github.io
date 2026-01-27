@@ -22,7 +22,7 @@ authors:
   - Zhang Tongyi#
 
 links:
-  Paper: https://arxiv.org/pdf/2509.21778
-#  Code: https://github.com/Bin-Cao/xxx
+  Paper: https://openreview.net/forum?id=OfmurJrzlT&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions)
+  Code: https://github.com/Bin-Cao/PRDNet
  
 ---

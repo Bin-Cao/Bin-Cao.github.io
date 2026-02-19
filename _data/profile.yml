@@ -70,6 +70,17 @@ short_bio: >-
       Outside of research, I enjoy <strong>jogging</strong> and <strong>watching movies</strong>.
       </p>
 
+      <p>
+        I serve as a reviewer for 
+        <a href="https://iclr.cc/" target="_blank">ICLR</a>, 
+        <a href="https://www.kdd.org/" target="_blank">KDD</a>, and 
+        <a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence" target="_blank">
+          Engineering Applications of Artificial Intelligence (EAAI)
+        </a>.
+      </p>
+
+      
+
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-

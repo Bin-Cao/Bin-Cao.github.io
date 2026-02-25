@@ -21,7 +21,7 @@ authors:
   - Zhang Tongyi#
 
 links:
-  Paper: https://arxiv.org/abs/2602.16372v1
+  Paper: https://arxiv.org/abs/2602.16372
   Code: https://github.com/Bin-Cao/PyWPEM
  
 ---

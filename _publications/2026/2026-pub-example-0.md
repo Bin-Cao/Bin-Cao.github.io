@@ -11,7 +11,7 @@ abstract: >-
 cover:          /assets/images/covers/scibull.jpg
 authors:
   - <strong>Cao Bin</strong>*
-  - Qin Yin#
+  - Qin Yin*,#
   - Luo Yan* 
   - Ying Zhehan 
   - Yan Zilin

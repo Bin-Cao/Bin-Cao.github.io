@@ -55,7 +55,9 @@ short_bio: >-
         I have developed a series of machine learning methods for key problems in X-ray diffraction (XRD) and crystal analysis, including large-scale XRD pattern simulation 
         (<a href="https://github.com/Bin-Cao/SimXRD" style="color: #66bb6a;">SimXRD</a>), 
         crystal structure determination 
-        (<a href="https://github.com/Bin-Cao/XQueryer" style="color: #66bb6a;">XQueryer</a>), 
+        (<a href="https://github.com/Bin-Cao/XQueryer" style="color: #66bb6a;">XQueryer</a>
+        for single-phase analysis and <a href="https://arxiv.org/abs/2605.05866" style="color: #66bb6a;">XDecomposer</a>
+        for multiphase decomposition), 
         XRD pattern refinement 
         (<a href="https://github.com/Bin-Cao/PyWPEM" style="color: #66bb6a;">WPEM</a>), 
         and crystal property prediction 

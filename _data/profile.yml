@@ -23,8 +23,7 @@ orcid: 0000-0001-7273-6779
 short_bio_text_justify: false
 short_bio: >-
       <p>
-        I am a <strong>Research Scientist</strong> at Huawei 
-        <a href="https://www.noahlab.com.hk/" style="color: #66bb6a;">Noah’s Ark Lab</a> (London Research Center). 
+        I am a Research Scientist at the London Research Center of <a href="https://www.noahlab.com.hk/" target="_blank">Noah’s Ark Lab</a>. 
         My research focuses on AI for materials science, with an emphasis on developing algorithms for crystallography and spectroscopy using graph representation learning and Bayesian optimization.
         </p>
 

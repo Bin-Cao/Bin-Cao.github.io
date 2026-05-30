@@ -4,9 +4,11 @@ navbar_name: "Bin Cao"
 
 positions:
 - name: Research Scientist 
-  logo: /assets/images/badges/hkust.png
+  logo: /assets/images/badges/huawei.png  
+#  logo: /assets/images/badges/hkust.png
 - name: London Research Center of Huawei Noah’s Ark Lab
-  logo: /assets/images/badges/hkust.png  # Logo is optional
+  logo: /assets/images/badges/huawei.png 
+#  logo: /assets/images/badges/hkust.png  # Logo is optional
 
 
 email: "bcao686@connect.hkust-gz.edu.cn"

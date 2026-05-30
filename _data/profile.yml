@@ -3,9 +3,9 @@ secondary_name: "曹斌"
 navbar_name: "Bin Cao"
 
 positions:
-- name: Phd Student
+- name: Research Scientist 
   logo: /assets/images/badges/hkust.png
-- name: The Hong Kong University of Science and Technology (Guangzhou)
+- name: London Research Center of Huawei Noah’s Ark Lab
   logo: /assets/images/badges/hkust.png  # Logo is optional
 
 

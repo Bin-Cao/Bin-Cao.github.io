@@ -1,5 +1,5 @@
 ---
-title:          "XDecomposer: Learning Prior-Free Set Decomposition for Multiphase X-ray Diffraction"
+title:          "Physics-Constrained Learning of Crystal Structures and Properties from Powder Diffraction"
 date:           2026-05-20 00:01:00 +0800
 selected:       true
 pub:            "HKUST Thesis"

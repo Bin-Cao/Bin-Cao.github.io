@@ -1,6 +1,6 @@
 - title: "XMatcher"
   cover: "/assets/images/covers/XMatcher.jpg"
-  pub: "App Toolkit"
+  pub: "App Windows&macOS"
   pub_date: "XRD Phase Matching"
   abstract: >-
     XMatcher is a app toolkit for experimental X-ray diffraction (XRD) phase matching against precomputed crystal-structure databases. It is designed around a production workflow: build a searchable theoretical peak database once, then perform fast and explainable retrieval for experimental patterns.
@@ -12,7 +12,7 @@
 
 - title: "TabularLab"
   cover: "/assets/images/covers/TabularLab.jpg"
-  pub: "App Toolkit"
+  pub: "App Windows&macOS"
   pub_date: "Tabular Machine Learning"
   abstract: >-
     TabularLab is a lightweight toolkit for tabular machine learning. It can be used as a desktop app or opened in a browser, and supports regression, classification, clustering, visualization, prediction, and result export.
@@ -20,4 +20,15 @@
     Install: "https://github.com/Bin-Cao/TabularLab/releases"
     Manual: "https://bin-cao.github.io/TabularLab/"
     Project: "https://github.com/Bin-Cao/TabularLab"
+
+
+- title: "XQueryer"
+  cover: "/assets/images/covers/XQueryer_web.jpg"
+  pub: "Website"
+  pub_date: "Online PXRD Analysis"
+  abstract: >-
+    Initially developed as a web platform for XQueryer, it has gradually evolved into a comprehensive framework for crystal analysis, including high-throughput simulation, single- and multi-phase identification, and diffraction pattern refinement.
+  links:
+    Website: "https://xqueryer.caobin.asia/"
+    Project: "https://doi.org/10.13140/RG.2.2.36041.30568"
 

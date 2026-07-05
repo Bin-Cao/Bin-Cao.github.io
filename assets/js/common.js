@@ -51,7 +51,10 @@ $(function () {
 
         $toggle.on('click', function () {
             var expanded = $abstract.toggleClass('is-expanded').hasClass('is-expanded');
-            $toggle.text(expanded ? 'Show less' : 'Show more');
+            var getI18nText = window.siteI18nText || function (key) {
+                return key === 'publication.show_less' ? 'Show less' : 'Show more';
+            };
+            $toggle.text(getI18nText(expanded ? 'publication.show_less' : 'publication.show_more'));
         });
     });
 

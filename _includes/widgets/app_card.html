@@ -1,7 +1,7 @@
 {% assign apps = include.apps %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl section-card app-section">
     <h6 class="border-bottom border-gray p-3 mb-0 section-heading">
-        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-cubes"></i> Apps{% endif %}
+        <i class="fas fa-cubes"></i> <span data-i18n="section.apps">Apps</span>
     </h6>
     {% for item in apps limit:include.limit %}
         {% include widgets/publication_item.html item=item first=false last=forloop.last hide_bottom_border=forloop.last %}

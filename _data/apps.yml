@@ -1,4 +1,5 @@
 - title: "XMatcher"
+  i18n_key: "app.xmatcher"
   cover: "/assets/images/covers/XMatcher.jpg"
   pub: "App Windows&macOS"
   pub_date: "XRD Phase Matching"
@@ -31,4 +32,3 @@
   links:
     Website: "https://xqueryer.caobin.asia/"
     Project: "https://doi.org/10.13140/RG.2.2.36041.30568"
-

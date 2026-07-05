@@ -52,6 +52,35 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: 0 0.25rem 1rem rgba(24, 39, 75, 0.06);
 }
 
+.language-switcher {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    display: inline-flex;
+    gap: 0.15rem;
+    padding: 0.16rem;
+}
+
+.language-option {
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.72);
+    cursor: pointer;
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 1.7rem;
+    padding: 0.32rem 0.42rem;
+}
+
+.language-option:hover,
+.language-option.is-active {
+    background-color: #fff;
+    color: #1f2a3d;
+}
+
 .inline-badge {
     height: 16px;
     vertical-align: -10%;
@@ -298,6 +327,10 @@ h1, h2, h3, h4, h5, h6,
 
     .news-item {
         align-items: flex-start;
+    }
+
+    .language-switcher {
+        margin-top: 0.55rem;
     }
 }
 

@@ -29,7 +29,7 @@
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
-                        {{ position.name }}<br/>
+                        <span data-i18n="profile.position_{{ forloop.index }}">{{ position.name }}</span><br/>
                         {% endfor %}
                     </div>
                 </div>

@@ -34,14 +34,14 @@
                             {% if position.logo -%}
                             <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
                             {%- endif %}
-                            {{ position.name }}<br/>
+                            <span data-i18n="profile.position_{{ forloop.index }}">{{ position.name }}</span><br/>
                             {% endfor %}
                         </div>
-                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                        <div class="text-profile-bio mt-3" data-i18n-html="profile.short_bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
                             {{ site.data.profile.short_bio }}
                         </div>
                         {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> <span data-i18n="profile.cv">Curriculum Vitae</span></a> <br/>
                         {% endif %}
                     </div>
         

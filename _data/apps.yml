@@ -8,3 +8,16 @@
     Install: "https://doi.org/10.6084/m9.figshare.32812985"
     Manual: "https://asterbin.github.io/Asterbin-XMatcher"
     Project: "https://github.com/Asterbin/Asterbin-XMatcher"
+
+
+- title: "TabularLab"
+  cover: "/assets/images/covers/TabularLab.jpg"
+  pub: "App Toolkit"
+  pub_date: "Tabular Machine Learning"
+  abstract: >-
+    TabularLab is a lightweight toolkit for tabular machine learning. It can be used as a desktop app or opened in a browser, and supports regression, classification, clustering, visualization, prediction, and result export.
+  links:
+    Install: "https://github.com/Bin-Cao/TabularLab/releases"
+    Manual: "https://bin-cao.github.io/TabularLab/"
+    Project: "https://github.com/Bin-Cao/TabularLab"
+

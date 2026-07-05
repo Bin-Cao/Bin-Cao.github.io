@@ -54,4 +54,33 @@ $(function () {
             $toggle.text(expanded ? 'Show less' : 'Show more');
         });
     });
+
+    var $publicationLightbox = $('<div class="publication-image-lightbox" aria-hidden="true"><img alt=""></div>');
+    $('body').append($publicationLightbox);
+
+    var closePublicationLightbox = function () {
+        $publicationLightbox.removeClass('is-visible').attr('aria-hidden', 'true');
+        $publicationLightbox.find('img').attr('src', '').attr('alt', '');
+    };
+
+    $('img.publication-cover').on('dblclick', function (event) {
+        event.preventDefault();
+
+        var $image = $(this);
+        var imageSrc = $image.attr('data-src') || $image.attr('src');
+        if (!imageSrc) {
+            return;
+        }
+
+        $publicationLightbox.find('img').attr('src', imageSrc).attr('alt', $image.attr('alt') || '');
+        $publicationLightbox.addClass('is-visible').attr('aria-hidden', 'false');
+    });
+
+    $publicationLightbox.on('click', closePublicationLightbox);
+
+    $(document).on('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closePublicationLightbox();
+        }
+    });
 })

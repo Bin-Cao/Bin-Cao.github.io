@@ -1,0 +1,10 @@
+- title: "XMatcher"
+  cover: "/assets/images/covers/XMatcher.jpg"
+  pub: "App Toolkit"
+  pub_date: "XRD Phase Matching"
+  abstract: >-
+    XMatcher is a app toolkit for experimental X-ray diffraction (XRD) phase matching against precomputed crystal-structure databases. It is designed around a production workflow: build a searchable theoretical peak database once, then perform fast and explainable retrieval for experimental patterns.
+  links:
+    Install: "https://doi.org/10.6084/m9.figshare.32812985"
+    Manual: "https://asterbin.github.io/Asterbin-XMatcher"
+    Project: "https://github.com/Asterbin/Asterbin-XMatcher"

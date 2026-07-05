@@ -48,9 +48,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .site-navbar {
-    background: rgba(31, 42, 61, 0.94);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0.45rem 1.4rem rgba(24, 39, 75, 0.16);
+    background: #182235 !important;
+    border-bottom: 1px solid rgba(214, 241, 220, 0.18);
+    box-shadow: 0 0.55rem 1.6rem rgba(24, 39, 75, 0.28);
     backdrop-filter: blur(14px);
 }
 
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .site-brand-text {
-    color: #fff;
+    color: #fff !important;
     font-weight: 900;
 }
 
@@ -133,15 +133,20 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .site-footer {
-    background: #182235;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.72);
+    background: #182235 !important;
+    border-top: 4px solid #66bb6a;
+    color: rgba(255, 255, 255, 0.78) !important;
+    box-shadow: 0 -0.35rem 1.2rem rgba(24, 39, 75, 0.08);
 }
 
 .footer-name {
-    color: #fff;
+    color: #fff !important;
     font-size: 1rem;
     font-weight: 900;
+}
+
+.footer-subtitle {
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .footer-subtitle,
@@ -158,7 +163,7 @@ h1, h2, h3, h4, h5, h6,
 
 .footer-links a,
 .footer-credit a {
-    color: #d6f1dc;
+    color: #d6f1dc !important;
     font-weight: 700;
 }
 

@@ -12,6 +12,7 @@
 
 
 - title: "TabularLab"
+  i18n_key: "app.tabularlab"
   cover: "/assets/images/covers/TabularLab.jpg"
   pub: "App Windows&macOS"
   pub_date: "Tabular Machine Learning"
@@ -24,6 +25,7 @@
 
 
 - title: "XQueryer"
+  i18n_key: "app.xqueryer"
   cover: "/assets/images/covers/XQueryer_web.jpg"
   pub: "Website"
   pub_date: "Online PXRD Analysis"

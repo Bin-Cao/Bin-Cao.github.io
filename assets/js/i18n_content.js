@@ -1,6 +1,10 @@
 (function () {
     var contentTranslations = {
         zh: {
+            "app.tabularlab.title": "TabularLab",
+            "app.tabularlab.abstract": "TabularLab 是一个轻量级表格机器学习工具包。它既可以作为桌面应用使用，也可以在浏览器中打开，支持回归、分类、聚类、可视化、预测和结果导出。",
+            "app.xqueryer.title": "XQueryer",
+            "app.xqueryer.abstract": "XQueryer 最初是一个在线晶体结构识别平台，现已逐步发展为综合晶体分析框架，涵盖高通量模拟、单相与多相识别以及衍射谱图精修。",
             "pub.2022_pub_example_1.abstract": "本研究提出一种由领域知识引导的可解释机器学习策略，并以铁素体-马氏体钢在超临界水中的氧化行为为例进行验证。",
             "pub.2023_no_first_1.abstract": "TCLR 算法利用暴露时间和温度两个实验特征，从复杂高维空间中提取活化能、时间指数和前因子谱，并结合元素特征形成具有高预测精度的通用可解释公式。",
             "pub.2023_no_first_2.abstract": "本工作首次通过阳离子交换成功合成正交相 (Ru, Mn)2O3 电催化剂。该材料在酸性析氧反应中表现出优异性能，在 10 mA cm-2 下过电位仅 168 mV，并具有 40 小时稳定性。",
@@ -49,6 +53,10 @@
             "news.2026_news4.title": "顺利通过博士答辩，并获得香港科技大学（广州）博士学位。"
         },
         ja: {
+            "app.tabularlab.title": "TabularLab",
+            "app.tabularlab.abstract": "TabularLab は、表形式データ向けの軽量な機械学習ツールキットです。デスクトップアプリとしてもブラウザ上でも利用でき、回帰、分類、クラスタリング、可視化、予測、結果のエクスポートをサポートします。",
+            "app.xqueryer.title": "XQueryer",
+            "app.xqueryer.abstract": "XQueryer は当初オンライン結晶構造識別プラットフォームとして開発され、現在では高スループットシミュレーション、単相・多相識別、回折パターン精密化を含む総合的な結晶解析フレームワークへ発展しています。",
             "news.2020_lorem.title": "北京化工大学を卒業し、基礎的な専門知識と技能を修得しました。<span class=\"badge badge-pill badge-info badge-publication\">学士</span>",
             "news.2023_news1.title": "材料最適化パッケージ Bgolearn をオープンソース化し、コミュニティに貢献しました。<a href=\"https://github.com/Bin-Cao/Bgolearn\" target=\"_blank\">詳細 <i class=\"fas fa-angle-double-right\"></i></a>",
             "news.2023_news2.title": "上海大学の優秀卒業生に選ばれました。<span class=\"badge badge-pill badge-info badge-publication\">修士</span>。",
@@ -66,6 +74,10 @@
             "news.2026_news4.title": "博士論文審査に合格し、香港科技大学（広州）より博士号を取得しました。"
         },
         ko: {
+            "app.tabularlab.title": "TabularLab",
+            "app.tabularlab.abstract": "TabularLab는 표 형식 머신러닝을 위한 경량 툴킷입니다. 데스크톱 앱으로 사용할 수도 있고 브라우저에서 열 수도 있으며, 회귀, 분류, 군집화, 시각화, 예측, 결과 내보내기를 지원합니다.",
+            "app.xqueryer.title": "XQueryer",
+            "app.xqueryer.abstract": "XQueryer는 처음에는 온라인 결정 구조 식별 플랫폼으로 개발되었으며, 현재는 고처리량 시뮬레이션, 단일상 및 다상 식별, 회절 패턴 정련을 포함하는 종합 결정 분석 프레임워크로 발전했습니다.",
             "news.2020_lorem.title": "베이징화공대학교를 성공적으로 졸업하고 핵심 전문 지식과 역량을 갖추었습니다. <span class=\"badge badge-pill badge-info badge-publication\">학사</span>",
             "news.2023_news1.title": "재료 최적화 패키지 Bgolearn을 오픈소스로 공개하여 커뮤니티에 기여했습니다. <a href=\"https://github.com/Bin-Cao/Bgolearn\" target=\"_blank\">자세히 보기 <i class=\"fas fa-angle-double-right\"></i></a>",
             "news.2023_news2.title": "상하이대학교 우수 졸업생으로 선정되었습니다. <span class=\"badge badge-pill badge-info badge-publication\">석사</span>.",
@@ -83,6 +95,10 @@
             "news.2026_news4.title": "박사 학위 논문 심사를 통과하고 홍콩과학기술대학교(광저우)에서 박사학위를 취득했습니다."
         },
         de: {
+            "app.tabularlab.title": "TabularLab",
+            "app.tabularlab.abstract": "TabularLab ist ein leichtgewichtiges Toolkit fur tabellarisches Machine Learning. Es kann als Desktop-App oder im Browser genutzt werden und unterstutzt Regression, Klassifikation, Clustering, Visualisierung, Vorhersage und Ergebnisexport.",
+            "app.xqueryer.title": "XQueryer",
+            "app.xqueryer.abstract": "XQueryer wurde zunachst als Online-Plattform zur Kristallstrukturidentifikation entwickelt und hat sich zu einem umfassenden Framework fur Kristallanalyse entwickelt, einschliesslich Hochdurchsatzsimulation, Ein- und Mehrphasenidentifikation sowie Verfeinerung von Diffraktionsmustern.",
             "news.2020_lorem.title": "Erfolgreicher Abschluss an der Beijing University of Chemical Technology mit solider fachlicher Ausbildung. <span class=\"badge badge-pill badge-info badge-publication\">Bachelor</span>",
             "news.2023_news1.title": "Bgolearn, ein Paket fur Materialoptimierung, wurde als Open Source veroffentlicht. <a href=\"https://github.com/Bin-Cao/Bgolearn\" target=\"_blank\">Mehr erfahren <i class=\"fas fa-angle-double-right\"></i></a>",
             "news.2023_news2.title": "Auszeichnung als Outstanding Graduate der Shanghai University. <span class=\"badge badge-pill badge-info badge-publication\">Master</span>.",

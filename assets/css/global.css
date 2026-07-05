@@ -47,9 +47,60 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
-.navbar {
-    opacity: 0.95;
-    box-shadow: 0 0.25rem 1rem rgba(24, 39, 75, 0.06);
+.site-navbar {
+    background: rgba(31, 42, 61, 0.94);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0.45rem 1.4rem rgba(24, 39, 75, 0.16);
+    backdrop-filter: blur(14px);
+}
+
+.site-navbar .navbar-nav {
+    align-items: center;
+}
+
+.site-navbar .nav-link {
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.76) !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0.08rem;
+    padding: 0.42rem 0.72rem !important;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-item.active .nav-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+}
+
+.site-brand {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.55rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+.site-brand:hover {
+    text-decoration: none;
+}
+
+.site-brand-mark {
+    align-items: center;
+    background-color: #e9f7ec;
+    border-radius: 50%;
+    color: #1f6f3a;
+    display: inline-flex;
+    font-size: 0.82rem;
+    font-weight: 900;
+    height: 2.1rem;
+    justify-content: center;
+    width: 2.1rem;
+}
+
+.site-brand-text {
+    color: #fff;
+    font-weight: 900;
 }
 
 .language-switcher {
@@ -79,6 +130,47 @@ h1, h2, h3, h4, h5, h6,
 .language-option.is-active {
     background-color: #fff;
     color: #1f2a3d;
+}
+
+.site-footer {
+    background: #182235;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-name {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.footer-subtitle,
+.footer-updated,
+.footer-credit {
+    font-size: 0.84rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.footer-links a,
+.footer-credit a {
+    color: #d6f1dc;
+    font-weight: 700;
+}
+
+.footer-links a:hover,
+.footer-credit a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-updated {
+    color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 0.25rem;
 }
 
 .inline-badge {
@@ -331,6 +423,16 @@ h1, h2, h3, h4, h5, h6,
 
     .language-switcher {
         margin-top: 0.55rem;
+    }
+
+    .site-navbar .navbar-nav {
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .site-navbar .nav-link {
+        display: inline-block;
+        margin: 0.08rem 0;
     }
 }
 

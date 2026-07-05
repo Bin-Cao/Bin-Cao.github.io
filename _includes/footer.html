@@ -1,13 +1,29 @@
-<footer class="footer border-top py-2 mt-5 bg-white small">
+<footer class="footer site-footer mt-5">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
-                    <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
+        <div class="row py-4 align-items-center">
+            <div class="col-md-5 mb-3 mb-md-0">
+                <div class="footer-name">{{ site.data.profile.primary_name }}</div>
+                <div class="footer-subtitle">
+                    <span data-i18n="profile.position_1">Research Scientist</span> ·
+                    <span data-i18n="section.apps">Apps</span> /
+                    <span data-i18n="nav.publications">Publications</span>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="footer-links">
+                    <a href="{{ '/' | relative_url }}" data-i18n="nav.home">Home</a>
+                    <a href="{{ 'publications' | relative_url }}" data-i18n="nav.publications">Publications</a>
+                    {% if site.data.profile.github %}
+                    <a target="_blank" href="https://github.com/{{ site.data.profile.github }}">GitHub</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-4 text-md-right">
+                <div class="footer-updated">
+                    <i class="fas fa-clock"></i>
+                    <span data-i18n="footer.updated">Last updated</span>: {{ "now" | date: "%b %Y" }}
+                </div>
+                <div class="footer-credit">
                     {{ site.data.display.footer_text }}
                 </div>
             </div>

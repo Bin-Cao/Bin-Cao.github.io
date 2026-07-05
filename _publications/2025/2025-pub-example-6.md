@@ -1,5 +1,6 @@
 ---
 title:          "XQueryer: an intelligent crystal structure identifier for powder X-ray diffraction"
+i18n_key:      "pub.2025_pub_example_6"
 date:           2025-10-12 00:01:00 +0800
 selected:       true
 pub:            "National Science Review"

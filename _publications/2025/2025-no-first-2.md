@@ -1,5 +1,6 @@
 ---
 title:          "opXRD: Open Experimental Powder X-Ray DiffractionDatabase"
+i18n_key:      "pub.2025_no_first_2"
 date:           2025-03-05 00:01:00 +0800
 selected:       false
 pub:            "Advanced Intelligent Discovery"

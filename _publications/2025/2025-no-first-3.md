@@ -1,5 +1,6 @@
 ---
 title:          "Dissecting the chemical strain in inactive components of sodium-ion battery cathodes"
+i18n_key:      "pub.2025_no_first_3"
 date:           2025-11-05 00:01:00 +0800
 selected:       false
 pub:            "Scripta Materialia"

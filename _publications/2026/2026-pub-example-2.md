@@ -1,5 +1,6 @@
 ---
 title:          "Bgolearn: a Unified Bayesian Optimization Framework for Accelerating Materials Discovery"
+i18n_key:      "pub.2026_pub_example_2"
 date:           2026-01-26 00:01:00 +0800
 selected:       true
 pub:            "arXiv "

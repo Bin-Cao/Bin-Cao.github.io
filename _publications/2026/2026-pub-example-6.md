@@ -1,5 +1,6 @@
 ---
 title:          "Physics-Constrained Learning of Crystal Structures and Properties from Powder Diffraction"
+i18n_key:      "pub.2026_pub_example_6"
 date:           2026-05-20 00:01:00 +0800
 selected:       true
 pub:            "HKUST Thesis"

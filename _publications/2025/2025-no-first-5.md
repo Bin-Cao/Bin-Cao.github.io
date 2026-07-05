@@ -1,5 +1,6 @@
 ---
 title:          "Metal–Insulator Transition Driven by the Interplay of Vacancies and Charge Orders in Square-Net Materials GdSbxTe2-x-δ"
+i18n_key:      "pub.2025_no_first_5"
 date:           2025-10-1 00:01:00 +0800
 selected:       false
 pub:            "Advanced Materials"

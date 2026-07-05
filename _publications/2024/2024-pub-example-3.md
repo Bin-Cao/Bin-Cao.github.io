@@ -1,5 +1,6 @@
 ---
 title:          "Crystallographic Phase Identifier of a Convolutional Self-Attention Neural Network (CPICANN) on Powder Diffraction Patterns"
+i18n_key:      "pub.2024_pub_example_3"
 date:           2024-5-27 00:01:00 +0800
 selected:       true
 pub:            "IUCrJ"

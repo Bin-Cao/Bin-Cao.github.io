@@ -1,5 +1,6 @@
 ---
 title:          "Divide and conquer: Machine learning accelerated design of lead-free solder alloys with high strength and high ductility "
+i18n_key:      "pub.2023_pub_example_1"
 date:           2023-11-05 00:01:00 +0800
 selected:       true
 pub:            "npj Computational Materials"

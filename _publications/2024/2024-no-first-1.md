@@ -1,5 +1,6 @@
 ---
 title:          "Machine learning-assisted composition design of W-free Co-based superalloys with high γ′-solvus temperature and low density"
+i18n_key:      "pub.2024_no_first_1"
 date:           2024-3-05 00:01:00 +0800
 selected:       false
 pub:            "Journal of Materials Research and Technology"

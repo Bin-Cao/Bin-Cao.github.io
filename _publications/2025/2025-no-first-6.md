@@ -1,5 +1,6 @@
 ---
 title:          "First-Order Phase Transformation in Highly Concentrated Electrolyte for High-Rate and Long-Cycle Aqueous Zn-Ion Battery"
+i18n_key:      "pub.2025_no_first_6"
 date:           2025-11-1 00:01:00 +0800
 selected:       false
 pub:            "Angewandte Chemie"

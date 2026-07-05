@@ -10,7 +10,7 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex news-item">
-                    <div class="news-title">{{ item.title }}</div>
+                    <div class="news-title"{% if item.i18n_key %} data-i18n-html="{{ item.i18n_key }}.title"{% endif %}>{{ item.title }}</div>
                     <div class="ml-auto mt-auto text-muted no-break news-date"><i>{{ item.date | date: "%b %d" }}</i></div>
                 </div>
                 {% endfor %}

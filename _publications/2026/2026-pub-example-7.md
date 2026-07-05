@@ -1,5 +1,6 @@
 ---
 title:          "SVGym (SciVerseGym): An Environment for Reinforcement Learning and Bayesian Optimization in Crystal Discovery"
+i18n_key:      "pub.2026_pub_example_7"
 date:           2026-06-23 00:01:00 +0800
 selected:       true
 pub:            "Technical Report"

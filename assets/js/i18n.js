@@ -47,7 +47,7 @@ window.siteTranslations = {
         "publication.show_more": "展开",
         "publication.show_less": "收起",
         "profile.cv": "个人简历",
-        "profile.position_1": "研究科学家",
+        "profile.position_1": "青年科学家",
         "profile.position_2": "华为诺亚方舟实验室伦敦研究中心",
         "link.paper": "论文",
         "link.code": "代码",
@@ -59,7 +59,7 @@ window.siteTranslations = {
         "link.slides": "幻灯片",
         "app.xmatcher.title": "XMatcher",
         "app.xmatcher.abstract": "XMatcher 是一个面向实验 X 射线衍射 (XRD) 物相匹配的应用工具包，可针对预计算晶体结构数据库进行快速检索。它围绕生产流程设计：先构建可搜索的理论峰数据库，再对实验谱图进行快速且可解释的匹配。",
-        "profile.short_bio": "<p>我目前是<a href=\"https://www.noahlab.com.hk/\" target=\"_blank\">华为诺亚方舟实验室</a>伦敦研究中心的研究科学家。我的研究聚焦于材料科学中的人工智能，重点是利用图表示学习和贝叶斯优化发展晶体学与光谱学算法。</p><p>我在这一方向的研究兴趣来源于跨学科训练以及学术界和工业界的研究经历。我博士毕业于<a href=\"https://www.hkust-gz.edu.cn/\" style=\"color: #66bb6a;\">香港科技大学（广州）</a>，师从<a href=\"https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html\" style=\"color: #66bb6a;\">张统一教授</a>。博士期间，我也曾在<a href=\"https://www.cityu.edu.hk/\" style=\"color: #66bb6a;\">香港城市大学</a>访问，合作导师为<a href=\"https://scholars.cityu.edu.hk/en/persons/yangren/\" style=\"color: #66bb6a;\">任洋教授</a>，并通过在<a href=\"https://www.shlab.org.cn/\" style=\"color: #66bb6a;\">上海人工智能实验室</a>和<a href=\"https://www.greendynamics.com.au/\" style=\"color: #66bb6a;\">GreenDynamics</a>的实习积累了工业研究经验。</p><p>博士之前，我在<a href=\"https://www.shu.edu.cn/\" style=\"color: #66bb6a;\">上海大学</a>获得力学硕士学位，导师为<a href=\"https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html\" style=\"color: #66bb6a;\">张统一教授</a>，期间在<a href=\"https://www.zhejianglab.org/\" style=\"color: #66bb6a;\">之江实验室</a>从事材料科学中的迁移学习研究。我本科毕业于<a href=\"https://www.buct.edu.cn/main.htm\" style=\"color: #66bb6a;\">北京化工大学</a>化工机械专业，学习重点包括有限元方法和化学。</p><p>我开发了一系列面向 X 射线衍射 (XRD) 和晶体分析关键问题的机器学习方法，包括大规模 XRD 谱图模拟 (<a href=\"https://github.com/Bin-Cao/SimXRD\" style=\"color: #66bb6a;\">SimXRD</a>)、晶体结构解析（用于单相分析的 <a href=\"https://github.com/Bin-Cao/XQueryer\" style=\"color: #66bb6a;\">XQueryer</a> 以及用于多相分解的 <a href=\"https://arxiv.org/abs/2605.05866\" style=\"color: #66bb6a;\">XDecomposer</a>）、XRD 谱图精修 (<a href=\"https://github.com/Bin-Cao/PyWPEM\" style=\"color: #66bb6a;\">WPEM</a>) 和晶体性质预测 (<a href=\"https://github.com/Bin-Cao/PRDNet\" style=\"color: #66bb6a;\">PRDNet</a>)。此外，我还开发了较早的材料发现贝叶斯优化框架之一 <a href=\"https://github.com/Bin-Cao/Bgolearn\" style=\"color: #66bb6a;\">Bgolearn</a>，该项目入选上海市经济和信息化委员会开源项目支持计划。</p><p>科研之外，我喜欢慢跑和健身。</p><p>我担任 <a href=\"https://iclr.cc/\" target=\"_blank\">ICLR</a>、<a href=\"https://neurips.cc/\" target=\"_blank\">NeurIPS</a>、<a href=\"https://icml.cc/\" target=\"_blank\">ICML</a>、<a href=\"https://aaai.org/\" target=\"_blank\">AAAI</a>、<a href=\"https://www.kdd.org/\" target=\"_blank\">KDD</a> 以及期刊 <a href=\"https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence\" target=\"_blank\">EAAI</a>、<a href=\"https://www.nature.com/commsmat/\" target=\"_blank\">Communications Materials</a>、<a href=\"https://www.sciencedirect.com/journal/results-in-engineering\" target=\"_blank\">Results in Engineering</a> 的审稿人。</p>"
+        "profile.short_bio": "<p>我目前是<a href=\"https://www.noahlab.com.hk/\" target=\"_blank\">华为诺亚方舟实验室</a>伦敦研究中心的青年科学家。我的研究聚焦于材料科学中的人工智能，重点是利用图表示学习和贝叶斯优化发展晶体学与光谱学算法。</p><p>我在这一方向的研究兴趣来源于跨学科训练以及学术界和工业界的研究经历。我博士毕业于<a href=\"https://www.hkust-gz.edu.cn/\" style=\"color: #66bb6a;\">香港科技大学（广州）</a>，师从<a href=\"https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html\" style=\"color: #66bb6a;\">张统一教授</a>。博士期间，我也曾在<a href=\"https://www.cityu.edu.hk/\" style=\"color: #66bb6a;\">香港城市大学</a>访问，合作导师为<a href=\"https://scholars.cityu.edu.hk/en/persons/yangren/\" style=\"color: #66bb6a;\">任洋教授</a>，并通过在<a href=\"https://www.shlab.org.cn/\" style=\"color: #66bb6a;\">上海人工智能实验室</a>和<a href=\"https://www.greendynamics.com.au/\" style=\"color: #66bb6a;\">GreenDynamics</a>的实习积累了工业研究经验。</p><p>博士之前，我在<a href=\"https://www.shu.edu.cn/\" style=\"color: #66bb6a;\">上海大学</a>获得力学硕士学位，导师为<a href=\"https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html\" style=\"color: #66bb6a;\">张统一教授</a>，期间在<a href=\"https://www.zhejianglab.org/\" style=\"color: #66bb6a;\">之江实验室</a>从事材料科学中的迁移学习研究。我本科毕业于<a href=\"https://www.buct.edu.cn/main.htm\" style=\"color: #66bb6a;\">北京化工大学</a>化工机械专业，学习重点包括有限元方法和化学。</p><p>我开发了一系列面向 X 射线衍射 (XRD) 和晶体分析关键问题的机器学习方法，包括大规模 XRD 谱图模拟 (<a href=\"https://github.com/Bin-Cao/SimXRD\" style=\"color: #66bb6a;\">SimXRD</a>)、晶体结构解析（用于单相分析的 <a href=\"https://github.com/Bin-Cao/XQueryer\" style=\"color: #66bb6a;\">XQueryer</a> 以及用于多相分解的 <a href=\"https://arxiv.org/abs/2605.05866\" style=\"color: #66bb6a;\">XDecomposer</a>）、XRD 谱图精修 (<a href=\"https://github.com/Bin-Cao/PyWPEM\" style=\"color: #66bb6a;\">WPEM</a>) 和晶体性质预测 (<a href=\"https://github.com/Bin-Cao/PRDNet\" style=\"color: #66bb6a;\">PRDNet</a>)。此外，我还开发了较早的材料发现贝叶斯优化框架之一 <a href=\"https://github.com/Bin-Cao/Bgolearn\" style=\"color: #66bb6a;\">Bgolearn</a>，该项目入选上海市经济和信息化委员会开源项目支持计划。</p><p>科研之外，我喜欢慢跑和健身。</p><p>我担任 <a href=\"https://iclr.cc/\" target=\"_blank\">ICLR</a>、<a href=\"https://neurips.cc/\" target=\"_blank\">NeurIPS</a>、<a href=\"https://icml.cc/\" target=\"_blank\">ICML</a>、<a href=\"https://aaai.org/\" target=\"_blank\">AAAI</a>、<a href=\"https://www.kdd.org/\" target=\"_blank\">KDD</a> 以及期刊 <a href=\"https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence\" target=\"_blank\">EAAI</a>、<a href=\"https://www.nature.com/commsmat/\" target=\"_blank\">Communications Materials</a>、<a href=\"https://www.sciencedirect.com/journal/results-in-engineering\" target=\"_blank\">Results in Engineering</a> 的审稿人。</p>"
     },
     ja: {
         "nav.menu": "メニュー",
@@ -162,6 +162,12 @@ window.siteI18nText = function (key, lang) {
     return table[key] || window.siteTranslations.en[key] || key;
 };
 
+window.siteI18nLookup = function (key, lang) {
+    var currentLang = lang || window.siteCurrentLang || 'en';
+    var table = window.siteTranslations[currentLang] || window.siteTranslations.en;
+    return table[key] || window.siteTranslations.en[key];
+};
+
 (function () {
     var supportedLanguages = ['en', 'zh', 'ja', 'ko', 'de'];
 
@@ -195,12 +201,20 @@ window.siteI18nText = function (key, lang) {
 
         $('[data-i18n]').each(function () {
             var $element = $(this);
-            $element.text(window.siteI18nText($element.attr('data-i18n'), lang));
+            if (!$element.attr('data-i18n-default-text')) {
+                $element.attr('data-i18n-default-text', $element.text());
+            }
+            var translatedText = window.siteI18nLookup($element.attr('data-i18n'), lang);
+            $element.text(translatedText || $element.attr('data-i18n-default-text'));
         });
 
         $('[data-i18n-html]').each(function () {
             var $element = $(this);
-            $element.html(window.siteI18nText($element.attr('data-i18n-html'), lang));
+            if (!$element.attr('data-i18n-default-html')) {
+                $element.attr('data-i18n-default-html', $element.html());
+            }
+            var translatedHtml = window.siteI18nLookup($element.attr('data-i18n-html'), lang);
+            $element.html(translatedHtml || $element.attr('data-i18n-default-html'));
         });
 
         $('[data-lang-switch]').each(function () {

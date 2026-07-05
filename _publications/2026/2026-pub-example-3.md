@@ -1,5 +1,6 @@
 ---
 title:          "AI-Driven Structure Refinement of X-ray Diffraction"
+i18n_key:      "pub.2026_pub_example_3"
 date:           2026-02-19 00:01:00 +0800
 selected:       true
 pub:            "arXiv"

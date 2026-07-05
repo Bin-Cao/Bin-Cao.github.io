@@ -1,5 +1,6 @@
 ---
 title:          "Ferromagnetic Surface Segregation via Stress-Concentration Coupling Boosts the Oxygen Evolution Reaction in RuO2"
+i18n_key:      "pub.2025_no_first_4"
 date:           2025-12-06 00:01:00 +0800
 selected:       false
 pub:            "ACS Nano"

@@ -1,5 +1,6 @@
 ---
 title:          "Enhancing the performance of Li-rich oxide cathodes through multifunctional surface engineering"
+i18n_key:      "pub.2025_no_first_1"
 date:           2025-01-05 00:01:00 +0800
 selected:       false
 pub:            "Journal of Power Sources"

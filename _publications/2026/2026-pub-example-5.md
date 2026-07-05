@@ -1,5 +1,6 @@
 ---
 title:          "XDecomposer: Learning Prior-Free Set Decomposition for Multiphase X-ray Diffraction"
+i18n_key:      "pub.2026_pub_example_5"
 date:           2026-05-7 00:01:00 +0800
 selected:       true
 pub:            "arXiv"

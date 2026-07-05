@@ -1,5 +1,6 @@
 ---
 title:          "MLMD: a programming-free AI platform to predict and design materials"
+i18n_key:      "pub.2024_pub_example_1"
 date:           2024-03-21 00:01:00 +0800
 selected:       true
 pub:            "npj Computational Materials"

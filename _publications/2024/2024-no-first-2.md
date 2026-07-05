@@ -1,5 +1,6 @@
 ---
 title:          "A Li-rich layered oxide cathode with remarkable capacity and prolonged cycle life"
+i18n_key:      "pub.2024_no_first_2"
 date:           2024-6-05 00:01:00 +0800
 selected:       false
 pub:            "Chemical Engineering Journal"

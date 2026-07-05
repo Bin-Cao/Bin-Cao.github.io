@@ -1,5 +1,6 @@
 ---
 title:          "Interpretable Active Learning Identifies Iron-Doped Carbon Dots With High Photothermal Conversion Efficiency for Antitumor Synergistic Therapy"
+i18n_key:      "pub.2025_pub_example_2"
 date:           2025-04-24 00:01:00 +0800
 selected:       true
 pub:            "Aggregate "

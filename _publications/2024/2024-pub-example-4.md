@@ -1,5 +1,6 @@
 ---
 title:          "CGWGAN: crystal generative framework based on Wyckoff generative adversarial network"
+i18n_key:      "pub.2024_pub_example_4"
 date:           2024-08-27 00:01:00 +0800
 selected:       true
 pub:            "journal of material informatics"

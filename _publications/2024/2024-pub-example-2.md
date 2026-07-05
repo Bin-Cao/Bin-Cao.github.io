@@ -1,5 +1,6 @@
 ---
 title:          "Active Learning Accelerates the Discovery of High Strength and High Ductility Lead-Free Solder Alloys"
+i18n_key:      "pub.2024_pub_example_2"
 date:           2024-05-12 00:01:00 +0800
 selected:       true
 pub:            "Materials & Design"

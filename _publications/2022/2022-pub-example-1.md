@@ -1,5 +1,6 @@
 ---
 title:          "Domain knowledge-guided interpretive machine learning: formula discovery for the oxidation behavior of ferritic-martensitic steels in supercritical water"
+i18n_key:      "pub.2022_pub_example_1"
 date:           2022-04-05 00:01:00 +0800
 selected:       true
 pub:            "journal of material informatics"

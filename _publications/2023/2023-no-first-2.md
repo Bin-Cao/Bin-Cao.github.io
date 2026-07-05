@@ -1,5 +1,6 @@
 ---
 title:          "Orthorhombic (Ru, Mn)2O3: A superior electrocatalyst for acidic oxygen evolution reaction"
+i18n_key:      "pub.2023_no_first_2"
 date:           2023-10-05 00:01:00 +0800
 selected:       false
 pub:            "Nano Energy"

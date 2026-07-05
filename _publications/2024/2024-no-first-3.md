@@ -1,5 +1,6 @@
 ---
 title:          "A universal strategy towards high-rate and ultralong-life of Li‐rich Mn‐based cathode materials"
+i18n_key:      "pub.2024_no_first_3"
 date:           2024-10-05 00:01:00 +0800
 selected:       false
 pub:            "Journal of Power Sources"

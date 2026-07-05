@@ -1,5 +1,6 @@
 ---
 title:          "Materials Generation in the Era of Artificial Intelligence: A Comprehensive Survey"
+i18n_key:      "pub.2025_pub_example_4"
 date:           2025-05-24 00:01:00 +0800
 selected:       true
 pub:            "arXiv "

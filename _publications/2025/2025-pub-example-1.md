@@ -1,5 +1,6 @@
 ---
 title:          "SimXRD-4M: Big Simulated X-ray Diffraction Data and Crystal Symmetry Classification Benchmark"
+i18n_key:      "pub.2025_pub_example_1"
 date:           2025-01-21 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Learning Representations (ICLR) "

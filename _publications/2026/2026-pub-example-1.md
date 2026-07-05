@@ -1,5 +1,6 @@
 ---
 title:          "Beyond Structure: Invariant Crystal Property Prediction with Pseudo-Particle Ray Diffraction"
+i18n_key:      "pub.2026_pub_example_1"
 date:           2026-01-21 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Learning Representations (ICLR) "

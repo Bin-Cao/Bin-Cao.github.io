@@ -1,5 +1,6 @@
 ---
 title:          "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial"
+i18n_key:      "pub.2026_pub_example_4"
 date:           2026-04-8 00:01:00 +0800
 selected:       true
 pub:            "arXiv"

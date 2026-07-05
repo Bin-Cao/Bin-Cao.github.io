@@ -1,5 +1,6 @@
 ---
 title:          "Optimize the quantum yield of G‐quartet‐based circularly polarized luminescence materials via active learning strategy‐BgoFace"
+i18n_key:      "pub.2025_pub_example_5"
 date:           2025-06-12 00:01:00 +0800
 selected:       true
 pub:            "MGE advances"

@@ -1,5 +1,6 @@
 ---
 title:          "Machine Learning-Engineered Nanozyme System for Synergistic Anti-Tumor Ferroptosis/Apoptosis Therapy"
+i18n_key:      "pub.2024_pub_example_5"
 date:           2024-12-27 00:01:00 +0800
 selected:       true
 pub:            "Small"

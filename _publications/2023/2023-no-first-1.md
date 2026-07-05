@@ -1,6 +1,6 @@
 ---
-title:          "Discovering a formula for the high temperature oxidation behavior of FeCrAlCoNi based high entropy alloys by domain knowledge-guided machine learning
-Author links open overlay panel"
+title:          "Discovering a formula for the high temperature oxidation behavior of FeCrAlCoNi based high entropy alloys by domain knowledge-guided machine learning"
+i18n_key:      "pub.2023_no_first_1"
 date:           2023-6-05 00:01:00 +0800
 selected:       false
 pub:            "Journal of Materials Science & Technology"

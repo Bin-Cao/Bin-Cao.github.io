@@ -39,4 +39,19 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    $('[data-publication-toggle]').each(function () {
+        var $toggle = $(this);
+        var $abstract = $toggle.prev('.publication-abstract');
+
+        if (!$abstract.length || $abstract[0].scrollHeight <= $abstract[0].clientHeight + 1) {
+            $toggle.addClass('is-hidden');
+            return;
+        }
+
+        $toggle.on('click', function () {
+            var expanded = $abstract.toggleClass('is-expanded').hasClass('is-expanded');
+            $toggle.text(expanded ? 'Show less' : 'Show more');
+        });
+    });
 })

@@ -10,8 +10,8 @@
         </div>
         <div class="publication-content-col p-3 pl-md-0">
             <h5 class="mt-0 mb-1 font-weight-normal publication-title"{% if item.i18n_key %} data-i18n="{{ item.i18n_key }}.title"{% endif %}>{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<span class="publication-venue"><i>{{ item.pub }}</i></span>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            <p class="mt-0 mb-0 small publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0 small publication-meta">{{item.pub_pre}}<span class="publication-venue"><i>{{ item.pub }}</i></span>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
             <p class="mt-0 mb-0 small text-muted publication-abstract"{% if item.i18n_key %} data-i18n-html="{{ item.i18n_key }}.abstract"{% endif %}>{{ item.abstract }}</p>
             <button type="button" class="btn btn-link btn-sm p-0 publication-abstract-toggle" data-publication-toggle data-i18n="publication.show_more">Show more</button>
             
@@ -40,8 +40,8 @@
             <div class="mb-auto"></div>
             <div>
                 <h5 class="mt-0 mb-1 font-weight-normal publication-title"{% if item.i18n_key %} data-i18n="{{ item.i18n_key }}.title"{% endif %}>{{ item.title }}</h5>
-                <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                <p class="mt-0 mb-0 small">{{item.pub_pre}}<span class="publication-venue"><i>{{ item.pub }}</i></span>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                <p class="mt-0 mb-0 small publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+                <p class="mt-0 mb-0 small publication-meta">{{item.pub_pre}}<span class="publication-venue"><i>{{ item.pub }}</i></span>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
                 <p class="mt-0 mb-0 small text-muted publication-abstract"{% if item.i18n_key %} data-i18n-html="{{ item.i18n_key }}.abstract"{% endif %}>{{ item.abstract }}</p>
                 <button type="button" class="btn btn-link btn-sm p-0 publication-abstract-toggle" data-publication-toggle data-i18n="publication.show_more">Show more</button>
                 

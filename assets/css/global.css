@@ -1,7 +1,9 @@
 @charset "utf-8";
 body {
     font-family: "Lato", sans-serif;
+    font-size: 1.04rem;
     font-weight: 400;
+    line-height: 1.58;
     padding-top: 5.0rem;
 }
 
@@ -39,11 +41,13 @@ h1, h2, h3, h4, h5, h6,
 
 
 .text-profile-position {
+    font-size: 1.02rem;
     font-weight: 400;
 }
 
 .text-profile-bio {
     /* font-family: "Raleway"; */
+    font-size: 1.04rem;
     font-weight: 400;
 }
 
@@ -463,4 +467,60 @@ div.lazy {
 
 .email-text {
     font-family: Source Code Pro, monospace;
+}
+
+.profile-portrait {
+    cursor: zoom-in;
+}
+
+.profile-portrait-home {
+    max-height: 360px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.profile-portrait-home-mobile {
+    max-width: 70%;
+}
+
+.profile-portrait-layout2 {
+    height: 260px;
+    object-fit: cover;
+}
+
+.profile-portrait-layout2-mobile {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+
+.image-lightbox {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    bottom: 0;
+    cursor: zoom-out;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 4vw;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 160ms ease;
+    z-index: 2000;
+}
+
+.image-lightbox.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.image-lightbox img {
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+    max-height: 90vh;
+    max-width: 90vw;
+    object-fit: contain;
 }

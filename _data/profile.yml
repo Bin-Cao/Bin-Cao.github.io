@@ -1,5 +1,5 @@
 primary_name: "Bin Cao (曹斌)"
-secondary_name: "曹斌"
+# secondary_name: "曹斌"
 navbar_name: "Bin Cao"
 
 positions:
@@ -37,8 +37,8 @@ short_bio: >-
         <a href="https://www.cityu.edu.hk/" style="color: #66bb6a;">City University of Hong Kong</a>, working with 
         <a href="https://scholars.cityu.edu.hk/en/persons/yangren/" style="color: #66bb6a;">Prof. Yang Ren</a>, 
         and gained industry research experience through internships at 
-        <a href="https://www.shlab.org.cn/" style="color: #66bb6a;">Shanghai AI Lab</a> and 
-        <a href="https://www.greendynamics.com.au/" style="color: #66bb6a;">GreenDynamics</a>.
+        <a href="https://www.shlab.org.cn/" style="color: #66bb6a;">Shanghai AI Lab</a>, 
+        <a href="https://www.greendynamics.com.au/" style="color: #66bb6a;">GreenDynamics</a> and <a href="https://www.nice.org.cn/" style="color: #66bb6a;">Institute for General Decision Intelligence, NICE</a>.
         </p>
 
         <p>
@@ -90,7 +90,9 @@ short_bio: >-
       
 
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/bc1.jpg
+portrait_url_home: /assets/images/photos/bc1.jpg
+portrait_url_layout2: /assets/images/photos/bc2.jpg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
@@ -121,6 +123,11 @@ education:
 
 
 experience:
+- name: Institute for General Decision Intelligence
+  logo: /assets/images/badges/IGDI.png
+  position: Research Intern
+  date: July. 2026 - Sep 2026
+
 - name: GreenDynamics
   logo: /assets/images/badges/greendym.png
   position: MTS Intern
@@ -145,5 +152,3 @@ awards:
   date: 2023
 - name: China National Scholarship
   date: 2022
-
-

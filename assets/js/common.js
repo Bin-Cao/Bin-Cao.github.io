@@ -58,7 +58,7 @@ $(function () {
         });
     });
 
-    var $publicationLightbox = $('<div class="publication-image-lightbox" aria-hidden="true"><img alt=""></div>');
+    var $publicationLightbox = $('<div class="publication-image-lightbox image-lightbox" aria-hidden="true"><img alt=""></div>');
     $('body').append($publicationLightbox);
 
     var closePublicationLightbox = function () {
@@ -76,6 +76,19 @@ $(function () {
         }
 
         $publicationLightbox.find('img').attr('src', imageSrc).attr('alt', $image.attr('alt') || '');
+        $publicationLightbox.addClass('is-visible').attr('aria-hidden', 'false');
+    });
+
+    $('img.profile-portrait').on('dblclick', function (event) {
+        event.preventDefault();
+
+        var $image = $(this);
+        var imageSrc = $image.attr('data-src') || $image.attr('src');
+        if (!imageSrc) {
+            return;
+        }
+
+        $publicationLightbox.find('img').attr('src', imageSrc).attr('alt', $image.attr('alt') || 'Portrait');
         $publicationLightbox.addClass('is-visible').attr('aria-hidden', 'false');
     });
 

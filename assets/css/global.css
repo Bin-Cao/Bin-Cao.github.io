@@ -484,8 +484,10 @@ div.lazy {
 }
 
 .profile-portrait-layout2 {
-    height: 260px;
+    height: auto;
+    max-height: 260px;
     object-fit: cover;
+    width: 240px;
 }
 
 .profile-portrait-layout2-mobile {

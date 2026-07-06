@@ -11,6 +11,10 @@
                             <img 
                                 src="{{ portrait_url | relative_url }}" 
                                 class="figure-img img-fluid img-thumbnail profile-portrait profile-portrait-layout2" 
+                                width="240"
+                                height="260"
+                                decoding="async"
+                                fetchpriority="high"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
@@ -24,7 +28,7 @@
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
                                 {% assign portrait_url = site.data.profile.portrait_url_layout2 | default: site.data.profile.portrait_url %}
-                                <img src="{{ portrait_url | relative_url }}" class="rounded-circle profile-portrait profile-portrait-layout2-mobile" alt="Portrait">
+                                <img src="{{ portrait_url | relative_url }}" class="rounded-circle profile-portrait profile-portrait-layout2-mobile" alt="Portrait" width="64" height="64" decoding="async">
                             </div>
                             {% endif %}
                         </div>
@@ -104,7 +108,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid" loading="lazy" decoding="async">
             </div>
             {% if site.data.profile.wechat_prompt %}
             <div class="modal-body p-1">

@@ -3,7 +3,7 @@
     <div class="row no-gutters publication-item publication-row {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="publication-cover-col mb-md-0 p-md-3">
             {%- if item.cover -%}
-            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy publication-cover rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy publication-cover rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" width="230" height="172" loading="lazy" decoding="async">
             {%- else -%}
             <svg class="bubble-visual-hash lazy publication-cover rounded-sm" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
             {%- endif -%}
@@ -33,7 +33,7 @@
     <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             {%- if item.cover -%}
-            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy publication-cover publication-cover-mobile rounded-sm mb-3" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy publication-cover publication-cover-mobile rounded-sm mb-3" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" width="300" height="180" loading="lazy" decoding="async">
             {%- else -%}
             <svg class="bubble-visual-hash lazy publication-cover publication-cover-mobile rounded-sm mb-3" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
             {%- endif -%}

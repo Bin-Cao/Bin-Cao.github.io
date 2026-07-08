@@ -8,6 +8,13 @@ pub_date:       "2025"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   We apply an interpretable AL strategy to efficiently optimize the photothermal conversion efficiency (PCE) of carbon dots (CDs) in photothermal therapy (PTT). Using this approach, we successfully synthesized irondoped CDs (Fe-CDs) with PCE exceeding 78.7% after only 16 experimental trials over four iterations.
+keywords:
+  - interpretable active learning
+  - carbon dots
+  - photothermal conversion
+  - iron doping
+  - antitumor therapy
+  - SHAP
 
 cover:          /assets/images/covers/aggregateshap.jpg
 authors:

@@ -8,6 +8,13 @@ pub_date:       "2025"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   This work developed an integrated AL software, BgoFace, which satisfies most material property optimization re-quirements. The application of BgoFace (with default setting) successfully accel-erated the discovery of G4-based CPL materials, achievingresults within six iterations and synthesizing 24 experimentalgroups. The final QY nearly doubled the initial best QY inthe training dataset.
+keywords:
+  - BgoFace
+  - active learning
+  - circularly polarized luminescence
+  - G-quartet materials
+  - quantum yield
+  - material optimization
 
 cover:          /assets/images/covers/bgoface.jpg
 authors:

@@ -7,6 +7,13 @@ pub:            "Journal of Materials Research and Technology"
 pub_date:       "2024"
 abstract: >-
    This article validates a straightforward strategy to guide rapid discovery and fabrication of multi-component materials with desired dual-performance characteristics.
+keywords:
+  - Co-based superalloys
+  - composition design
+  - solvus temperature
+  - low density
+  - machine learning
+  - multi-component materials
 cover:          /assets/images/covers/jmrt.jpg
 authors:
 - Sun Linlin

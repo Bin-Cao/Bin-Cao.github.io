@@ -9,6 +9,13 @@ pub_date:       "2026"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   Efficient exploration of vast compositional and processing spaces is essential for accelerated materials discovery. Bayesian optimization (BO) provides a principled strategy for identifying optimal materials with minimal experiments, yet its adoption in materials science is hindered by implementation complexity and limited domain-specific tools. Here, we present Bgolearn, a comprehensive Python framework that makes BO accessible and practical for materials research through an intuitive interface, robust algorithms, and materials-oriented workflows.
+keywords:
+  - Bgolearn
+  - Bayesian optimization
+  - materials discovery
+  - Python framework
+  - active learning
+  - experimental optimization
 
 cover:          /assets/images/covers/bgolearn.jpg
 authors:

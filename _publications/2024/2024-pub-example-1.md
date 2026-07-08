@@ -8,6 +8,13 @@ pub_date:       "2024"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   We developed MLMD, an AI platform for materials design. It is capable of effectively discovering novel materials with high-potential advanced properties end-to-end, utilizing model inference, surrogate optimization, and even working in situations of data scarcity based on active learning.
+keywords:
+  - MLMD
+  - AI platform
+  - materials design
+  - active learning
+  - surrogate optimization
+  - materials discovery
 
 cover:          /assets/images/covers/MLMD.jpg
 authors:

@@ -9,16 +9,23 @@ body_attr: >-
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
 <div class="row">
-    <div class="col-12 col-lg-10">
+    <div class="col-12 col-lg-10 publication-filter-scope">
+        <div class="publication-search publication-search-page my-3 p-3 bg-white shadow-sm rounded-xl">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input type="search" class="form-control" data-publication-search-input data-i18n-attr="placeholder:publication.search_placeholder" placeholder="Search publications by keyword">
+        </div>
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        <div data-publication-year-group>
+            <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+            <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in year.items %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
+            </div>
         </div>
         {% endfor %}
+        <p class="publication-no-results my-3 p-3 bg-white shadow-sm rounded-xl text-muted small" data-publication-no-results data-i18n="publication.no_results">No matching publications.</p>
     </div>
 
     <div class="col-2 d-none d-lg-block">

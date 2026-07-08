@@ -7,6 +7,13 @@ pub:            "ACS Nano"
 pub_date:       "2025"
 abstract: >-
   In this study, we successfully induced weak ferromagnetism in commercial RuO2, transitioning it from an AFM state using an electrochemical sodiation method. This process resulted in high activity, achieving an overpotential of 145 mV to reach 10 mA cm–2 and extending the service hours by more than 13 times compared to pristine RuO2 in 0.5 M H2SO4.
+keywords:
+  - RuO2
+  - oxygen evolution reaction
+  - ferromagnetic surface segregation
+  - stress concentration
+  - electrocatalysis
+  - acidic OER
 cover:          /assets/images/covers/acsnano.jpg
 authors:
 - Qin Yin*

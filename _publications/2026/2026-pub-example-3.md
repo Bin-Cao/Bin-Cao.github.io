@@ -9,6 +9,13 @@ pub_date:       "2026"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   AI can quickly propose candidate phases from X-ray diffraction (XRD), but refinement often fails due to unstable intensities under peak overlap and weak diffraction constraints. We introduce WPEM, a physics-constrained whole-pattern decomposition workflow that embeds Bragg's law in a batch expectation–maximization framework. WPEM models the full profile as a probabilistic mixture, iteratively inferring component intensities while keeping peak centers Bragg-consistent, producing a stable, physically valid representation. On \ce{PbSO4} and \ce{Tb2BaCoO5}, WPEM outperforms FullProf and TOPAS. It generalizes to multiphase Ti–15Nb films, \ce{NaCl}–\ce{Li2CO3} mixtures, semicrystalline polymers, operando cathodes, disordered Ru–Mn oxides (CCDC 2530452), and ancient Egyptian make-up, bridging AI-generated hypotheses and diffraction-ready structure refinement.
+keywords:
+  - WPEM
+  - X-ray diffraction refinement
+  - whole-pattern decomposition
+  - Bragg law
+  - structure refinement
+  - multiphase XRD
 
 cover:          /assets/images/covers/wpem.jpg
 authors:

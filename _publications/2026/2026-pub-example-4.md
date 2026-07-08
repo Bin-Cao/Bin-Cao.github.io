@@ -9,6 +9,13 @@ pub_date:       "2026"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   Traditional materials discovery relies on iterative hypothesis–experiment cycles, but it scales poorly with increasing complexity: problems with 5–15 design variables and costly, time-intensive experiments often allow exploration of less than 0.1% of the design space. This tutorial introduces Bayesian Optimization (BO) as a principled framework to accelerate discovery by using surrogate models, such as Gaussian processes, and acquisition functions to efficiently balance exploration and exploitation. We present the core components, practical workflows, and real-world applications of BO in areas like catalysis and molecular discovery, along with key extensions for realistic settings. Overall, this tutorial bridges theory and practice, enabling more efficient, informed, and scalable scientific discovery.
+keywords:
+  - Bayesian optimization
+  - scientific discovery
+  - tutorial
+  - surrogate models
+  - acquisition functions
+  - materials discovery
 
 
 cover:          /assets/images/covers/tutorial_bgo.jpg

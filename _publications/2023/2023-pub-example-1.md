@@ -7,6 +7,13 @@ pub:            "npj Computational Materials"
 pub_date:       "2023"
 abstract: >-
   In general, small in size and big in noise, while the design space is huge, by a newly developed data preprocessing algorithm, named the Tree-Classifier for Gaussian Process Regression (TCGPR)….
+keywords:
+  - lead-free solder alloys
+  - alloy design
+  - high strength
+  - high ductility
+  - machine learning
+  - TCGPR
 cover:          /assets/images/covers/2023npj.jpg
 authors:
 - Wei Qinghua*

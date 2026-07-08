@@ -7,6 +7,13 @@ pub:            "Chemical Engineering Journal"
 pub_date:       "2024"
 abstract: >-
    Introducing a facile ion-exchange method coupled with low-temperature thermal treatment, we have developed a strategy to enhance the cycling performance of Lithium-rich manganese-based layered oxides (LLOs).
+keywords:
+  - Li-rich layered oxide
+  - cathode materials
+  - ion exchange
+  - cycle life
+  - lithium-ion batteries
+  - manganese-based oxides
 cover:          /assets/images/covers/leicej.jpg
 authors:
 - Lei Tongxing

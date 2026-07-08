@@ -9,6 +9,13 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   We developed a novel XRD simulation method that incorporates comprehensive physical interactions, resulting in a high-fidelity database. SimXRD comprises 4,065,346 simulated powder XRD patterns, representing 119,569 unique crystal structures under 33 simulated conditions that reflect real-world variations. We benchmark 21 sequence models in both in-library and out-of-library scenarios and analyze the impact of class imbalance in longtailed crystal label distributions. Remarkably, we find that: (1) current neural networks struggle with classifying low-frequency crystals, particularly in out-oflibrary situations; (2) models trained on SimXRD can generalize to real experimental data.
+keywords:
+  - SimXRD
+  - X-ray diffraction simulation
+  - crystal symmetry classification
+  - benchmark dataset
+  - powder XRD
+  - ICLR
 
 cover:          /assets/images/covers/simxrdiclr.jpg
 authors:

@@ -7,6 +7,13 @@ pub:            "Journal of Materials Science & Technology"
 pub_date:       "2023"
 abstract: >-
    The Tree-Classifier for Linear Regression (TCLR) algorithm utilizes the two experimental features of exposure time (t) and temperature (T) to extract the spectrums of activation energy (Q) and time exponent (m) from the complex and high dimensional feature space, which automatically gives the spectrum of pre-factor. The three spectrums are assembled by using the element features, which leads to a general and interpretive formula with high prediction accuracy of the determination coefficient =0.971.
+keywords:
+  - high entropy alloys
+  - oxidation behavior
+  - domain knowledge
+  - interpretable machine learning
+  - formula discovery
+  - TCLR
 cover:          /assets/images/covers/jmst.jpg
 authors:
 - Wei Qinghua

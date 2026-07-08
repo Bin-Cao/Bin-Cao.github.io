@@ -7,6 +7,13 @@ pub:            "Advanced Materials"
 pub_date:       "2025"
 abstract: >-
   Here, a doping-dependent metal-insulator transition (MIT) with tunable bandgaps is reported in square-net materials GdSbxTe2-x-δ and a cooperative interaction between CDWs and vacancies that drives the MIT is discovered. 
+keywords:
+  - metal-insulator transition
+  - square-net materials
+  - vacancies
+  - charge order
+  - charge density waves
+  - tunable bandgap
 cover:          /assets/images/covers/wang_am.jpg
 authors:
 - Wang Qun

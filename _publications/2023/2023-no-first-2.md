@@ -7,6 +7,13 @@ pub:            "Nano Energy"
 pub_date:       "2023"
 abstract: >-
    The present work, for the first time, successfully synthesizes orthorhombic (Ru, Mn)2O3 electrocatalyst through cation exchange. The orthorhombic (Ru, Mn)2O3 particles exhibit the outstanding electrocatalysis performance as OER electrocatalyst, showing an ultralow overpotential of 168 mV at 10 mA cm−2 in acidic water and good stability in 40 h of OER.
+keywords:
+  - electrocatalyst
+  - acidic oxygen evolution reaction
+  - Ru Mn oxide
+  - orthorhombic phase
+  - cation exchange
+  - OER
 cover:          /assets/images/covers/nanoenergy.jpg
 authors:
 - Qin Yin

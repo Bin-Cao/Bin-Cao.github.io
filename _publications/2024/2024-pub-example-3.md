@@ -11,6 +11,13 @@ pub_date:       "2024"
 #  semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   In this work, we developed a machine learning phase identifier that achieved excellent performance for structure identification from powder diffraction patterns.
+keywords:
+  - CPICANN
+  - powder diffraction
+  - phase identification
+  - convolutional neural network
+  - self-attention
+  - crystallography
 cover:          /assets/images/covers/iucrj.jpg
 authors:
   - Zhang Shouyang*

@@ -58,6 +58,49 @@ $(function () {
         });
     });
 
+    $('.publication-filter-scope').each(function () {
+        var $scope = $(this);
+        var $input = $scope.find('[data-publication-search-input]').first();
+        var $entries = $scope.find('[data-publication-entry]');
+        var $noResults = $scope.find('[data-publication-no-results]').first();
+
+        if (!$input.length || !$entries.length) {
+            return;
+        }
+
+        var normalize = function (value) {
+            return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+        };
+
+        var filterPublications = function () {
+            var query = normalize($input.val());
+            var visibleCount = 0;
+
+            $entries.each(function () {
+                var $entry = $(this);
+                var searchText = normalize($entry.attr('data-publication-search') + ' ' + $entry.text());
+                var isVisible = !query || searchText.indexOf(query) !== -1;
+
+                $entry.toggle(isVisible);
+                if (isVisible && !$entry.hasClass('d-md-none')) {
+                    visibleCount += 1;
+                }
+            });
+
+            $scope.find('[data-publication-year-group]').each(function () {
+                var $group = $(this);
+                var hasVisiblePapers = $group.find('[data-publication-entry]:visible').length > 0;
+                $group.toggle(hasVisiblePapers);
+            });
+
+            $noResults.toggle(visibleCount === 0);
+        };
+
+        $noResults.hide();
+        $input.on('input', filterPublications);
+        filterPublications();
+    });
+
     var $publicationLightbox = $('<div class="publication-image-lightbox image-lightbox" aria-hidden="true"><img alt=""></div>');
     $('body').append($publicationLightbox);
 

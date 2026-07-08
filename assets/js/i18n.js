@@ -15,6 +15,8 @@ window.siteTranslations = {
         "publication.all": "All publications",
         "publication.show_more": "Show more",
         "publication.show_less": "Show less",
+        "publication.search_placeholder": "Search publications by keyword",
+        "publication.no_results": "No matching publications.",
         "profile.cv": "Curriculum Vitae",
         "profile.position_1": "Research Scientist",
         "profile.position_2": "London Research Center of Huawei Noah's Ark Lab",
@@ -57,6 +59,8 @@ window.siteTranslations = {
         "publication.all": "全部论文",
         "publication.show_more": "展开",
         "publication.show_less": "收起",
+        "publication.search_placeholder": "按关键词搜索论文",
+        "publication.no_results": "没有匹配的论文。",
         "profile.cv": "个人简历",
         "profile.position_1": "青年科学家",
         "profile.position_2": "华为诺亚方舟实验室伦敦研究中心",
@@ -99,6 +103,8 @@ window.siteTranslations = {
         "publication.all": "すべての論文",
         "publication.show_more": "もっと見る",
         "publication.show_less": "閉じる",
+        "publication.search_placeholder": "キーワードで論文を検索",
+        "publication.no_results": "一致する論文はありません。",
         "profile.cv": "履歴書",
         "profile.position_1": "研究科学者",
         "profile.position_2": "Huawei Noah's Ark Lab ロンドン研究センター",
@@ -141,6 +147,8 @@ window.siteTranslations = {
         "publication.all": "전체 논문",
         "publication.show_more": "더 보기",
         "publication.show_less": "접기",
+        "publication.search_placeholder": "키워드로 논문 검색",
+        "publication.no_results": "일치하는 논문이 없습니다.",
         "profile.cv": "이력서",
         "profile.position_1": "연구 과학자",
         "profile.position_2": "Huawei Noah's Ark Lab 런던 연구센터",
@@ -183,6 +191,8 @@ window.siteTranslations = {
         "publication.all": "Alle Publikationen",
         "publication.show_more": "Mehr anzeigen",
         "publication.show_less": "Weniger anzeigen",
+        "publication.search_placeholder": "Publikationen nach Stichwort suchen",
+        "publication.no_results": "Keine passenden Publikationen.",
         "profile.cv": "Lebenslauf",
         "profile.position_1": "Research Scientist",
         "profile.position_2": "London Research Center des Huawei Noah's Ark Lab",
@@ -270,6 +280,28 @@ window.siteI18nLookup = function (key, lang) {
             }
             var translatedHtml = window.siteI18nLookup($element.attr('data-i18n-html'), lang);
             $element.html(translatedHtml || $element.attr('data-i18n-default-html'));
+        });
+
+        $('[data-i18n-attr]').each(function () {
+            var $element = $(this);
+            var pairs = ($element.attr('data-i18n-attr') || '').split(',');
+
+            pairs.forEach(function (pair) {
+                var parts = pair.split(':');
+                var attrName = (parts[0] || '').trim();
+                var key = (parts[1] || '').trim();
+                if (!attrName || !key) {
+                    return;
+                }
+
+                var defaultAttrName = 'data-i18n-default-attr-' + attrName;
+                if (!$element.attr(defaultAttrName)) {
+                    $element.attr(defaultAttrName, $element.attr(attrName) || '');
+                }
+
+                var translatedAttr = window.siteI18nLookup(key, lang);
+                $element.attr(attrName, translatedAttr || $element.attr(defaultAttrName));
+            });
         });
 
         $('[data-lang-switch]').each(function () {

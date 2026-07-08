@@ -7,6 +7,13 @@ pub:            "Angewandte Chemie"
 pub_date:       "2025"
 abstract: >-
   As a result, capacity doubles and cycle life increase sixty-fold compared to regular dilute electrolyte. The first-order phase transformation is attributed to reduced de-solvation energy and charge transfer energy barrier due to different Zn2+ solvation structure in the concentrated electrolyte. Our findings offer groundbreaking insights into the microstructure evolution of electrode in concentrated electrolyte and pave the way to further develop batteries with excellent performance.
+keywords:
+  - aqueous Zn-ion battery
+  - concentrated electrolyte
+  - first-order phase transformation
+  - high-rate battery
+  - long-cycle battery
+  - solvation structure
 cover:          /assets/images/covers/shi_angew.jpg
 authors:
 - Shi Xiuling#

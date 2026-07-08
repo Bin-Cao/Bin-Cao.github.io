@@ -8,6 +8,13 @@ pub_date:       "2025"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   We first organize various types of materials and illustrate multiple representations of crystalline materials. We then provide a detailed summary and taxonomy of current AI-driven materials generation approaches. Furthermore, we discuss the common evaluation metrics and summarize open-source codes and benchmark datasets. Finally, we conclude with potential future directions and challenges in this fast-growing field.
+keywords:
+  - materials generation
+  - artificial intelligence
+  - survey
+  - crystal representation
+  - benchmark datasets
+  - generative models
 
 cover:          /assets/images/covers/mg_survey.jpg
 authors:

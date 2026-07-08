@@ -11,6 +11,13 @@ pub_date:       "2024"
 #  semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   A novel ML model, termed the sequential backward Tree-Classifier for Gaussian Process Regression (TCGPR), is proposed to improve data pattern recognition following the divide-and-conquer principle.
+keywords:
+  - nanozyme
+  - ferroptosis
+  - apoptosis therapy
+  - anti-tumor therapy
+  - TCGPR
+  - machine learning
 cover:          /assets/images/covers/small_li.jpg
 authors:
   - Li Tianliang*

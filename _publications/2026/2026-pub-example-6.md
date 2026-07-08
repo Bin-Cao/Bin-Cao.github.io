@@ -9,6 +9,14 @@ pub_date:       "2026"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   This thesis develops a physics-constrained AI framework for crystal structure and property inference from powder X-ray diffraction (PXRD). By combining large-scale simulated and experimental datasets, physics-aware structure identification (XQueryer), whole-pattern refinement (WPEM), and diffraction-informed representation learning (PRDNet), the framework enables end-to-end, physically consistent interpretation of diffraction data, advancing autonomous materials characterization and AI-driven materials discovery.
+keywords:
+  - physics-constrained learning
+  - powder X-ray diffraction
+  - crystal structure inference
+  - crystal property prediction
+  - XQueryer
+  - WPEM
+  - PRDNet
  
 
 

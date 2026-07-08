@@ -11,6 +11,13 @@ pub_date:       "2024"
 #  semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   To facilitate materials informatics development, all active learning algorithms were made open-source in our designed framework, Bgolearn
+keywords:
+  - active learning
+  - lead-free solder alloys
+  - high strength
+  - high ductility
+  - Bgolearn
+  - materials informatics
 cover:          /assets/images/covers/mad_des.jpg
 authors:
   - <strong>Cao Bin</strong>

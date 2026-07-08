@@ -1,12 +1,17 @@
 {% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-xl section-card publication-section">
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl section-card publication-section publication-filter-scope">
     <h6 class="border-bottom border-gray p-3 mb-0 section-heading">
         <i class="fas fa-star"></i> <span data-i18n="section.selected_publications">Selected Publications</span>
         <a href="{{ 'publications' | relative_url }}"><span data-i18n="publication.view_all">(view all</span> <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
+    <div class="publication-search p-3 border-bottom border-gray">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="search" class="form-control form-control-sm" data-publication-search-input data-i18n-attr="placeholder:publication.search_placeholder" placeholder="Search publications by keyword">
+    </div>
     {% for item in publications limit:include.limit %}
         {% include widgets/publication_item.html item=item first=false last=false %}    
     {% endfor %}
+    <p class="publication-no-results p-3 mb-0 text-muted small" data-publication-no-results data-i18n="publication.no_results">No matching publications.</p>
     <h6 class="d-block p-3 mt-0 text-right section-footer-link">
         <a href="{{ 'publications' | relative_url }}"><span data-i18n="publication.all">All publications</span> <i class="fas fa-angle-double-right"></i></a>
     </h6>

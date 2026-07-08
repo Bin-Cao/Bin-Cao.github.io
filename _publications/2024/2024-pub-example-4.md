@@ -11,6 +11,13 @@ pub_date:       "2024"
 #  semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   In this work, we present a crystal generative framework based on Wyckoff generative adversarial network (CGWGAN) to efficiently discover novel crystals.
+keywords:
+  - CGWGAN
+  - crystal generation
+  - Wyckoff positions
+  - generative adversarial network
+  - novel crystals
+  - materials generation
 cover:          /assets/images/covers/cgwgan.jpg
 authors:
   - Su Tianhao*

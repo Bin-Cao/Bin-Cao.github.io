@@ -7,6 +7,13 @@ pub:            "Journal of Power Sources"
 pub_date:       "2024"
 abstract: >-
    we employed a simple citric acid treatment (CA-treatment) method to fabricate the Li-rich spinel coating layer on LRMs. This in situ formed spinel Li4Mn5O12 layer successfully suppresses the oxygen release, provides three-dimensional (3D) lithium-ion diffusion channels and enriches Li embedding sites, resulting in a substantial improvement in the rate capability and high-rate cycling performance. 
+keywords:
+  - Li-rich Mn-based cathodes
+  - spinel coating
+  - rate capability
+  - ultralong cycle life
+  - lithium diffusion
+  - oxygen release
 cover:          /assets/images/covers/fu_jps.jpg
 authors:
 - Fu Wenbo

@@ -8,6 +8,13 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2022"
 abstract: >-
   In this study, we propose a domain knowledge-guided interpretive machine learning strategy and demonstrate it by studying the oxidation behavior of ferritic-martensitic steels in supercritical water…
+keywords:
+  - interpretable machine learning
+  - formula discovery
+  - ferritic-martensitic steels
+  - oxidation behavior
+  - supercritical water
+  - TCLR
 cover:          /assets/images/covers/2022jmi.jpg
 authors:
 - <strong>Cao Bin</strong>

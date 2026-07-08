@@ -9,6 +9,13 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 abstract: >-
   We propose PRDNet, a novel architecture that integrates graph embeddings with a learned pseudoparticle diffraction module. It generates synthetic diffraction patterns that are invariant to crystallographic symmetries. We extensively evaluate PRDNet on multiple large-scale benchmarks, including Materials Project, JARVIS-DFT, and MatBench. Our model achieves state-of-the-art performance across a wide range of crystal property prediction tasks, demonstrating its effectiveness.
+keywords:
+  - PRDNet
+  - crystal property prediction
+  - pseudo-particle ray diffraction
+  - graph embeddings
+  - symmetry invariance
+  - ICLR
 
 cover:          /assets/images/covers/PRDNet.jpg
 authors:

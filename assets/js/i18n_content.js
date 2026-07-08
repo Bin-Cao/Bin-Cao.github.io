@@ -1,6 +1,8 @@
 (function () {
     var contentTranslations = {
         zh: {
+            "app.ploteverything.title": "PlotEverything",
+            "app.ploteverything.abstract": "PlotEverything 是一个轻量级科学绘图工作台。它帮助用户从表格数据创建出版级图表、显示晶体结构、模拟 XRD 谱图、排版多面板图，并在无需编写绘图代码的情况下导出最终图片。",
             "app.tabularlab.title": "TabularLab",
             "app.tabularlab.abstract": "TabularLab 是一个轻量级表格机器学习工具包。它既可以作为桌面应用使用，也可以在浏览器中打开，支持回归、分类、聚类、可视化、预测和结果导出。",
             "app.xqueryer.title": "XQueryer",
@@ -53,6 +55,8 @@
             "news.2026_news4.title": "顺利通过博士答辩，并获得香港科技大学（广州）博士学位。"
         },
         ja: {
+            "app.ploteverything.title": "PlotEverything",
+            "app.ploteverything.abstract": "PlotEverything は、軽量な科学図作成ワークスペースです。表計算データから論文向けの図を作成し、結晶構造の表示、XRD パターンのシミュレーション、複数パネル図の配置、最終画像のエクスポートを、プロット用コードを書かずに行えます。",
             "app.tabularlab.title": "TabularLab",
             "app.tabularlab.abstract": "TabularLab は、表形式データ向けの軽量な機械学習ツールキットです。デスクトップアプリとしてもブラウザ上でも利用でき、回帰、分類、クラスタリング、可視化、予測、結果のエクスポートをサポートします。",
             "app.xqueryer.title": "XQueryer",
@@ -74,6 +78,8 @@
             "news.2026_news4.title": "博士論文審査に合格し、香港科技大学（広州）より博士号を取得しました。"
         },
         ko: {
+            "app.ploteverything.title": "PlotEverything",
+            "app.ploteverything.abstract": "PlotEverything는 가벼운 과학 그림 작업 공간입니다. 사용자는 플로팅 코드를 작성하지 않고도 스프레드시트 데이터로 논문 스타일 그림을 만들고, 결정 구조를 표시하며, XRD 패턴을 시뮬레이션하고, 다중 패널 그림을 배치한 뒤 최종 이미지를 내보낼 수 있습니다.",
             "app.tabularlab.title": "TabularLab",
             "app.tabularlab.abstract": "TabularLab는 표 형식 머신러닝을 위한 경량 툴킷입니다. 데스크톱 앱으로 사용할 수도 있고 브라우저에서 열 수도 있으며, 회귀, 분류, 군집화, 시각화, 예측, 결과 내보내기를 지원합니다.",
             "app.xqueryer.title": "XQueryer",
@@ -95,6 +101,8 @@
             "news.2026_news4.title": "박사 학위 논문 심사를 통과하고 홍콩과학기술대학교(광저우)에서 박사학위를 취득했습니다."
         },
         de: {
+            "app.ploteverything.title": "PlotEverything",
+            "app.ploteverything.abstract": "PlotEverything ist ein leichtgewichtiges Arbeitsumfeld fur wissenschaftliche Abbildungen. Es hilft dabei, publikationsreife Grafiken aus Tabellendaten zu erstellen, Kristallstrukturen anzuzeigen, XRD-Muster zu simulieren, Mehrfachpanels anzuordnen und fertige Bilder ohne Plot-Code zu exportieren.",
             "app.tabularlab.title": "TabularLab",
             "app.tabularlab.abstract": "TabularLab ist ein leichtgewichtiges Toolkit fur tabellarisches Machine Learning. Es kann als Desktop-App oder im Browser genutzt werden und unterstutzt Regression, Klassifikation, Clustering, Visualisierung, Vorhersage und Ergebnisexport.",
             "app.xqueryer.title": "XQueryer",

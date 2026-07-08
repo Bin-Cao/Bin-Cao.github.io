@@ -1,3 +1,19 @@
+- title: "PlotEverything"
+  i18n_key: "app.ploteverything"
+  cover: "/assets/images/covers/PlotEverything.jpg"
+  pub: "App Windows&macOS"
+  pub_date: "Nature-style plots without expertise"
+  abstract: >-
+    PlotEverything is a lightweight scientific figure workspace. It helps users create publication-style figures from spreadsheet data, display crystal structures, simulate XRD patterns, arrange multi-panel figures, and export final images without writing plotting code.
+  links:
+    Install: "https://github.com/Bin-Cao/PlotEverything/releases"
+    Manual: "https://bin-cao.github.io/PlotEverything/"
+    Project: "https://github.com/Bin-Cao/PlotEverything"
+
+
+
+
+
 - title: "XMatcher"
   i18n_key: "app.xmatcher"
   cover: "/assets/images/covers/XMatcher.jpg"

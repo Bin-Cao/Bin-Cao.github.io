@@ -1,9 +1,9 @@
 ---
-title:          "Bgolearn: a Unified Bayesian Optimization Framework for Accelerating Materials Discovery"
+title:          "Bgolearn: a unified Bayesian optimization framework for accelerating materials discovery"
 i18n_key:      "pub.2026_pub_example_2"
 date:           2026-01-26 00:01:00 +0800
 selected:       true
-pub:            "arXiv "
+pub:            "npj Computational Materials "
 pub_date:       "2026"
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Under Review</span>' 
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count

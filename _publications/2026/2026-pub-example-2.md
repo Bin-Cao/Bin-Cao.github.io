@@ -32,6 +32,7 @@ authors:
   - Liu Li
   - Xue Dezhen
   - Turab Lookman#
+  - Wang Jun#
   - Zhang Tongyi#
 
 links:

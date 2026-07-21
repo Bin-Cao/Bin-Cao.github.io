@@ -18,7 +18,7 @@ keywords:
  
 
 
-cover:          /assets/images/covers/xmatcher.jpg
+cover:          /assets/images/covers/xmatcher2.jpg
 authors:
   - <strong>Cao Bin</strong>
 

@@ -38,6 +38,7 @@
             "pub.2026_pub_example_5.abstract": "XDecomposer 是一种无需先验的多相 XRD 联合分解与识别框架，不依赖候选相列表、结构模板或相数先验。它将多相衍射分析表述为集合预测问题，可同时推断相分辨组分、混合比例和结构表示，并在模拟与实验数据上显著提升重构和物相识别性能。",
             "pub.2026_pub_example_6.abstract": "本论文构建了从粉末 X 射线衍射推断晶体结构与性质的物理约束 AI 框架，结合大规模模拟和实验数据、XQueryer、WPEM 与 PRDNet，实现端到端且物理一致的衍射数据解析。",
             "pub.2026_pub_example_7.abstract": "SciVerseGym 是兼容 Gymnasium 的序列晶体发现环境，将晶体设计建模为马尔可夫决策过程。它支持元素替换、晶格扰动、原子位移、空位创建和原子插入等操作，为强化学习、贝叶斯优化、进化搜索和语言智能体提供开放可复现实验平台。",
+            "pub.2026_pub_example_8.abstract": "粉末 X 射线衍射（XRD）广泛用于晶体物相识别，近年来机器学习方法显著加速了衍射图谱的解读。然而，可靠的物相判定仍需透明、基于证据的验证，尤其对于复杂样品，可解释性与专家评估依然不可或缺。检索匹配方法提供了稳健且互补的策略，但许多实现为专有软件，限制了可及性和可重复性。本文提出开源、证据驱动的 XMatcher 框架，将衍射数据库、匹配算法与交互式可视化整合为便携式工作流。XMatcher 可由晶体结构生成理论衍射库，结合化学与衍射约束检索候选物相，进行全局角度偏移校正和一对一峰匹配，并给出定量一致性指标及峰级证据。其 AutoMix 模块通过评估候选物相组合、估计非负衍射贡献并展示物相特异的峰分布，将识别拓展至多相图谱。借助本地图形界面，XMatcher 支持候选相排序查看、交互式图谱比较、基于 PDF/CIF 的全谱验证以及可重复的分析导出。通过呈现支持与冲突证据而非依赖单一相似度评分，XMatcher 为晶体物相识别提供了可解释、可重复的平台。",
             "news.2020_lorem.title": "顺利毕业于北京化工大学，获得扎实的专业知识与技能。<span class=\"badge badge-pill badge-info badge-publication\">本科</span>",
             "news.2023_news1.title": "开源材料优化软件包 Bgolearn，为社区做出贡献。<a href=\"https://github.com/Bin-Cao/Bgolearn\" target=\"_blank\">了解更多 <i class=\"fas fa-angle-double-right\"></i></a>",
             "news.2023_news2.title": "获评上海大学优秀毕业生。<span class=\"badge badge-pill badge-info badge-publication\">硕士</span>。",
@@ -156,7 +157,8 @@
         "pub.2026_pub_example_4.abstract": "本チュートリアルは、代理モデルと獲得関数を用いて探索と活用をバランスさせるベイズ最適化を、効率的な科学発見の原理的枠組みとして紹介します。",
         "pub.2026_pub_example_5.abstract": "XDecomposer は候補相リスト、構造テンプレート、相数の事前知識を必要としない多相 XRD の同時分解・識別フレームワークです。",
         "pub.2026_pub_example_6.abstract": "本博士論文は、粉末 XRD から結晶構造と物性を推定する物理制約 AI フレームワークを構築し、自律材料評価と AI 駆動材料発見を前進させます。",
-        "pub.2026_pub_example_7.abstract": "SciVerseGym は逐次的な結晶発見のための Gymnasium 互換環境で、置換、格子摂動、原子変位、空孔生成などを通じて強化学習やベイズ最適化のテストベッドを提供します。"
+        "pub.2026_pub_example_7.abstract": "SciVerseGym は逐次的な結晶発見のための Gymnasium 互換環境で、置換、格子摂動、原子変位、空孔生成などを通じて強化学習やベイズ最適化のテストベッドを提供します。",
+        "pub.2026_pub_example_8.abstract": "粉末 X 線回折（XRD）は結晶相同定に広く用いられ、近年の機械学習は回折パターン解釈を大きく加速しています。しかし、信頼できる相の割り当てには、特に複雑な試料において、透明で証拠に基づく検証が依然として必要であり、解釈可能性と専門家による評価が不可欠です。サーチマッチ法は堅牢で相補的な戦略ですが、多くの実装はプロプライエタリであり、利用可能性と再現性を制限しています。本研究では、回折データベース、マッチングアルゴリズム、対話的可視化をポータブルなワークフローに統合した、オープンソースかつ証拠駆動型の XMatcher フレームワークを提案します。XMatcher は結晶構造から理論回折ライブラリを生成し、化学的・回折的制約により候補相を検索し、グローバルな角度シフト補正と一対一のピークマッチングを適用して、定量的一致度指標とピークレベルの証拠を報告します。AutoMix モジュールは、候補相の組合せを評価し、非負の回折寄与を推定し、相ごとのピーク分布を可視化することで、多相パターンへ同定を拡張します。ローカル GUI を通じて、候補相の順位付き確認、対話的なパターン比較、PDF/CIF に基づく全パターン検証、再現可能な解析のエクスポートが可能です。単一の類似度スコアに依存せず、支持証拠と矛盾する証拠の双方を示すことで、XMatcher は結晶相同定のための解釈可能で再現可能なプラットフォームを提供します。"
     });
 
     Object.assign(contentTranslations.ko, {
@@ -190,7 +192,8 @@
         "pub.2026_pub_example_4.abstract": "이 튜토리얼은 대리 모델과 획득 함수를 이용해 탐색과 활용을 균형 있게 수행하는 베이지안 최적화를 효율적 과학 발견의 원리적 프레임워크로 소개합니다.",
         "pub.2026_pub_example_5.abstract": "XDecomposer는 후보 상 목록, 구조 템플릿, 상 개수 사전지식 없이 다상 XRD를 공동 분해·식별하는 prior-free 프레임워크입니다.",
         "pub.2026_pub_example_6.abstract": "본 학위논문은 분말 XRD로부터 결정 구조와 물성을 추론하는 물리 제약 AI 프레임워크를 구축하여 자율 재료 특성화와 AI 기반 재료 발견을 진전시킵니다.",
-        "pub.2026_pub_example_7.abstract": "SciVerseGym은 순차적 결정 발견을 위한 Gymnasium 호환 환경으로, 치환, 격자 교란, 원자 변위, 공공 생성 등을 지원하며 강화학습과 베이지안 최적화의 테스트베드를 제공합니다."
+        "pub.2026_pub_example_7.abstract": "SciVerseGym은 순차적 결정 발견을 위한 Gymnasium 호환 환경으로, 치환, 격자 교란, 원자 변위, 공공 생성 등을 지원하며 강화학습과 베이지안 최적화의 테스트베드를 제공합니다.",
+        "pub.2026_pub_example_8.abstract": "분말 X선 회절(XRD)은 결정상 식별에 널리 사용되며, 최근의 머신러닝 접근법은 회절 패턴 해석을 크게 가속했습니다. 그러나 특히 해석 가능성과 전문가 평가가 필수적인 복잡한 시료에서는 신뢰할 수 있는 상 할당을 위해 여전히 투명하고 증거 기반의 검증이 필요합니다. 검색-매칭 방법은 견고하고 상호보완적인 전략을 제공하지만, 많은 구현이 독점적이어서 접근성과 재현성이 제한됩니다. 본 연구에서는 회절 데이터베이스, 매칭 알고리즘 및 대화형 시각화를 휴대 가능한 워크플로에 통합한 오픈소스 증거 기반 프레임워크 XMatcher를 소개합니다. XMatcher는 결정 구조에서 이론 회절 라이브러리를 생성하고, 화학 및 회절 제약을 통해 후보 상을 검색하며, 전역 각도 이동 보정과 일대일 피크 매칭을 적용하고, 정량적 일치 지표와 피크 수준의 증거를 보고합니다. AutoMix 모듈은 후보 상 조합을 평가하고 음수가 아닌 회절 기여를 추정하며 상별 피크 분포를 시각화하여 다상 패턴으로 식별 범위를 확장합니다. 로컬 그래픽 인터페이스를 통해 후보 상의 순위별 검토, 대화형 패턴 비교, PDF/CIF 기반 전패턴 검증 및 재현 가능한 분석 내보내기가 가능합니다. 단일 유사도 점수에 의존하지 않고 뒷받침하는 증거와 상충하는 증거를 모두 제시함으로써, XMatcher는 결정상 식별을 위한 해석 가능하고 재현 가능한 플랫폼을 제공합니다."
     });
 
     Object.assign(contentTranslations.de, {
@@ -224,7 +227,8 @@
         "pub.2026_pub_example_4.abstract": "Das Tutorial führt Bayes'sche Optimierung als prinzipiellen Rahmen für effiziente wissenschaftliche Entdeckung ein und behandelt Surrogatmodelle, Akquisitionsfunktionen, Workflows und Anwendungen.",
         "pub.2026_pub_example_5.abstract": "XDecomposer ist ein priorfreies Framework zur gemeinsamen Zerlegung und Identifikation mehrphasiger XRD-Muster ohne Kandidatenlisten, Strukturvorlagen oder Vorwissen über die Phasenzahl.",
         "pub.2026_pub_example_6.abstract": "Die Dissertation entwickelt ein physikalisch beschränktes KI-Framework zur Inferenz von Kristallstrukturen und Eigenschaften aus Pulver-XRD und unterstützt autonome Materialcharakterisierung.",
-        "pub.2026_pub_example_7.abstract": "SciVerseGym ist eine Gymnasium-kompatible Umgebung für sequentielle Kristallentdeckung mit Substitution, Gitterstörung, Atomverschiebung und Leerstellenbildung als Testbed für RL und Bayes-Optimierung."
+        "pub.2026_pub_example_7.abstract": "SciVerseGym ist eine Gymnasium-kompatible Umgebung für sequentielle Kristallentdeckung mit Substitution, Gitterstörung, Atomverschiebung und Leerstellenbildung als Testbed für RL und Bayes-Optimierung.",
+        "pub.2026_pub_example_8.abstract": "Pulver-Röntgendiffraktion (XRD) wird weithin zur Identifizierung kristalliner Phasen eingesetzt, und aktuelle Machine-Learning-Ansätze haben die Interpretation von Diffraktionsmustern erheblich beschleunigt. Eine verlässliche Phasenzuordnung erfordert jedoch weiterhin eine transparente, evidenzbasierte Validierung, insbesondere bei komplexen Proben, für die Interpretierbarkeit und Expertenbewertung unverzichtbar bleiben. Search-Match-Methoden bieten eine robuste, ergänzende Strategie, doch viele Implementierungen sind proprietär und beschränken damit Zugänglichkeit und Reproduzierbarkeit. Hier stellen wir XMatcher vor, ein quelloffenes, evidenzgetriebenes Framework, das Diffraktionsdatenbanken, Matching-Algorithmen und interaktive Visualisierung in einem portablen Workflow vereint. XMatcher erzeugt theoretische Diffraktionsbibliotheken aus Kristallstrukturen, sucht Kandidatenphasen mithilfe chemischer und diffraktiver Einschränkungen, führt eine globale Winkelverschiebungskorrektur sowie Eins-zu-eins-Peak-Matching durch und berichtet quantitative Übereinstimmungsmetriken zusammen mit Peak-bezogener Evidenz. Das Modul AutoMix erweitert die Identifizierung auf Mehrphasenmuster, indem es Kombinationen von Kandidatenphasen bewertet, nichtnegative Diffraktionsbeiträge schätzt und phasenspezifische Peak-Verteilungen visualisiert. Über eine lokale grafische Oberfläche ermöglicht XMatcher die rangbasierte Prüfung von Kandidaten, interaktive Mustervergleiche, die Ganzmuster-Validierung auf Basis von PDF/CIF sowie den Export reproduzierbarer Analysen. Indem XMatcher unterstützende und widersprechende Evidenz offenlegt, statt sich auf einen einzelnen Ähnlichkeitswert zu verlassen, bietet es eine interpretierbare und reproduzierbare Plattform für die Identifizierung kristalliner Phasen."
     });
 
     var zhAbstracts = contentTranslations.zh;

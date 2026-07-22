@@ -34,7 +34,7 @@ authors:
 
 
 links:
-  Paper: https://arxiv.org/abs/2607.17162
-  Code: https://github.com/Asterbin/Asterbin-XMatcher
+  Paper: https://www.researchsquare.com/article/rs-10164164/v1
+  Code: https://github.com/Bin-Cao/AlloyDiscovery
  
 ---

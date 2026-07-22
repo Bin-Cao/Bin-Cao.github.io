@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向材料优化的贝叶斯优化（BO）中文教程：背景、原理、实验闭环、应用与实战建议。">
+  <title>第一章｜贝叶斯优化：材料优化的序贯决策方法</title>
+  <style>
+    :root { --ink:#17243a; --muted:#62728b; --paper:#fffdf8; --blue:#2357d8; --cyan:#43c4cf; --gold:#f6bd49; --coral:#ef765e; --line:#dfe6ef; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#f4f7fb; font:16px/1.8 "PingFang SC","Microsoft YaHei",system-ui,sans-serif; }
+    .hero { position:relative; padding:36px 24px 31px; color:var(--ink); background:var(--paper); border-bottom:1px solid var(--line); }
+    .hero::after { content:""; position:absolute; left:0; bottom:0; width:112px; height:4px; background:var(--coral); }
+    .wrap { width:min(1080px,100%); margin:auto; position:relative; z-index:1; }
+    .eyebrow { display:inline-block; color:var(--coral); letter-spacing:.12em; font-size:.78rem; font-weight:800; }
+    h1 { max-width:820px; margin:12px 0 9px; font-size:clamp(2rem,4vw,3.05rem); line-height:1.2; letter-spacing:-.04em; }
+    main > section { scroll-margin-top:60px; } .chapter-kicker { display:block; margin-bottom:8px; color:#a85540; font-size:.78rem; font-weight:800; letter-spacing:.12em; } .chapter-opening { max-width:780px; margin-bottom:37px; font-family:Georgia,"Songti SC",serif; font-size:1.2rem; line-height:2; } .chapter-opening::first-letter { float:left; margin:11px 10px 0 0; color:var(--coral); font-size:4rem; font-weight:800; line-height:.65; } .reading { max-width:790px; } .reading h3 { margin-top:30px; font-size:1.25rem; } .sidenote { margin:25px 0; padding:15px 18px; border-top:2px solid var(--gold); border-bottom:1px solid var(--line); color:#6a5b43; font-size:.92rem; } .sidenote strong { color:#a14a34; } .book-list { padding-left:1.25em; } .book-list li { margin:9px 0; }
+    .lead { max-width:760px; color:#536278; font-size:1.04rem; }
+    .meta { margin-top:16px; color:#7a879b; font-size:.84rem; }
+    .nav { position:sticky; top:0; z-index:4; padding:10px 20px; background:#ffffffed; border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
+    .nav div { width:min(1080px,100%); margin:auto; display:flex; gap:18px; overflow:auto; white-space:nowrap; } .nav a { color:#51627e; text-decoration:none; font-size:.9rem; } .nav a:hover { color:var(--blue); }
+    main { width:min(1080px,100%); margin:0 auto; padding:42px 24px 72px; }
+    section { margin:0 0 58px; } h2 { margin:0 0 17px; font-size:1.72rem; line-height:1.3; letter-spacing:-.02em; } h3 { margin:0 0 8px; font-size:1.08rem; }
+    p { margin:0 0 14px; } .intro { font-size:1.1rem; color:#34455f; }
+    .callout { margin:23px 0; padding:19px 22px; border-left:5px solid var(--cyan); border-radius:0 12px 12px 0; background:#eafbfc; color:#24495a; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; } .card { padding:21px; border:1px solid var(--line); border-radius:16px; background:white; box-shadow:0 5px 19px #233c6d09; }
+    .card .num { display:block; margin-bottom:8px; color:var(--blue); font-weight:800; font-size:.82rem; letter-spacing:.08em; }
+    .flow { display:grid; grid-template-columns:repeat(5,1fr); align-items:center; gap:9px; padding:22px; border-radius:18px; background:#112453; color:white; }
+    .step { min-height:117px; padding:14px; border-radius:12px; background:#ffffff12; } .step b { display:block; color:#8becef; font-size:.8rem; } .arrow { color:#78e4e9; text-align:center; font-size:1.5rem; }
+    .formula { overflow:auto; margin:21px 0; padding:18px 22px; border-radius:13px; background:#f0f4fa; color:#263a62; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.95rem; }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:20px; } .tag { display:inline-block; margin:2px 4px 2px 0; padding:2px 10px; border-radius:99px; background:#e8efff; color:#2c56b4; font-size:.8rem; }
+    .table-wrap { overflow:auto; border:1px solid var(--line); border-radius:15px; background:white; } table { width:100%; border-collapse:collapse; min-width:690px; } th,td { padding:14px 16px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); } th { background:#f6f8fb; color:#42526c; font-size:.88rem; } tr:last-child td { border:0; }
+    .demo { padding:24px; border-radius:18px; color:white; background:linear-gradient(130deg,#224fc5,#157d94); } .demo h2 { margin-bottom:5px; } .playground { width:100%; height:720px; margin-top:18px; border:1px solid #ffffff55; border-radius:10px; background:white; } .playground-note { margin:14px 0 0!important; color:#d9ffff; font-size:.9rem; } .playground-note a { color:#fff0b4; } input { width:130px; padding:8px 10px; border:0; border-radius:8px; font:inherit; } button { padding:9px 15px; cursor:pointer; border:0; border-radius:8px; background:var(--gold); color:#3e2b00; font-weight:700; font:inherit; }
+    .code { overflow:auto; padding:20px; border-radius:14px; background:#14223e; color:#dbeaff; font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace; } .code .k { color:#82e5e5; } .code .s { color:#f4c66c; }
+    .check { list-style:none; padding:0; } .check li { margin:10px 0; padding-left:29px; position:relative; } .check li::before { content:"✓"; position:absolute; left:0; top:0; color:#168b76; font-weight:800; }
+    footer { padding:26px 24px; color:#75829a; text-align:center; border-top:1px solid var(--line); font-size:.9rem; } a { color:#245bd4; }
+    .definition { margin:24px 0; padding:18px 21px; background:#f5f0e6; border-radius:9px; } .definition strong { color:var(--blue); } .exercise { margin:30px 0; padding:20px 23px; border:1px dashed #b8a987; background:#fffaf0; } .exercise h3 { margin:0 0 8px; color:#9b6530; font-size:1rem; }
+    @media (max-width:760px) { .hero { padding-top:55px; } .grid,.two { grid-template-columns:1fr; } .flow { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); min-height:14px; } main { padding-top:30px; } }
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <span class="eyebrow">MATERIALS INTELLIGENCE · CHAPTER 01</span>
+    <h1>贝叶斯优化：<br>材料优化的序贯决策方法</h1>
+    <p class="lead">贝叶斯优化（Bayesian Optimization, BO）不是“让算法替你做实验”，而是在昂贵、缓慢且充满不确定性的材料探索中，持续追问：下一次，什么最值得做？</p>
+    <p class="meta">第一章 · 贝叶斯优化 · 2026<br>作者：<a href="https://bin-cao.github.io/">曹斌</a> and ChatGPT</p>
+  </div></header>
+  <nav class="nav"><div><a href="#why">问题的尺度</a><a href="#principle">预测与不确定性</a><a href="#workflow">实验闭环</a><a href="#case">贯穿案例</a><a href="#applications">应用图谱</a><a href="#practice">实践清单</a></div></nav>
+  <main>
+    <section id="why"><h2><span class="chapter-kicker">1.1 · THE EXPERIMENTAL QUESTION</span>为什么材料优化特别适合 BO？</h2>
+      <p class="chapter-opening">设想你在优化一类析氧反应催化剂：四种金属的配比、煅烧温度、反应时间和前驱体浓度共同决定活性与稳定性。即使每个变量只取十个值，也已是千万级组合；而一轮合成、表征与测试可能需要数天。穷举并不只是慢，而是根本不可行。</p>
+      <p class="reading">实验室中常见的策略是围绕“目前冠军”局部微调。这一策略隐含了一个危险前提：我们一开始就站在正确的山脚下。真实材料空间却更像一片群岛——有相变边界、不可合成区和仪器噪声，也有尚未被看见的性能高地。BO 的任务不是承诺一条捷径，而是在有限预算下，把每次实验同时变成<strong>性能测试</strong>和<strong>知识获取</strong>。</p>
+      <div class="grid">
+        <article class="card"><span class="num">01 / EXPENSIVE</span><h3>每个标签都昂贵</h3><p>DFT 计算、原位表征或实验制备的成本高，数据通常只有几十到几百条。</p></article>
+        <article class="card"><span class="num">02 / MIXED</span><h3>变量五花八门</h3><p>连续配比、离散元素、类别工艺和结构描述符往往同时出现。</p></article>
+        <article class="card"><span class="num">03 / NOISY</span><h3>结果带有噪声</h3><p>批次差异、仪器漂移和样品不均一会让“最高分”未必真是最优。</p></article>
+      </div>
+      <aside class="callout"><strong>BO 的价值：</strong>用已有结果建立一个带不确定性的“代理模型”，再把下一次实验投向既可能很优、又能最大幅度减少认知盲区的位置。它追求的是<strong>用更少的实验找到足够好的答案</strong>。</aside>
+    </section>
+
+    <section id="principle"><h2><span class="chapter-kicker">1.2 · THE ENGINE</span>BO 的发动机：预测、不确定性与决策</h2>
+      <p>传统回归只回答“这里的性能预计是多少”。BO 还会问“我对这个预计有多大把握”。这个额外的不确定性，正是它敢于在未知区域探索、又不会盲目冒险的原因。</p>
+      <div class="flow">
+        <div class="step"><b>STEP 1</b>已有数据<br><small>设计 x → 测量 y</small></div><i class="arrow">→</i>
+        <div class="step"><b>STEP 2</b>代理模型<br><small>均值 μ(x)、方差 σ(x)</small></div><i class="arrow">→</i>
+        <div class="step"><b>STEP 3</b>采集函数<br><small>给候选点打“下一步价值”分</small></div>
+      </div>
+      <div class="two" style="margin-top:20px"><article class="card"><h3>代理模型：高斯过程（GP）</h3><p>GP 是材料 BO 中经典的起点：小数据下表现稳健，天然给出预测均值 <em>μ(x)</em> 与标准差 <em>σ(x)</em>。当变量多、数据更多或输入是复杂结构时，也可换成随机森林、深度核或集成模型。</p><div class="formula">f(x) | D  ~  Normal( μ(x), σ²(x) )</div></article>
+      <article class="card"><h3>采集函数：把“下一步”量化</h3><p><span class="tag">EI</span><span class="tag">UCB</span><span class="tag">PI</span><span class="tag">qNEHVI</span></p><p>最常用的 UCB（上置信界）把性能与未知性相加：β 越大，越偏向探索；β 越小，越偏向追逐当前最好结果。</p><div class="formula">a_UCB(x) = μ(x) + β · σ(x)</div></article></div>
+      <p style="margin-top:18px"><strong>一个直觉：</strong>均值高、但模型已经很确定的点，是“稳妥加分”；均值一般、但不确定性很大的点，可能藏着惊喜。采集函数负责在二者之间做可控的取舍。</p>
+    </section>
+
+    <section id="theory"><h2><span class="chapter-kicker">1.2.1 · MATHEMATICAL CORE</span>原理深化：高斯过程如何从数据得到“均值 + 误差条”？</h2>
+      <div class="reading"><p>把未知的材料响应函数写成 <em>f(x)</em>，实验读数写成 <em>y = f(x) + ε</em>，其中 ε 是均值为零、方差为 σ<sub>n</sub><sup>2</sup> 的测量噪声。高斯过程并不预设 <em>f</em> 的具体函数形式，而是规定任意有限组输入的函数值服从联合高斯分布：</p>
+      <div class="formula">f(x) ∼ GP(m(x), k(x, x′))<br><small>m(x) 是先验均值；k(x, x′) 是核函数，规定两个设计点的相关性如何随距离变化。</small></div>
+      <p>给定训练输入矩阵 X 和响应向量 y，令 K = k(X, X)，对一个新候选 x<sub>*</sub>，后验均值与方差为：</p>
+      <div class="formula">μ(x*) = k(x*, X)[K + σ<sub>n</sub><sup>2</sup>I]<sup>−1</sup>y<br>σ<sup>2</sup>(x*) = k(x*,x*) − k(x*,X)[K + σ<sub>n</sub><sup>2</sup>I]<sup>−1</sup>k(X,x*)<small>第一式是相似历史样品的加权组合；第二式说明：靠近已测点时不确定性下降，远离数据或噪声较大时不确定性上升。</small></div>
+      <h3>核函数就是材料相似性的假设</h3><p>最常见的平方指数（RBF）核为 <em>k(x,x′)=s²exp(−||x−x′||² / 2ℓ²)</em>。长度尺度 ℓ 决定模型认为性能变化有多快：ℓ 很小，模型允许相邻配方性能剧烈跳变；ℓ 很大，模型会把局部突变抹平。材料响应常不如教科书函数光滑，Matérn 核因允许有限可微性，往往是更稳健的起点。无论选择何种核，都应在留出数据或逐轮回测中检查其预测误差和不确定性校准。</p>
+      <h3>EI 的闭式形式</h3><p>对最小化问题，令当前最佳观测为 <em>f<sub>min</sub></em>，改进量为 <em>I(x)=max(0, f<sub>min</sub>−f(x)−ξ)</em>。在高斯后验下，令 <em>z=(f<sub>min</sub>−ξ−μ(x))/σ(x)</em>，就有：</p>
+      <div class="formula">EI(x) = (f<sub>min</sub> − ξ − μ(x))Φ(z) + σ(x)φ(z)<small>Φ 和 φ 分别为标准正态分布的累积分布函数与密度函数。第一项偏向低预测均值，第二项奖励不确定区域；ξ 控制“多大的改进才值得追求”。</small></div>
+      <p>这也解释了为什么 BO 不是普通的回归排序：只按 μ(x) 排序会永远追逐已知优区；只按 σ(x) 排序又会变成无目的采样。EI、UCB 等采集函数的硬核之处，正是将这两种价值置于同一决策标尺。</p></div>
+    </section>
+
+    <section id="workflow"><h2><span class="chapter-kicker">1.3 · THE CLOSED LOOP</span>从问题定义到闭环实验：一轮 BO 怎样跑？</h2>
+      <div class="table-wrap"><table><thead><tr><th>环节</th><th>要做什么</th><th>材料场景中的关键问题</th></tr></thead><tbody>
+        <tr><td><strong>定义目标</strong></td><td>明确最大化、最小化或多目标权衡。</td><td>活性、稳定性、成本不能只看单一指标；先统一单位与测试条件。</td></tr>
+        <tr><td><strong>编码空间</strong></td><td>设定变量边界、类别和不可行约束。</td><td>配比应满足总和为 1；元素组合、毒性和相稳定性是硬约束。</td></tr>
+        <tr><td><strong>初始采样</strong></td><td>用 Sobol / 拉丁超立方等方式覆盖空间。</td><td>通常先做 10–30 个有代表性的点，避免一开始都挤在经验配方附近。</td></tr>
+        <tr><td><strong>拟合与提议</strong></td><td>训练代理模型并最大化采集函数。</td><td>把重复测试的方差告诉模型；每轮可并行提议 q 个样品。</td></tr>
+        <tr><td><strong>实验与更新</strong></td><td>制备、测量、质控，写回数据集并循环。</td><td>记录失败样品与元数据；它们是模型学习“不可行区”的重要证据。</td></tr>
+      </tbody></table></div>
+      <aside class="callout"><strong>停止条件不应只看轮数。</strong>可结合预算、连续若干轮无显著提升、候选点高度重复、或已获得满足工程指标的可复现配方。最后务必做独立重复实验确认最优点。</aside>
+    </section>
+
+    <section id="case"><h2><span class="chapter-kicker">1.4 · A RUNNING EXAMPLE</span>贯穿案例：催化剂配方怎样逐步收敛？</h2>
+      <div class="reading"><p>继续使用四元氧化物催化剂的例子。令 A、B、C 的摩尔分数为可调变量，D 为余量；煅烧温度 <em>T</em> 是第四个变量。目标是最小化在 10 mA cm<sup>−2</sup> 下的过电位 η。为了沿用“最大化”的记号，可把响应写成 <em>y = −η</em>。</p><p>这并不是把四个数字交给程序就结束了。组成变量必须满足非负且总和为 1；超过设备温度上限的候选自然无效；已知不能形成目标相的区域也应排除。把这些知识放进搜索空间，是实验者给算法的第一份、也是最重要的一份答案。</p><h3>第 0 轮：用覆盖，而非直觉，建立起点</h3><p>我们先用 16 个空间填充的初始样品覆盖可行区域，而不是将所有样品压在常见配方附近。其中两个关键样品进行重复测试，用于估计测量误差。这里的“覆盖”并不意味着平均撒点：如果先验知识表明某一元素的高含量有相分离风险，就应在边界附近较密集地采样，确认这条边界究竟在哪里。</p><h3>第 1 轮：模型第一次提出反直觉建议</h3><p>初始模型显示，中等 A 含量、高温区的预测均值最高；但该处数据密集，预测方差很小。另一个富 B 区的均值略低，却因几乎没有观测而拥有大的不确定性。若探索强度足够，BO 会把一部分实验投向富 B 区。这一选择的意义不是赌运气，而是检验“B 不重要”这条早期结论是否只是数据稀缺造成的幻觉。</p></div>
+      <aside class="sidenote"><strong>读者提示：</strong>在可并行制备的实验室中，不必让一轮只推荐一个样品。一个好批次常包含“两个验证当前优区的样品 + 两个打开未知区的样品”，并在候选之间保持足够差异。</aside>
+    </section>
+
+    <section id="applications"><h2><span class="chapter-kicker">1.5 · APPLICATION MAP</span>材料领域的三类典型任务</h2>
+      <div class="grid">
+        <article class="card"><span class="num">CATALYSIS</span><h3>催化剂配方与工况</h3><p>输入：元素比例、载体、煅烧温度、反应温度。输出：过电位、选择性、寿命。适合加入成本、贵金属上限与相稳定性约束。</p></article>
+        <article class="card"><span class="num">ENERGY</span><h3>电池与储能材料</h3><p>输入：掺杂比例、粒径、烧结曲线、电解液配方。输出：容量、循环保持率、倍率性能。建议以多目标 Pareto 前沿替代单一加权分数。</p></article>
+        <article class="card"><span class="num">PROCESS</span><h3>工艺窗口寻优</h3><p>输入：温度、压力、时间、浓度和设备参数。输出：强度、相纯度、缺陷密度。BO 尤其适合“每次试验成本高但可自动化”的场景。</p></article>
+      </div>
+    </section>
+
+    <section><div class="demo"><h2>互动实验：Bgolearn Playground</h2><p>以下嵌入 Bgolearn 官方互动页面。建议先尝试改变采样点和采集策略，再回到本章的 EI、UCB 推导，观察“均值”和“不确定性”如何共同改变下一次推荐。</p><iframe class="playground" src="https://bin-cao.github.io/Bgolearn/" title="Bgolearn interactive playground" loading="lazy">你的浏览器不支持嵌入页面。</iframe><p class="playground-note">若嵌入内容受浏览器策略限制，请在新标签页打开 <a href="https://bin-cao.github.io/Bgolearn/" target="_blank" rel="noopener noreferrer">Bgolearn Playground</a>。</p></div></section>
+
+    <section id="practice"><h2><span class="chapter-kicker">1.6 · FROM THEORY TO BENCH</span>一个可复用的实战配方</h2>
+      <p>下面以“最小化析氧过电位 η”为例，使用 Bgolearn 的实际接口。<code>X</code> 的每一行可写为 <code>[x_A, x_B, x_C, T]</code>；第四种元素的比例由 <code>1 − x_A − x_B − x_C</code> 给出。<code>candidates</code> 是已经满足组成、设备和安全约束的虚拟候选池，而不是无约束的随机数。</p>
+      <pre class="code"><code><span class="k">import</span> numpy <span class="k">as</span> np
+<span class="k">from</span> Bgolearn <span class="k">import</span> Bgolearn
+
+<span class="k"># 初始实验：行 = 样品，列 = [A, B, C, 煅烧温度]</span>
+X = np.array([[0.20, 0.15, 0.10, 650],
+              [0.35, 0.10, 0.20, 700],
+              ...])
+y = np.array([0.326, 0.301, ...])  <span class="k"># 实测过电位 η / V；越小越好</span>
+noise = 0.008                         <span class="k"># 重复实验估计的同方差标准差 / V</span>
+
+<span class="k">for</span> round <span class="k">in</span> range(12):
+    candidates = feasible_compositions_and_temperature()
+    bgo = Bgolearn().fit(
+        data_matrix=X,
+        Measured_response=y,
+        virtual_samples=candidates,
+        Mission=<span class="s">"Regression"</span>,
+        noise_std=noise,
+        min_search=<span class="s">True</span>,               <span class="k"># η 是最小化目标</span>
+        opt_num=4,
+        Normalize=<span class="s">True</span>)
+
+    ei, x_next = bgo.EI()                  <span class="k"># 返回候选池 EI 与推荐的 4 个点</span>
+    y_next = run_synthesis_and_test(x_next) <span class="k"># 真实实验，不是模型预测</span>
+    X = np.vstack([X, x_next])
+    y = np.concatenate([y, y_next])</code></pre>
+      <p style="margin-top:16px">这里 <code>fit</code> 先在已有 <code>X, y</code> 上拟合代理模型，并对整个候选池返回预测均值和标准差；<code>EI()</code> 再据此排序，给出推荐点。Bgolearn 内置回归、分类、EI、AEI、EQI、UCB、PoI、PES 和 KG 等流程；上例刻意选择最小接口，便于将重点放回实验设计本身。若每个样品噪声不同，可传入与训练样本等长的 <code>noise_std</code> 数组，而不是一个标量。</p>
+    </section>
+
+    <section id="modelling"><h2><span class="chapter-kicker">1.7 · MODELLING THE QUESTION</span>在运行算法前：把材料问题建模正确</h2>
+      <div class="reading"><p>许多 BO 项目的失败，不发生在模型选择，而发生在第一张数据表。算法只能优化你交给它的变量、目标与约束；如果这些定义与真实科学问题错位，再精巧的采集函数也只会更高效地走错方向。因此，在写下第一行代码前，应完成一次“问题审计”。</p>
+      <h3>目标：测量值不等于优化目标</h3><p>以电催化为例，过电位、电流密度、Tafel 斜率、法拉第效率和寿命都可测，但它们回答不同的问题。若只优化初始过电位，算法可能偏爱很快衰减的材料；若仅用寿命，算法又可能选择活性不足的惰性配方。一个合格的目标应当明确测试条件、聚合方式与可接受阈值。例如，可以把“100 小时后仍保持 90% 活性”设为硬约束，再在满足约束的样品中最小化过电位。</p>
+      <div class="definition"><strong>定义：黑箱目标函数。</strong>在 BO 中，黑箱并不表示没有机理，而是表示我们无法用低成本、可靠的解析公式直接从设计变量算出结果。合成和测试过程就是对这个黑箱的一次昂贵查询。</div>
+      <h3>变量：区分可控量、派生量与泄漏信息</h3><p>可控量是本轮实验开始前能设定的东西，例如元素比例、温度、时间、气氛和浓度。派生量如最终晶粒尺寸、比表面积和 XRD 峰宽，常常只有实验后才能得到；它们可用于事后机理分析或第二阶段优化，却不能作为第一阶段推荐时已经知道的输入。若把未来才能获得的表征量放进模型，离线结果会异常漂亮，线上闭环却无法复现——这就是数据泄漏。</p>
+      <h3>空间：把“不能做”写成规则</h3><p>对组成变量，简单的独立上下界经常产生总和不为 1 的伪配方。一个实用办法是用前三个组分表示第四个余量，并在候选生成时拒绝负余量；更稳健的办法是直接在单纯形上采样。对温度、时间等连续量，边界应来自设备能力、工艺可行性与安全规定，而非历史数据中恰好出现的最小值和最大值。</p></div>
+    </section>
+
+    <section id="data"><h2><span class="chapter-kicker">1.8 · DATA AND UNCERTAINTY</span>小数据并不等于粗糙数据</h2>
+      <div class="reading"><p>BO 擅长小样本，但“小样本”要求每个样本都可解释、可追溯。材料数据常包含比算法更隐蔽的误差源：原料批次、设备校准、操作者、湿度、样品位置、测试顺序乃至电极装配方式。若这些变化没有记录，模型会把系统偏差误读成组成效应。</p><h3>建议记录的最小元数据</h3><ul class="book-list"><li>样品标识、原料批次、配方和完整制备程序，而不是只记录名义组成；</li><li>测试日期、仪器、校准状态、操作者与测试顺序；</li><li>原始曲线或谱图的存储位置、处理脚本版本和异常处理原因；</li><li>失败实验及失败类型：未合成、表征失败、性能不达标或数据无效。</li></ul><p>失败不是应当删除的脏数据。对“是否可合成”“是否满足安全条件”而言，失败恰恰是最直接的标签。可以建立一个分类模型预测可行性，或在搜索空间中永久排除经过确认的失败区域。</p><h3>噪声如何进入决策？</h3><p>若同一配方重复三次得到的性能差异接近不同配方之间的差异，模型就不该对微小排名过度自信。高斯过程可通过观测噪声项表达这种不确定性；更实际的做法是，在疑似最优点、模型变化快的边界和关键对照样品上安排重复实验。重复实验看似没有探索新配方，实际上在校准“我们究竟能相信多大差异”。</p></div>
+      <div class="exercise"><h3>思考题：一个 0.02 V 的提升值得追逐吗？</h3><p>先比较它与仪器重复性、样品间方差和应用需求。若标准差为 0.03 V，则该提升尚不足以支持“更优”的结论；若重复误差只有 0.003 V，且目标阈值就在附近，那么一次独立复现比继续大范围搜索更有价值。</p></div>
+    </section>
+
+    <section id="acquisition"><h2><span class="chapter-kicker">1.9 · ACQUISITION IN DETAIL</span>采集函数到底在比较什么？</h2>
+      <div class="reading"><p>在当前最好值为 <em>f*</em> 的最大化问题中，Expected Improvement（EI）并不是只偏爱最高均值。它计算“如果我在 x 处实验，超越 f* 的期望幅度有多大”。因此，一个均值略低但不确定性很大的点，仍可能拥有高 EI；而一个均值很高、但几乎被充分测试的点，新增价值会下降。</p>
+      <div class="formula">EI(x) = E[max(0, f(x) − f* − ξ)]<br><small>ξ 是改进阈值；它越大，算法越不愿为了极小的预期提升而消耗实验预算。</small></div>
+      <p>UCB 更容易解释和调节：用 κ 放大或缩小探索奖励。Probability of Improvement（PI）只看“是否可能超过当前最优”，容易偏好微小改进；EI 同时在意概率与改进幅度，常作为默认起点。没有任何采集函数在所有问题上都最好。更重要的是问：本轮预算更需要确认、发现，还是避险？</p>
+      <h3>批量推荐的额外难题</h3><p>若实验平台一天能处理四个样品，连续地选四次“单点最优”会得到彼此过近的配方。批量 BO 使用 qEI、qNEI 或 qUCB 等函数，在同一批内考虑候选之间的信息重叠；也可先选一个主候选，再对模型进行“幻想更新”，依次选出互补点。对人工实验而言，一批中保留对照样品还能监测批次漂移。</p></div>
+    </section>
+
+    <section><h2><span class="chapter-kicker">1.10 · REAL-WORLD EXTENSIONS</span>当问题变得真实：约束、多目标与多保真</h2>
+      <div class="reading"><h3>约束不是事后过滤器</h3><p>实际材料空间充满不可行点：相不稳定、前驱体不可得、成本超标、设备达不到，或存在安全风险。若先让采集函数在整个空间寻找“最优”再做过滤，它会把大量注意力浪费在永远不会被实施的位置。更好的做法是在候选生成时直接满足硬约束，或建立可行性模型 P(feasible | x)，使高性能但难以实现的方案自动降低优先级。</p><h3>多目标不宜过早压成一个分数</h3><p>活性、稳定性和成本常彼此冲突。将三者固定加权看似简单，实则把应用偏好悄悄写死。多目标 BO 保留 Pareto 前沿：前沿上的每一个候选，都无法在不牺牲至少一个目标的前提下改善另一个。它让研究者在实验结束后仍保有选择权。</p><h3>把廉价信息用在刀刃上</h3><p>DFT、快速表征和高通量筛选通常便宜却有偏差；长期稳定性实验昂贵却更接近真实目标。多保真 BO 可以先学习不同保真度之间的关联，再决定何时做便宜的预筛、何时为一个候选支付昂贵的验证成本。关键前提是：廉价信号与最终目标必须存在可学习的相关性。</p></div>
+    </section>
+
+    <section id="pitfalls"><h2><span class="chapter-kicker">1.11 · FIELD NOTES</span>五个最常见、也最容易忽略的坑</h2><ul class="check">
+      <li><strong>把相关性当成可操作性：</strong>候选点必须能合成、能测试；先把物理与工艺约束放进搜索空间。</li>
+      <li><strong>忽略实验噪声：</strong>对接近最优的样品做重复测试，并将方差纳入模型，而不是只保留均值。</li>
+      <li><strong>特征尺度混乱：</strong>对连续变量标准化；类别变量采用合适编码；组成数据注意闭合约束与成分比例。</li>
+      <li><strong>过早只做利用：</strong>前几轮就盯住“当前冠军”会困在局部最优。探索强度应随数据量和目标风险调整。</li>
+      <li><strong>只报告最优数值：</strong>同时报告实验预算、初始设计、约束、随机种子、重复次数与优化轨迹，才能判断方法是否真的节省实验。</li>
+    </ul></section>
+
+    <section><h2><span class="chapter-kicker">1.12 · CHAPTER SUMMARY</span>本章小结：BO 是一位会提问的实验搭档</h2><p class="intro">材料创新仍然依赖化学直觉、机理理解和严谨实验。BO 的独特之处在于，它把这些宝贵判断放进一个会自我修正的决策循环：每得到一个结果，就更清楚下一步该问什么。对实验预算有限、设计空间庞大的问题而言，这往往比“做更多实验”更接近真正的加速。</p><div class="definition"><strong>带走三句话：</strong>先把目标、变量和约束定义成可实验的问题；让模型的不确定性参与下一次决策；用独立复现和完整元数据，检验“发现”是否真的成立。</div></section>
+  </main>
+  <footer>为材料优化而写 · Bayesian Optimization in Materials · 作者：<a href="https://bin-cao.github.io/">曹斌</a> and ChatGPT</footer>
+</body>
+</html>

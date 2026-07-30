@@ -303,6 +303,7 @@ h1, h2, h3, h4, h5, h6,
 .publication-mobile-item:hover {
     background-color: #fbfdfb;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), inset 0 -1px 0 rgba(31, 45, 61, 0.04);
+    transform: translateY(-2px);
 }
 
 .publication-cover-col {
@@ -338,6 +339,7 @@ h1, h2, h3, h4, h5, h6,
         0 0 0 4px #fff,
         0 0 0 5px rgba(46, 125, 50, 0.2),
         0 0.75rem 1.55rem rgba(24, 39, 75, 0.15);
+    transform: scale(1.018);
 }
 
 .publication-cover-mobile {
@@ -454,6 +456,7 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: 0 0.25rem 0.7rem rgba(46, 125, 50, 0.12);
     color: #185b27;
     text-decoration: none;
+    transform: translateY(-2px);
 }
 
 .publication-image-lightbox {
@@ -563,6 +566,59 @@ div.lazy {
 
 .badge-publication {
     font-size: 100%;
+}
+
+.download-milestone {
+    animation: download-milestone-glow 2.8s ease-in-out infinite;
+    background: linear-gradient(120deg, #238443, #4caf50, #238443);
+    background-size: 200% 100%;
+    box-shadow: 0 0.18rem 0.6rem rgba(46, 125, 50, 0.25);
+    cursor: default;
+    letter-spacing: 0.01em;
+}
+
+.publication-reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 480ms ease, transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.publication-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.publication-reveal.is-visible:hover {
+    transform: translateY(-2px);
+}
+
+@keyframes download-milestone-glow {
+    0%, 100% {
+        background-position: 100% 50%;
+        box-shadow: 0 0.18rem 0.6rem rgba(46, 125, 50, 0.25);
+    }
+
+    50% {
+        background-position: 0 50%;
+        box-shadow: 0 0.25rem 0.9rem rgba(46, 125, 50, 0.42);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .publication-row,
+    .publication-mobile-item,
+    .publication-cover,
+    .publication-links a,
+    .publication-reveal,
+    .download-milestone {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .publication-reveal {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .email-text {

@@ -40,6 +40,32 @@ $(function () {
         $grid.masonry('layout');
     });
 
+    var revealPublications = function () {
+        var $entries = $('[data-publication-entry]');
+        if (!$entries.length || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return;
+        }
+
+        $entries.each(function (index) {
+            $(this).addClass('publication-reveal').css('transition-delay', Math.min(index % 6, 5) * 55 + 'ms');
+        });
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        $entries.each(function () {
+            observer.observe(this);
+        });
+    };
+
+    revealPublications();
+
     $('[data-publication-toggle]').each(function () {
         var $toggle = $(this);
         var $abstract = $toggle.prev('.publication-abstract');

@@ -33,9 +33,9 @@
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links publication-links">
                 {% for link in item.links %}
                 {% if link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}" data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</a>
+                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}"><span data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</span><i class="fas fa-arrow-up-right-from-square publication-link-icon" aria-hidden="true"></i></a>
                 {% else %}
-                <a target="_blank" href="{{ link[1] }}" data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</a>
+                <a target="_blank" href="{{ link[1] }}"><span data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</span><i class="fas fa-arrow-up-right-from-square publication-link-icon" aria-hidden="true"></i></a>
                 {% endif %}
                 {% endfor %}
             </p>
@@ -70,9 +70,9 @@
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links publication-links">
                     {% for link in item.links %}
                     {% if link[1].url %}
-                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}" data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</a>
+                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}"><span data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</span><i class="fas fa-arrow-up-right-from-square publication-link-icon" aria-hidden="true"></i></a>
                     {% else %}
-                    <a target="_blank" href="{{ link[1] }}" data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</a>
+                    <a target="_blank" href="{{ link[1] }}"><span data-i18n="link.{{ link[0] | slugify }}">{{ link[0] }}</span><i class="fas fa-arrow-up-right-from-square publication-link-icon" aria-hidden="true"></i></a>
                     {% endif %}
                     {% endfor %}
                 </p>

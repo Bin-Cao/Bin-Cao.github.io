@@ -439,15 +439,22 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .publication-links a {
+    align-items: center;
     background: linear-gradient(180deg, #f4fbf5 0%, #eaf6ed 100%);
     border: 1px solid rgba(46, 125, 50, 0.2);
     border-radius: 999px;
     color: #276c39;
-    display: inline-block;
+    display: inline-flex;
+    gap: 0.34rem;
     font-weight: 700;
     line-height: 1;
     padding: 0.36rem 0.62rem;
     transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
+}
+
+.publication-link-icon {
+    font-size: 0.72em;
+    transition: transform 140ms ease;
 }
 
 .publication-links a:hover {
@@ -457,6 +464,11 @@ h1, h2, h3, h4, h5, h6,
     color: #185b27;
     text-decoration: none;
     transform: translateY(-2px);
+}
+
+.publication-links a:hover .publication-link-icon,
+.publication-links a:focus .publication-link-icon {
+    transform: translate(1px, -1px);
 }
 
 .publication-image-lightbox {

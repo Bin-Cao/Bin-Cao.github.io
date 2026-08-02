@@ -1,6 +1,8 @@
 (function () {
     var contentTranslations = {
         zh: {
+            "app.Xchange.title": "Xchange",
+            "app.Xchange.abstract": "Xchange 是一个开放、经人工审核的实验粉末 X 射线衍射（XRD）数据数据库。它也寓意 eXchange：连接数据、洞见与研究人员，共同推动科学进步。",
             "app.ploteverything.title": "PlotEverything",
             "app.ploteverything.abstract": "PlotEverything 是一个轻量级科学绘图工作台。它帮助用户从表格数据创建出版级图表、显示晶体结构、模拟 XRD 谱图、排版多面板图，并在无需编写绘图代码的情况下导出最终图片。",
             "app.tabularlab.title": "TabularLab",
@@ -57,6 +59,8 @@
             "news.2026_news4.title": "顺利通过博士答辩，并获得香港科技大学（广州）博士学位。"
         },
         ja: {
+            "app.Xchange.title": "Xchange",
+            "app.Xchange.abstract": "Xchange は、実験粉末 X 線回折（XRD）データのためのオープンで、人手によるレビューを経たデータベースです。また eXchange、すなわちデータ、洞察、研究者をつなぎ、科学の発展を促すという意味も込められています。",
             "app.ploteverything.title": "PlotEverything",
             "app.ploteverything.abstract": "PlotEverything は、軽量な科学図作成ワークスペースです。表計算データから論文向けの図を作成し、結晶構造の表示、XRD パターンのシミュレーション、複数パネル図の配置、最終画像のエクスポートを、プロット用コードを書かずに行えます。",
             "app.tabularlab.title": "TabularLab",
@@ -80,6 +84,8 @@
             "news.2026_news4.title": "博士論文審査に合格し、香港科技大学（広州）より博士号を取得しました。"
         },
         ko: {
+            "app.Xchange.title": "Xchange",
+            "app.Xchange.abstract": "Xchange는 실험 분말 X선 회절(XRD) 데이터를 위한 공개형 전문가 검토 데이터베이스입니다. 또한 데이터, 통찰, 연구자를 연결해 과학 발전을 이끈다는 의미의 eXchange를 뜻하기도 합니다.",
             "app.ploteverything.title": "PlotEverything",
             "app.ploteverything.abstract": "PlotEverything는 가벼운 과학 그림 작업 공간입니다. 사용자는 플로팅 코드를 작성하지 않고도 스프레드시트 데이터로 논문 스타일 그림을 만들고, 결정 구조를 표시하며, XRD 패턴을 시뮬레이션하고, 다중 패널 그림을 배치한 뒤 최종 이미지를 내보낼 수 있습니다.",
             "app.tabularlab.title": "TabularLab",
@@ -103,6 +109,8 @@
             "news.2026_news4.title": "박사 학위 논문 심사를 통과하고 홍콩과학기술대학교(광저우)에서 박사학위를 취득했습니다."
         },
         de: {
+            "app.Xchange.title": "Xchange",
+            "app.Xchange.abstract": "Xchange ist eine offene, fachlich geprüfte Datenbank für experimentelle Pulver-Röntgendiffraktionsdaten (XRD). Der Name steht zugleich für eXchange: Daten, Erkenntnisse und Forschende zusammenzubringen, um die Wissenschaft voranzubringen.",
             "app.ploteverything.title": "PlotEverything",
             "app.ploteverything.abstract": "PlotEverything ist ein leichtgewichtiges Arbeitsumfeld fur wissenschaftliche Abbildungen. Es hilft dabei, publikationsreife Grafiken aus Tabellendaten zu erstellen, Kristallstrukturen anzuzeigen, XRD-Muster zu simulieren, Mehrfachpanels anzuordnen und fertige Bilder ohne Plot-Code zu exportieren.",
             "app.tabularlab.title": "TabularLab",

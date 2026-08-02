@@ -1,3 +1,16 @@
+- title: "Xchange"
+  i18n_key: "app.Xchange"
+  cover: "/assets/images/covers/Xchange.jpg"
+  pub: "Website"
+  pub_date: "Nature-style plots without expertise"
+  abstract: >-
+    Xchange is an open, human-reviewed database for experimental powder X-ray diffraction (XRD) data. It also stands for eXchange: bringing data, insight, and researchers together to advance science.
+  links:
+    Website: "https://xchange.caobin.asia/"
+    Project: "https://bin-cao.github.io/Xchange.db/"
+
+
+
 - title: "PlotEverything"
   i18n_key: "app.ploteverything"
   cover: "/assets/images/covers/PlotEverything.jpg"

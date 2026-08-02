@@ -2,7 +2,7 @@
   i18n_key: "app.Xchange"
   cover: "/assets/images/covers/Xchange.jpg"
   pub: "Website"
-  pub_date: "Nature-style plots without expertise"
+  pub_date: "Human-reviewed database for real XRD"
   abstract: >-
     Xchange is an open, human-reviewed database for experimental powder X-ray diffraction (XRD) data. It also stands for eXchange: bringing data, insight, and researchers together to advance science.
   links:

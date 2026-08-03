@@ -39,4 +39,133 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    var revealPublications = function () {
+        var $entries = $('[data-publication-entry]');
+        if (!$entries.length || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return;
+        }
+
+        $entries.each(function (index) {
+            $(this).addClass('publication-reveal').css('transition-delay', Math.min(index % 6, 5) * 55 + 'ms');
+        });
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        $entries.each(function () {
+            observer.observe(this);
+        });
+    };
+
+    revealPublications();
+
+    $('[data-publication-toggle]').each(function () {
+        var $toggle = $(this);
+        var $abstract = $toggle.prev('.publication-abstract');
+
+        if (!$abstract.length || $abstract[0].scrollHeight <= $abstract[0].clientHeight + 1) {
+            $toggle.addClass('is-hidden');
+            return;
+        }
+
+        $toggle.on('click', function () {
+            var expanded = $abstract.toggleClass('is-expanded').hasClass('is-expanded');
+            var getI18nText = window.siteI18nText || function (key) {
+                return key === 'publication.show_less' ? 'Show less' : 'Show more';
+            };
+            $toggle.text(getI18nText(expanded ? 'publication.show_less' : 'publication.show_more'));
+        });
+    });
+
+    $('.publication-filter-scope').each(function () {
+        var $scope = $(this);
+        var $input = $scope.find('[data-publication-search-input]').first();
+        var $entries = $scope.find('[data-publication-entry]');
+        var $noResults = $scope.find('[data-publication-no-results]').first();
+
+        if (!$input.length || !$entries.length) {
+            return;
+        }
+
+        var normalize = function (value) {
+            return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+        };
+
+        var filterPublications = function () {
+            var query = normalize($input.val());
+            var visibleCount = 0;
+
+            $entries.each(function () {
+                var $entry = $(this);
+                var searchText = normalize($entry.attr('data-publication-search') + ' ' + $entry.text());
+                var isVisible = !query || searchText.indexOf(query) !== -1;
+
+                $entry.toggle(isVisible);
+                if (isVisible && !$entry.hasClass('d-md-none')) {
+                    visibleCount += 1;
+                }
+            });
+
+            $scope.find('[data-publication-year-group]').each(function () {
+                var $group = $(this);
+                var hasVisiblePapers = $group.find('[data-publication-entry]:visible').length > 0;
+                $group.toggle(hasVisiblePapers);
+            });
+
+            $noResults.toggle(visibleCount === 0);
+        };
+
+        $noResults.hide();
+        $input.on('input', filterPublications);
+        filterPublications();
+    });
+
+    var $publicationLightbox = $('<div class="publication-image-lightbox image-lightbox" aria-hidden="true"><img alt=""></div>');
+    $('body').append($publicationLightbox);
+
+    var closePublicationLightbox = function () {
+        $publicationLightbox.removeClass('is-visible').attr('aria-hidden', 'true');
+        $publicationLightbox.find('img').attr('src', '').attr('alt', '');
+    };
+
+    $('img.publication-cover').on('dblclick', function (event) {
+        event.preventDefault();
+
+        var $image = $(this);
+        var imageSrc = $image.attr('data-src') || $image.attr('src');
+        if (!imageSrc) {
+            return;
+        }
+
+        $publicationLightbox.find('img').attr('src', imageSrc).attr('alt', $image.attr('alt') || '');
+        $publicationLightbox.addClass('is-visible').attr('aria-hidden', 'false');
+    });
+
+    $('img.profile-portrait').on('dblclick', function (event) {
+        event.preventDefault();
+
+        var $image = $(this);
+        var imageSrc = $image.attr('data-src') || $image.attr('src');
+        if (!imageSrc) {
+            return;
+        }
+
+        $publicationLightbox.find('img').attr('src', imageSrc).attr('alt', $image.attr('alt') || 'Portrait');
+        $publicationLightbox.addClass('is-visible').attr('aria-hidden', 'false');
+    });
+
+    $publicationLightbox.on('click', closePublicationLightbox);
+
+    $(document).on('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closePublicationLightbox();
+        }
+    });
 })

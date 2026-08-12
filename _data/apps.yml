@@ -8,6 +8,9 @@
   links:
     Website: "https://baize.caobin.asia/"
     Booklet: "https://baize.caobin.asia/docs/baize.html"
+    Introduction:
+      url: "/Baize/"
+      target: "_self"
 
 
 - title: "Xchange"

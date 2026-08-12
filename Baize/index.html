@@ -70,6 +70,18 @@
       .number { color:var(--blue); font:700 12px ui-monospace,SFMono-Regular,monospace; }
       .card h3 { margin:38px 0 8px; font-size:19px; }
       .card p { margin:0; color:var(--muted); font-size:14px; }
+      .future { background:#f3f6fd; }
+      .future-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+      .future-card { padding:28px; border:1px solid var(--line); background:white; }
+      .future-card h3 { margin:30px 0 10px; font-size:20px; }
+      .future-card p { margin:0; color:var(--muted); font-size:14px; }
+      .future-card .number { display:block; }
+      .principles { display:grid; grid-template-columns:1fr 1fr; margin-top:34px; border-top:1px solid var(--line); }
+      .principle { display:grid; grid-template-columns:100px 1fr; gap:20px; padding:20px 0; border-bottom:1px solid var(--line); }
+      .principle:nth-child(odd) { padding-right:28px; border-right:1px solid var(--line); }
+      .principle:nth-child(even) { padding-left:28px; }
+      .principle b { color:var(--blue); font-size:14px; }
+      .principle span { color:var(--muted); font-size:14px; }
       .about { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; }
       .profile, .project { padding:30px; border:1px solid var(--line); background:white; }
       .profile h3, .project h3 { margin:0 0 14px; font-size:23px; }
@@ -78,7 +90,7 @@
       .facts li { padding:10px 0; border-top:1px solid var(--line); color:#4c5a73; font-size:14px; }
       .facts b { color:var(--ink); }
       footer { padding:28px 0; color:var(--muted); font-size:13px; }
-      @media (max-width:760px) { .wrap { width:min(100% - 28px,1080px); } nav { height:64px; } .hero,.heading,.about { grid-template-columns:1fr; } .hero { min-height:auto; padding:55px 0; gap:26px; } .mascot-panel { min-height:300px; } .grid { grid-template-columns:1fr 1fr; } .card:nth-child(2) { border-right:0; } .card { min-height:180px; border-bottom:1px solid var(--line); } .card:nth-child(n+3) { border-bottom:0; } section { padding:64px 0; } }
+      @media (max-width:760px) { .wrap { width:min(100% - 28px,1080px); } nav { height:64px; } .hero,.heading,.about,.future-grid,.principles { grid-template-columns:1fr; } .hero { min-height:auto; padding:55px 0; gap:26px; } .mascot-panel { min-height:300px; } .grid { grid-template-columns:1fr 1fr; } .card:nth-child(2) { border-right:0; } .card { min-height:180px; border-bottom:1px solid var(--line); } .card:nth-child(n+3) { border-bottom:0; } .principle:nth-child(odd),.principle:nth-child(even) { padding-left:0; padding-right:0; border-right:0; } section { padding:64px 0; } }
     </style>
   </head>
   <body>
@@ -89,7 +101,7 @@
           <div class="kicker">AI AGENT × MATERIALS SCIENCE</div>
           <h1>让材料发现，<br><em>更有方向。</em></h1>
           <p class="lead">白泽 BaiZe 是一位面向材料研发的人工智能 Agent。它将研究者的提问转化为可追溯的科学路径，连接文献阅读、假设生成、实验设计与研究写作。</p>
-          <div class="buttons"><a class="button primary" href="https://github.com/Bin-Cao/BaiZe" target="_blank" rel="noopener">访问 BaiZe GitHub ↗</a><a class="button secondary" href="#about">了解 BaiZe</a></div>
+          <div class="buttons"><a class="button primary" href="https://baize.caobin.asia/" target="_blank" rel="noopener">访问 BaiZe Homepage ↗</a><a class="button secondary" href="#about">了解 BaiZe</a></div>
         </div>
         <div class="mascot-panel"><img class="mascot" src="../assets/images/baize/baize-mascot-final.png" alt="白泽 BaiZe 吉祥物：头生材料晶格角、怀抱矿物球的白色神兽"></div>
       </header>
@@ -100,6 +112,22 @@
             <article class="card"><div class="number">02 / 推演</div><h3>提出假设</h3><p>以可检查的证据形成清晰、可证伪的材料假设。</p></article>
             <article class="card"><div class="number">03 / 验证</div><h3>设计实验</h3><p>组织变量、对照与测量指标，使实验结果具备解释力。</p></article>
             <article class="card"><div class="number">04 / 沉淀</div><h3>形成研究资产</h3><p>将方法、数据与结论整理为报告、论文和可继续协作的项目资料。</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="future">
+        <div class="wrap">
+          <div class="heading"><div><div class="kicker">AI FOR MATERIALS</div><h2>智能体如何参与<br>材料发现的未来</h2></div><p>未来的材料研发不应只是更快地产生文本或候选配方，而应让每一步推理都与数据、文献、实验约束和人的判断保持连接。</p></div>
+          <div class="future-grid">
+            <article class="future-card"><span class="number">01 / 从回答走向研究过程</span><h3>持续理解上下文</h3><p>材料问题往往跨越配方、制备、表征与性能。BaiZe 的目标是持续保留问题背景、已有证据和未解决的不确定性，而不是把每轮对话当作孤立任务。</p></article>
+            <article class="future-card"><span class="number">02 / 从预测走向可验证的假设</span><h3>让模型服务实验</h3><p>预测本身不是终点。更有价值的是将候选机制转化为可区分的实验、明确变量范围，并说明什么结果会支持或推翻一个假设。</p></article>
+            <article class="future-card"><span class="number">03 / 从单点工具走向协作伙伴</span><h3>连接研究资产</h3><p>文献笔记、数据分析、实验协议与论文草稿应彼此关联。BaiZe 希望让这些研究资产在本地项目中累积、可追溯，并能被团队继续使用。</p></article>
+          </div>
+          <div class="principles">
+            <div class="principle"><b>人始终在环</b><span>研究者提出问题、检查证据、决定实验边界；智能体帮助整理信息与推进下一步，而不替代科学判断。</span></div>
+            <div class="principle"><b>证据优先</b><span>结论应能回到文献、数据或实验记录。信息不足时，明确假设和待验证的问题比给出看似确定的回答更重要。</span></div>
+            <div class="principle"><b>本地优先</b><span>研究过程沉淀在自己的项目目录中，便于版本管理、复现、审阅与长期积累。</span></div>
+            <div class="principle"><b>开放演进</b><span>作为开源项目，BaiZe 期待与材料研究者共同探索新的研究技能、工具连接方式和可靠的协作范式。</span></div>
           </div>
         </div>
       </section>

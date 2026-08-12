@@ -1,6 +1,8 @@
 (function () {
     var contentTranslations = {
         zh: {
+            "agent.baize.title": "白泽 BaiZe",
+            "agent.baize.abstract": "白泽 BaiZe 是一款专为材料科学研究设计的 AI 智能体，支持从文献发现与证据整合，到假设生成、实验设计和科学写作的完整研究流程。它并非只生成答案，而是将科学推理组织为可追溯、可复现的工作流，帮助研究者把开放式材料问题转化为可检验的假设和可执行的实验。白泽开源且本地优先，使文献笔记、研究假设、实验方案和论文等成果能够在项目中留存并持续发展。",
             "app.Xchange.title": "Xchange",
             "app.Xchange.abstract": "Xchange 是一个开放、经人工审核的实验粉末 X 射线衍射（XRD）数据数据库。它也寓意 eXchange：连接数据、洞见与研究人员，共同推动科学进步。",
             "app.ploteverything.title": "PlotEverything",
@@ -59,6 +61,8 @@
             "news.2026_news4.title": "顺利通过博士答辩，并获得香港科技大学（广州）博士学位。"
         },
         ja: {
+            "agent.baize.title": "白泽 BaiZe",
+            "agent.baize.abstract": "白泽 BaiZe は、材料科学研究のために設計された AI エージェントです。文献探索と証拠の統合から、仮説生成、実験設計、科学論文執筆まで、研究ワークフロー全体を支援します。単に回答を生成するのではなく、科学的推論を追跡可能で再現性のあるワークフローとして整理し、開かれた材料科学の問いを検証可能な仮説と実行可能な実験へと導きます。オープンソースかつローカルファーストであり、文献ノート、仮説、実験プロトコル、論文などの研究成果をプロジェクト内に保持し、継続的に発展させられます。",
             "app.Xchange.title": "Xchange",
             "app.Xchange.abstract": "Xchange は、実験粉末 X 線回折（XRD）データのためのオープンで、人手によるレビューを経たデータベースです。また eXchange、すなわちデータ、洞察、研究者をつなぎ、科学の発展を促すという意味も込められています。",
             "app.ploteverything.title": "PlotEverything",
@@ -84,6 +88,8 @@
             "news.2026_news4.title": "博士論文審査に合格し、香港科技大学（広州）より博士号を取得しました。"
         },
         ko: {
+            "agent.baize.title": "백택 BaiZe",
+            "agent.baize.abstract": "백택 BaiZe는 재료과학 연구를 위해 설계된 AI 에이전트입니다. 문헌 탐색과 근거 종합부터 가설 생성, 실험 설계, 과학 글쓰기까지 전 연구 과정을 지원합니다. 단순히 답변을 생성하는 대신, 과학적 추론을 추적 가능하고 재현 가능한 워크플로로 구성하여 연구자가 개방형 재료과학 문제를 검증 가능한 가설과 실행 가능한 실험으로 전환하도록 돕습니다. 오픈소스이자 로컬 우선 도구로서 문헌 노트, 가설, 실험 프로토콜, 논문 등의 연구 산출물을 프로젝트 안에 보존하고 계속 발전시킬 수 있습니다.",
             "app.Xchange.title": "Xchange",
             "app.Xchange.abstract": "Xchange는 실험 분말 X선 회절(XRD) 데이터를 위한 공개형 전문가 검토 데이터베이스입니다. 또한 데이터, 통찰, 연구자를 연결해 과학 발전을 이끈다는 의미의 eXchange를 뜻하기도 합니다.",
             "app.ploteverything.title": "PlotEverything",
@@ -109,6 +115,8 @@
             "news.2026_news4.title": "박사 학위 논문 심사를 통과하고 홍콩과학기술대학교(광저우)에서 박사학위를 취득했습니다."
         },
         de: {
+            "agent.baize.title": "BaiZe",
+            "agent.baize.abstract": "BaiZe ist ein speziell für die Materialforschung entwickelter KI-Agent. Er unterstützt den gesamten Forschungsablauf – von Literaturrecherche und Evidenzsynthese über Hypothesengenerierung und Versuchsplanung bis zum wissenschaftlichen Schreiben. Statt nur Antworten zu erzeugen, organisiert BaiZe wissenschaftliches Denken als nachvollziehbaren und reproduzierbaren Workflow und hilft Forschenden, offene materialwissenschaftliche Fragen in prüfbare Hypothesen und umsetzbare Experimente zu überführen. BaiZe ist Open Source und Local-First; Forschungsergebnisse wie Literaturnotizen, Hypothesen, Versuchsprotokolle und Manuskripte bleiben im Projekt erhalten und können weiterentwickelt werden.",
             "app.Xchange.title": "Xchange",
             "app.Xchange.abstract": "Xchange ist eine offene, fachlich geprüfte Datenbank für experimentelle Pulver-Röntgendiffraktionsdaten (XRD). Der Name steht zugleich für eXchange: Daten, Erkenntnisse und Forschende zusammenzubringen, um die Wissenschaft voranzubringen.",
             "app.ploteverything.title": "PlotEverything",

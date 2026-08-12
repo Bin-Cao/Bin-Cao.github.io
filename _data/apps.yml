@@ -1,3 +1,15 @@
+- title: "白泽BaiZe"
+  i18n_key: "agent.baize"
+  cover: "/assets/images/covers/baize.jpg"
+  pub: "Agent"
+  pub_date: "BaiZe is an open-source AI Agent for materials science"
+  abstract: >-
+    BaiZe is an AI Agent designed specifically for materials science research. It supports the full research workflow, from literature discovery and evidence synthesis to hypothesis generation, experimental design, and scientific writing. Rather than simply generating answers, BaiZe organizes scientific reasoning into a traceable and reproducible workflow, helping researchers transform open-ended materials questions into testable hypotheses and actionable experiments. It is open-source and local-first, allowing research outputs such as literature notes, hypotheses, experimental protocols, and papers to be retained and further developed within a project.
+  links:
+    Website: "https://baize.caobin.asia/"
+    Booklet: "https://baize.caobin.asia/docs/baize.html"
+
+
 - title: "Xchange"
   i18n_key: "app.Xchange"
   cover: "/assets/images/covers/Xchange.jpg"

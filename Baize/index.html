@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>白泽 BaiZe｜面向材料科学的人工智能 Agent · Bin Cao</title>
+    <meta name="description" content="白泽 BaiZe 是由 Bin Cao 创建、面向材料科学的人工智能 Agent。它帮助研究者将文献、科学假设、实验设计与论文写作连接为可追溯、可复现的研究闭环。">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bin-cao.github.io/Baize/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="白泽 BaiZe｜面向材料科学的人工智能 Agent">
+    <meta property="og:description" content="由 Bin Cao 创建的材料科学 AI Agent，让文献、假设、实验与论文在可追溯的研究闭环中相遇。">
+    <meta property="og:url" content="https://bin-cao.github.io/Baize/">
+    <meta property="og:image" content="https://bin-cao.github.io/assets/images/baize/baize-mascot-final.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "BaiZe",
+        "alternateName": "白泽",
+        "applicationCategory": "ScientificApplication",
+        "operatingSystem": "macOS, Windows, Linux",
+        "description": "面向材料科学的人工智能 Agent，支持文献洞察、科学假设、实验设计和研究写作。",
+        "url": "https://bin-cao.github.io/Baize/",
+        "codeRepository": "https://github.com/Bin-Cao/BaiZe",
+        "author": {
+          "@type": "Person",
+          "name": "Bin Cao",
+          "url": "https://bin-cao.github.io/",
+          "jobTitle": "Research Scientist",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Huawei Noah's Ark Lab, London Research Center"
+          }
+        }
+      }
+    </script>
+    <style>
+      :root { --ink:#101827; --blue:#1d4ed8; --pale:#eaf0ff; --paper:#fbfcff; --line:#dbe3f0; --muted:#667085; --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; --serif:"Songti SC","STSong",serif; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--sans); line-height:1.65; }
+      a { color:inherit; }
+      .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+      nav { height:72px; border-bottom:1px solid var(--line); background:rgba(251,252,255,.92); }
+      nav .wrap { height:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+      .brand { color:var(--ink); font-weight:800; text-decoration:none; letter-spacing:-.02em; }
+      .back { color:var(--blue); font-size:14px; font-weight:700; text-decoration:none; }
+      .hero { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:48px; min-height:570px; padding:70px 0; }
+      .kicker { color:var(--blue); font-size:13px; font-weight:800; letter-spacing:.12em; }
+      h1,h2 { font-family:var(--serif); letter-spacing:-.055em; line-height:1.15; }
+      h1 { max-width:680px; margin:18px 0 22px; font-size:clamp(45px,6vw,72px); }
+      h1 em { color:var(--blue); font-style:normal; }
+      .lead { max-width:570px; color:#526078; font-size:18px; }
+      .buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+      .button { display:inline-block; padding:12px 18px; font-size:14px; font-weight:800; text-decoration:none; }
+      .button.primary { background:var(--blue); color:white; }
+      .button.secondary { border:1px solid var(--line); background:white; }
+      .mascot-panel { position:relative; min-height:410px; display:grid; place-items:center; overflow:hidden; background:var(--pale); }
+      .mascot-panel:before { content:"材料发现 · 可追溯研究"; position:absolute; right:16px; top:18px; color:#7490c9; font-size:12px; writing-mode:vertical-rl; letter-spacing:.2em; }
+      .mascot { width:min(390px,88%); position:relative; z-index:1; filter:drop-shadow(0 20px 24px rgba(26,59,139,.16)); }
+      section { padding:84px 0; border-top:1px solid var(--line); }
+      .heading { display:grid; grid-template-columns:1fr minmax(240px,420px); gap:34px; align-items:end; margin-bottom:38px; }
+      h2 { margin:10px 0 0; font-size:clamp(32px,4vw,48px); }
+      .heading p, .copy { color:var(--muted); }
+      .grid { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--line); background:white; }
+      .card { min-height:210px; padding:24px; border-right:1px solid var(--line); }
+      .card:last-child { border:0; }
+      .number { color:var(--blue); font:700 12px ui-monospace,SFMono-Regular,monospace; }
+      .card h3 { margin:38px 0 8px; font-size:19px; }
+      .card p { margin:0; color:var(--muted); font-size:14px; }
+      .about { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; }
+      .profile, .project { padding:30px; border:1px solid var(--line); background:white; }
+      .profile h3, .project h3 { margin:0 0 14px; font-size:23px; }
+      .profile p, .project p { color:var(--muted); }
+      .facts { margin:22px 0 0; padding:0; list-style:none; }
+      .facts li { padding:10px 0; border-top:1px solid var(--line); color:#4c5a73; font-size:14px; }
+      .facts b { color:var(--ink); }
+      footer { padding:28px 0; color:var(--muted); font-size:13px; }
+      @media (max-width:760px) { .wrap { width:min(100% - 28px,1080px); } nav { height:64px; } .hero,.heading,.about { grid-template-columns:1fr; } .hero { min-height:auto; padding:55px 0; gap:26px; } .mascot-panel { min-height:300px; } .grid { grid-template-columns:1fr 1fr; } .card:nth-child(2) { border-right:0; } .card { min-height:180px; border-bottom:1px solid var(--line); } .card:nth-child(n+3) { border-bottom:0; } section { padding:64px 0; } }
+    </style>
+  </head>
+  <body>
+    <nav><div class="wrap"><a class="brand" href="https://bin-cao.github.io/">Bin Cao</a><a class="back" href="https://bin-cao.github.io/">← 返回个人主页</a></div></nav>
+    <main>
+      <header class="hero wrap">
+        <div>
+          <div class="kicker">AI AGENT × MATERIALS SCIENCE</div>
+          <h1>让材料发现，<br><em>更有方向。</em></h1>
+          <p class="lead">白泽 BaiZe 是一位面向材料研发的人工智能 Agent。它将研究者的提问转化为可追溯的科学路径，连接文献阅读、假设生成、实验设计与研究写作。</p>
+          <div class="buttons"><a class="button primary" href="https://github.com/Bin-Cao/BaiZe" target="_blank" rel="noopener">访问 BaiZe GitHub ↗</a><a class="button secondary" href="#about">了解 BaiZe</a></div>
+        </div>
+        <div class="mascot-panel"><img class="mascot" src="../assets/images/baize/baize-mascot-final.png" alt="白泽 BaiZe 吉祥物：头生材料晶格角、怀抱矿物球的白色神兽"></div>
+      </header>
+      <section id="about">
+        <div class="wrap"><div class="heading"><div><div class="kicker">研究闭环</div><h2>从问题走向<br>可复现的发现</h2></div><p>白泽将 Agent 推理、工具调用与研究技能连接为一条工作流，帮助材料研究者保留证据、假设与后续实验的来路。</p></div>
+          <div class="grid">
+            <article class="card"><div class="number">01 / 发现</div><h3>文献洞察</h3><p>检索并综合领域工作，建立研究脉络，定位值得回答的问题。</p></article>
+            <article class="card"><div class="number">02 / 推演</div><h3>提出假设</h3><p>以可检查的证据形成清晰、可证伪的材料假设。</p></article>
+            <article class="card"><div class="number">03 / 验证</div><h3>设计实验</h3><p>组织变量、对照与测量指标，使实验结果具备解释力。</p></article>
+            <article class="card"><div class="number">04 / 沉淀</div><h3>形成研究资产</h3><p>将方法、数据与结论整理为报告、论文和可继续协作的项目资料。</p></article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap"><div class="heading"><div><div class="kicker">关于我</div><h2>我为什么做 BaiZe</h2></div><p>我希望把材料研究中分散的文献、数据、推理与实验计划，组织成一条可以回看、审阅和继续推进的路径。</p></div>
+          <div class="about">
+            <article class="profile"><h3>Bin Cao（曹斌）</h3><p>我目前是 Huawei Noah’s Ark Lab London Research Center 的 Research Scientist，研究人工智能如何帮助理解与发现材料，尤其关注晶体学、光谱学、图表示学习与贝叶斯优化。</p><ul class="facts"><li><b>个人主页：</b><a href="https://bin-cao.github.io/">bin-cao.github.io</a></li><li><b>研究方向：</b>AI for Materials Science、X-ray Diffraction、Crystallography、Bayesian Optimization</li><li><b>联系方式：</b><a href="mailto:bcao686@connect.hkust-gz.edu.cn">bcao686@connect.hkust-gz.edu.cn</a></li></ul></article>
+            <article class="project"><h3>从研究中的真实问题出发</h3><p>做材料研究时，真正困难的往往不是得到一个答案，而是弄清它基于哪些证据、哪些假设仍待验证，以及下一步实验该如何设计。BaiZe 因此被设计为研究协作工具，而不是替代判断的黑箱。</p><p>它以本地优先的命令行方式运行，将文献笔记、假设、实验方案和写作材料沉淀在项目目录中，方便版本管理、复查与协作。</p><a class="button primary" href="https://github.com/Bin-Cao/BaiZe" target="_blank" rel="noopener">了解开源项目 ↗</a></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="wrap">© 2026 BaiZe · Created by <a href="https://bin-cao.github.io/">Bin Cao</a> · 面向材料科学的人工智能</div></footer>
+  </body>
+</html>

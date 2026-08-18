@@ -35,7 +35,11 @@
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
+                        {% if position.link -%}
+                        <a href="{{ position.link }}" target="_blank"><span data-i18n="profile.position_{{ forloop.index }}">{{ position.name }}</span></a><br/>
+                        {%- else -%}
                         <span data-i18n="profile.position_{{ forloop.index }}">{{ position.name }}</span><br/>
+                        {%- endif %}
                         {% endfor %}
                     </div>
                 </div>

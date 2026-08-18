@@ -5,9 +5,11 @@ navbar_name: "Bin Cao"
 positions:
 - name: Research Scientist 
   logo: /assets/images/badges/huawei.png  
+  link: https://www.huawei.com/
 #  logo: /assets/images/badges/hkust.png
 - name: London Research Center of Huawei Noah’s Ark Lab
   logo: /assets/images/badges/huawei.png 
+  link: https://www.noahlab.com.hk/
 #  logo: /assets/images/badges/hkust.png  # Logo is optional
 
 
@@ -38,7 +40,7 @@ short_bio: >-
         <a href="https://scholars.cityu.edu.hk/en/persons/yangren/" style="color: #66bb6a;">Prof. Yang Ren</a>, 
         and gained industry research experience through internships at 
         <a href="https://www.shlab.org.cn/" style="color: #66bb6a;">Shanghai AI Lab</a>, 
-        <a href="https://www.greendynamics.com.au/" style="color: #66bb6a;">GreenDynamics</a> and <a href="https://www.nice.org.cn/" style="color: #66bb6a;">Institute for General Decision Intelligence, NICE</a>.
+        <a href="https://www.greendynamics.com.au/" style="color: #66bb6a;">GreenDynamics</a> and <a href="https://www.yangtzeailab.com/" style="color: #66bb6a;">AI Lab, The Yangtze River Delta</a>.
         </p>
 
         <p>
@@ -124,12 +126,14 @@ education:
 
 
 experience:
-- name: Institute for General Decision Intelligence
+- name: AI Lab, The Yangtze River Delta
+  link: https://www.yangtzeailab.com/
   logo: /assets/images/badges/igdi2.png
   position: Scientist(internship)
-  date: July. 2026 - Sep 2026
+  date: July. 2026 - Sep 2026 
 
 - name: GreenDynamics
+  link: https://www.greendynamics.com.au/
   logo: /assets/images/badges/greendym.png
   position: MTS Intern
   date: May. 2026 - June 2026

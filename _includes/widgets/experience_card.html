@@ -35,7 +35,11 @@
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
-                                        <div>{{ item.name }}</div>
+                                        {% if item.link -%}
+                                        <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                                        {%- else -%}
+                                        {{ item.name }}
+                                        {%- endif %}
                                         <div class="small">{{ item.dept }}</div>
                                         <div class="small d-flex">
                                             <div>{{ item.position }}</div>

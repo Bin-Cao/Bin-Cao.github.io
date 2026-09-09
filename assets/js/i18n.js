@@ -231,6 +231,13 @@ window.siteTranslations = {
     }
 };
 
+Object.keys(window.siteTranslations).forEach(function (lang) {
+    window.siteTranslations[lang]["profile.short_bio"] = window.siteTranslations[lang]["profile.short_bio"].replace(
+        'MGE Advances</a>',
+        'MGE Advances</a>, <a href="https://journals.iucr.org/j/" target="_blank">Journal of Applied Crystallography</a>'
+    );
+});
+
 window.siteI18nText = function (key, lang) {
     var currentLang = lang || window.siteCurrentLang || 'en';
     var table = window.siteTranslations[currentLang] || window.siteTranslations.en;

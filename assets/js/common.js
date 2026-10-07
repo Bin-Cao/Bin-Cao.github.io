@@ -120,6 +120,8 @@ $(function () {
             });
 
             $noResults.toggle(visibleCount === 0);
+            // Filtering can bring unloaded covers into view without a user scroll.
+            $(window).trigger('scroll');
         };
 
         $noResults.hide();

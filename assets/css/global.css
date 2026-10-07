@@ -239,6 +239,248 @@ h1, h2, h3, h4, h5, h6,
     color: #4f6f59;
 }
 
+.career-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    scroll-margin-top: 5rem;
+}
+
+.career-panel {
+    --career-accent: #27634c;
+    --career-tint: #edf5f0;
+    background: #fff;
+    border: 1px solid #e4e9ef;
+    border-radius: 0.8rem;
+    box-shadow: 0 3px 12px rgba(24, 39, 75, 0.035);
+    min-width: 0;
+    padding: 1.15rem 1.4rem;
+}
+
+.career-research {
+    --career-accent: #355c85;
+    --career-tint: #eef3f9;
+}
+
+.career-awards {
+    --career-accent: #896421;
+    --career-tint: #faf4e7;
+    grid-column: 1 / -1;
+}
+
+.career-heading {
+    align-items: center;
+    color: #233044;
+    display: flex;
+    font-size: 1.04rem;
+    gap: 0.7rem;
+    line-height: 1.4;
+    margin: 0 0 1rem;
+}
+
+.career-heading-icon {
+    align-items: center;
+    background: var(--career-tint);
+    border-radius: 0.65rem;
+    color: var(--career-accent);
+    display: inline-flex;
+    flex: 0 0 2.2rem;
+    font-size: 1rem;
+    height: 2.2rem;
+    justify-content: center;
+}
+
+.career-timeline,
+.career-awards-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.career-entry {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    padding-bottom: 0.8rem;
+    position: relative;
+}
+
+.career-entry:last-child {
+    padding-bottom: 0;
+}
+
+.career-entry:not(:last-child)::before {
+    background: #e7ecf1;
+    bottom: 0;
+    content: "";
+    left: calc(1.25rem - 0.5px);
+    position: absolute;
+    top: 2.5rem;
+    width: 1px;
+}
+
+.career-logo {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e5eaf0;
+    border-radius: 0.7rem;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    position: relative;
+}
+
+.career-logo img {
+    height: 1.75rem;
+    object-fit: contain;
+    width: 1.75rem;
+}
+
+.career-date {
+    align-items: center;
+    color: #667386;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.74rem;
+    font-variant-numeric: tabular-nums;
+    gap: 0.3rem;
+    line-height: 1.5;
+    margin-bottom: 0.2rem;
+}
+
+.career-date time {
+    white-space: nowrap;
+}
+
+.career-current {
+    align-items: center;
+    color: #27634c;
+    display: inline-flex;
+    font-weight: 700;
+    gap: 0.4rem;
+}
+
+.career-current::before {
+    background: #3d9364;
+    border-radius: 50%;
+    content: "";
+    height: 6px;
+    width: 6px;
+}
+
+.career-institution {
+    color: #253044;
+    font-size: 0.94rem;
+    line-height: 1.45;
+    margin: 0 0 0.15rem;
+    overflow-wrap: anywhere;
+}
+
+.career-institution a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.career-institution a:hover {
+    color: var(--career-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.career-institution a:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid var(--career-accent);
+    outline-offset: 3px;
+}
+
+.career-role,
+.career-department {
+    font-size: 0.81rem;
+    line-height: 1.5;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.career-role {
+    color: #526075;
+}
+
+.career-department {
+    color: #6b7686;
+    margin-top: 0.15rem;
+}
+
+.career-awards .career-heading {
+    margin-bottom: 0.55rem;
+}
+
+.career-awards-list {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.career-award {
+    align-items: start;
+    border-bottom: 1px solid #edf0f3;
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    padding: 0.65rem 0;
+}
+
+.career-award:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.career-award-year {
+    background: var(--career-tint);
+    border-radius: 0.35rem;
+    color: var(--career-accent);
+    font-size: 0.74rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    line-height: 1.7;
+    padding: 0.12rem 0.35rem;
+    text-align: center;
+}
+
+.career-award-name {
+    color: #334155;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin: 0 0 0.1rem;
+    overflow-wrap: anywhere;
+}
+
+.career-award-issuer {
+    color: #6b7686;
+    font-size: 0.76rem;
+    line-height: 1.5;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 992px) {
+    .career-grid,
+    .career-awards-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .career-award:nth-last-child(-n + 2) {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .career-panel {
+        padding: 1rem 1.15rem;
+    }
+}
+
 .news-year {
     flex: 0 0 3.2rem;
     font-weight: 700;
@@ -330,6 +572,11 @@ h1, h2, h3, h4, h5, h6,
         0 0.55rem 1.25rem rgba(24, 39, 75, 0.12);
     cursor: zoom-in;
     transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.publication-cover-contain {
+    object-fit: contain;
+    background-color: #fff;
 }
 
 .publication-row:hover .publication-cover,

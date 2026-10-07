@@ -1,0 +1,28 @@
+{% assign career_item = include.item %}
+<li class="career-entry{% if career_item.current %} career-entry-current{% endif %}">
+    <div class="career-logo" aria-hidden="true">
+        <img src="{{ career_item.logo | relative_url }}" alt="" width="28" height="28" loading="lazy" decoding="async">
+    </div>
+    <div class="career-entry-body">
+        <div class="career-date">
+            {% if career_item.current %}
+            <span class="career-current" data-i18n="career.present">Present</span>
+            {% else %}
+            <time datetime="{{ career_item.start_date }}" data-career-date>{{ career_item.start_date | append: '-01' | date: '%b %Y' }}</time>
+            <span class="career-date-separator">–</span>
+            <time datetime="{{ career_item.end_date }}" data-career-date>{{ career_item.end_date | append: '-01' | date: '%b %Y' }}</time>
+            {% endif %}
+        </div>
+        <h3 class="career-institution">
+            {% if career_item.link %}
+            <a href="{{ career_item.link }}" target="_blank" rel="noopener" data-i18n="{{ career_item.i18n_key }}.name">{{ career_item.name }}</a>
+            {% else %}
+            <span data-i18n="{{ career_item.i18n_key }}.name">{{ career_item.name }}</span>
+            {% endif %}
+        </h3>
+        <p class="career-role" data-i18n="{{ career_item.i18n_key }}.position">{{ career_item.position }}</p>
+        {% if career_item.dept %}
+        <p class="career-department" data-i18n="{{ career_item.i18n_key }}.dept">{{ career_item.dept }}</p>
+        {% endif %}
+    </div>
+</li>

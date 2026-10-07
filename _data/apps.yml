@@ -1,10 +1,22 @@
-- title: "白泽BaiZe"
+- title: "Ganjiang (干将)"
+  i18n_key: "agent.ganjiang"
+  cover: "/assets/images/covers/ganjiang.jpg"
+  cover_fit: contain
+  pub: "Scientific Agent"
+  pub_date: "Self-learning XRD analysis"
+  abstract: >-
+    Ganjiang connects phase identification, mixture decomposition, and structure refinement in one scientific agent. Built on XMatcher, XQueryer, XDecomposer, and WPEM, it uses physical evidence to evaluate results and develops reusable analytical skills from validated experience. I led the development of this project.
+  links:
+    Website: "https://ganjiang.asia/"
+    Paper: "https://arxiv.org/abs/2610.07862"
+
+- title: "BaiZe (白泽)"
   i18n_key: "agent.baize"
   cover: "/assets/images/covers/baize.jpg"
-  pub: "Agent"
-  pub_date: "BaiZe is an open-source AI Agent for materials science"
+  pub: "Scientific Agent"
+  pub_date: "An open-source research workspace for materials science"
   abstract: >-
-    BaiZe is an AI Agent designed specifically for materials science research. It supports the full research workflow, from literature discovery and evidence synthesis to hypothesis generation, experimental design, and scientific writing. Rather than simply generating answers, BaiZe organizes scientific reasoning into a traceable and reproducible workflow, helping researchers transform open-ended materials questions into testable hypotheses and actionable experiments. It is open-source and local-first, allowing research outputs such as literature notes, hypotheses, experimental protocols, and papers to be retained and further developed within a project.
+    BaiZe turns materials research questions into traceable workflows, connecting literature discovery and evidence synthesis with hypothesis generation, experimental design, and scientific writing. Its open-source, local-first workspace keeps research notes, protocols, and manuscripts together so that each project can build on its accumulated knowledge.
   links:
     Website: "https://baize.caobin.asia/"
     Booklet: "https://baize.caobin.asia/docs/baize.html"
@@ -17,9 +29,9 @@
   i18n_key: "app.Xchange"
   cover: "/assets/images/covers/Xchange.jpg"
   pub: "Website"
-  pub_date: "Human-reviewed database for real XRD"
+  pub_date: "A curated database of experimental XRD patterns"
   abstract: >-
-    Xchange is an open, human-reviewed database for experimental powder X-ray diffraction (XRD) data. It also stands for eXchange: bringing data, insight, and researchers together to advance science.
+    Xchange is an open database of experimental powder X-ray diffraction patterns with human review. It connects real measurements with community curation, providing a shared resource for diffraction research and method development.
   links:
     Website: "https://xchange.caobin.asia/"
     Project: "https://bin-cao.github.io/Xchange.db/"
@@ -29,10 +41,10 @@
 - title: "PlotEverything"
   i18n_key: "app.ploteverything"
   cover: "/assets/images/covers/PlotEverything.jpg"
-  pub: "App Windows&macOS"
-  pub_date: "Nature-style plots without expertise"
+  pub: "Windows & macOS"
+  pub_date: "Publication-ready scientific figures, without coding"
   abstract: >-
-    PlotEverything is a lightweight scientific figure workspace. It helps users create publication-style figures from spreadsheet data, display crystal structures, simulate XRD patterns, arrange multi-panel figures, and export final images without writing plotting code.
+    PlotEverything brings data visualization, crystal structures, and simulated XRD patterns into one scientific figure workspace. Researchers can turn spreadsheet data into publication-ready plots, compose multipanel figures, and export finished graphics without writing code.
   links:
     Install: "https://github.com/Bin-Cao/PlotEverything/releases"
     Manual: "https://bin-cao.github.io/PlotEverything/"
@@ -45,10 +57,10 @@
 - title: "XMatcher"
   i18n_key: "app.xmatcher"
   cover: "/assets/images/covers/XMatcher.jpg"
-  pub: "App Windows&macOS"
-  pub_date: "XRD Phase Matching"
+  pub: "Windows & macOS"
+  pub_date: "Interpretable phase identification from experimental XRD"
   abstract: >-
-    XMatcher is a app toolkit for experimental X-ray diffraction (XRD) phase matching against precomputed crystal-structure databases. It is designed around a production workflow: build a searchable theoretical peak database once, then perform fast and explainable retrieval for experimental patterns.
+    XMatcher makes diffraction search and matching transparent and reproducible. It combines searchable crystal-structure databases, fast candidate retrieval, and interactive peak-level evidence to help researchers evaluate phase assignments in experimental XRD patterns.
   links:
     Install: "https://doi.org/10.6084/m9.figshare.32812985"
     Manual: "https://asterbin.github.io/Asterbin-XMatcher"
@@ -58,10 +70,10 @@
 - title: "TabularLab"
   i18n_key: "app.tabularlab"
   cover: "/assets/images/covers/TabularLab.jpg"
-  pub: "App Windows&macOS"
-  pub_date: "Tabular Machine Learning"
+  pub: "Windows & macOS"
+  pub_date: "From tabular data to predictive models"
   abstract: >-
-    TabularLab is a lightweight toolkit for tabular machine learning. It can be used as a desktop app or opened in a browser, and supports regression, classification, clustering, visualization, prediction, and result export.
+    TabularLab brings regression, classification, clustering, and visualization into an accessible desktop and browser workspace. It connects model building with prediction and result export, making tabular machine learning easier to use in everyday research.
   links:
     Install: "https://github.com/Bin-Cao/TabularLab/releases"
     Manual: "https://bin-cao.github.io/TabularLab/"
@@ -72,9 +84,9 @@
   i18n_key: "app.xqueryer"
   cover: "/assets/images/covers/XQueryer_web.jpg"
   pub: "Website"
-  pub_date: "Online PXRD Analysis"
+  pub_date: "An integrated platform for powder diffraction analysis"
   abstract: >-
-    Initially developed as a web platform for XQueryer, it has gradually evolved into a comprehensive framework for crystal analysis, including high-throughput simulation, single- and multi-phase identification, and diffraction pattern refinement.
+    The XQueryer web platform brings high-throughput diffraction simulation, single- and multiphase identification, and pattern refinement into a connected analysis workflow. It makes the underlying research methods accessible through an online interface for crystal analysis.
   links:
     Website: "https://xqueryer.caobin.asia/"
     Project: "https://doi.org/10.13140/RG.2.2.36041.30568"

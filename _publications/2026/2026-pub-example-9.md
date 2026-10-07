@@ -1,5 +1,5 @@
 ---
-title:          "High-strength and ductile high-entropy alloy via expert-trajectory-guided processingn"
+title:          "High-strength and ductile high-entropy alloy via expert-trajectory-guided processing"
 i18n_key:      "pub.2026_pub_example_9"
 date:           2026-07-22 00:01:00 +0800
 selected:       true

@@ -26,72 +26,11 @@ orcid: 0000-0001-7273-6779
 
 short_bio_text_justify: false
 short_bio: >-
-      <p>
-        I am a Research Scientist at the London Research Center of <a href="https://www.noahlab.com.hk/" target="_blank">Noah’s Ark Lab</a>. 
-        My research focuses on AI for materials science, with an emphasis on developing algorithms for crystallography and spectroscopy using graph representation learning and Bayesian optimization.
-        </p>
-
-        <p>
-        My research interest in this area has been shaped through a combination of interdisciplinary training and research experience across academia and industry. I received my Ph.D. from 
-        <a href="https://www.hkust-gz.edu.cn/" style="color: #66bb6a;">The Hong Kong University of Science and Technology</a> (Guangzhou Campus), where I worked with 
-        <a href="https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html" style="color: #66bb6a;">Prof. Tong-Yi Zhang</a>. 
-        During my Ph.D., I was also a visiting student at 
-        <a href="https://www.cityu.edu.hk/" style="color: #66bb6a;">City University of Hong Kong</a>, working with 
-        <a href="https://scholars.cityu.edu.hk/en/persons/yangren/" style="color: #66bb6a;">Prof. Yang Ren</a>, 
-        and gained industry research experience through internships at 
-        <a href="https://www.shlab.org.cn/" style="color: #66bb6a;">Shanghai AI Lab</a>, 
-        <a href="https://www.greendynamics.com.au/" style="color: #66bb6a;">GreenDynamics</a> and <a href="https://www.yangtzeailab.com/" style="color: #66bb6a;">AI Lab, The Yangtze River Delta</a>.
-        </p>
-
-        <p>
-        Prior to my Ph.D., I obtained an MPhil in Mechanics from 
-        <a href="https://www.shu.edu.cn/" style="color: #66bb6a;">Shanghai University</a> under the supervision of 
-        <a href="https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html" style="color: #66bb6a;">Prof. Tong-Yi Zhang</a>, 
-        where I worked on transfer learning for materials science during an internship at 
-        <a href="https://www.zhejianglab.org/" style="color: #66bb6a;">Zhejiang Laboratory</a>. 
-        I received my BEng in Chemical Machinery from 
-        <a href="https://www.buct.edu.cn/main.htm" style="color: #66bb6a;">Beijing University of Chemical Technology</a>, 
-        with a focus on finite element methods and chemistry.
-        </p>
-
-        <p>
-        I have developed a series of machine learning methods for key problems in X-ray diffraction (XRD) and crystal analysis, including large-scale XRD pattern simulation 
-        (<a href="https://github.com/Bin-Cao/SimXRD" style="color: #66bb6a;">SimXRD</a>), 
-        crystal structure determination 
-        (<a href="https://github.com/Bin-Cao/XQueryer" style="color: #66bb6a;">XQueryer</a>
-        for single-phase analysis and <a href="https://arxiv.org/abs/2605.05866" style="color: #66bb6a;">XDecomposer</a>
-        for multiphase decomposition), 
-        XRD pattern refinement 
-        (<a href="https://github.com/Bin-Cao/PyWPEM" style="color: #66bb6a;">WPEM</a>), 
-        and crystal property prediction 
-        (<a href="https://github.com/Bin-Cao/PRDNet" style="color: #66bb6a;">PRDNet</a>). 
-        In addition, I developed one of the first Bayesian optimization frameworks for materials discovery, 
-        <a href="https://github.com/Bin-Cao/Bgolearn" style="color: #66bb6a;">Bgolearn</a>, 
-        which has been selected for support under the Open Source Project Program of the Shanghai Municipal Commission of Economy and Informatization.
-        </p>
-
-        <p>
-        Outside of research, I enjoy jogging and going to the gym.
-        </p>
-        
-      <p>
-        I serve as a reviewer for 
-        <a href="https://iclr.cc/" target="_blank">ICLR</a>, 
-        <a href="https://neurips.cc/" target="_blank">NeurIPS</a>, 
-        <a href="https://icml.cc/" target="_blank">ICML</a>,
-        <a href="https://aaai.org/" target="_blank">AAAI</a>,
-        <a href="https://www.kdd.org/" target="_blank">KDD</a>, and journals
-        <a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence" target="_blank"> EAAI
-        </a>,
-        <a href="https://www.nature.com/commsmat/" target="_blank"> Communications Materials
-        </a>,
-        <a href="https://www.sciencedirect.com/journal/results-in-engineering" target="_blank"> Results in Engineering
-        </a>,
-        <a href="https://onlinelibrary.wiley.com/journal/29409497" target="_blank"> MGE Advances
-        </a>,
-        <a href="https://journals.iucr.org/j/" target="_blank"> Journal of Applied Crystallography
-        </a>.
-      </p>
+  <p>I am a <strong>Research Scientist</strong> at the London Research Center of <a href="https://www.noahlab.com.hk/" target="_blank" rel="noopener">Huawei Noah’s Ark Lab</a>, where I collaborate with <a href="https://profiles.ucl.ac.uk/10613-jun-wang" target="_blank" rel="noopener">Prof. Jun Wang</a>. I build AI methods and scientific software to understand and discover materials. My research connects <strong>scientific agents, crystal representation learning, and Bayesian optimization</strong>, with the goal of turning experimental data into physical insight and better experimental decisions.</p>
+  <p>I led the development of <strong><a href="https://ganjiang.asia/" target="_blank" rel="noopener">Ganjiang (干将)</a></strong>, a self-learning scientific agent for X-ray diffraction. Ganjiang brings phase identification, multiphase decomposition, and structure refinement into a unified workflow, and turns validated analytical experience into reusable skills. This work advances my broader aim: scientific AI that reasons with physical evidence and improves through experience. <a href="https://arxiv.org/abs/2610.07862" target="_blank" rel="noopener">Read the paper</a></p>
+  <p>My work spans the diffraction analysis pipeline: large-scale simulation with <a href="https://github.com/Bin-Cao/SimXRD">SimXRD</a> (ICLR 2025), phase identification with <a href="https://github.com/Asterbin/Asterbin-XMatcher">XMatcher</a> and <a href="https://github.com/Bin-Cao/XQueryer">XQueryer</a> (NSR), multiphase analysis with <a href="https://arxiv.org/abs/2605.05866">XDecomposer</a> (NeurIPS 2026), and physics-constrained refinement with <a href="https://github.com/Bin-Cao/PyWPEM">WPEM</a>. I also developed <a href="https://github.com/Bin-Cao/PRDNet">PRDNet</a> (ICLR 2026) for crystal property prediction and <a href="https://github.com/Bin-Cao/Bgolearn">Bgolearn</a> for Bayesian experimental design. Bgolearn was selected for support under the Shanghai Municipal Commission of Economy and Informatization’s Open Source Project Program.</p>
+  <p>I received my Ph.D. from <a href="https://www.hkust-gz.edu.cn/">HKUST (Guangzhou)</a>, advised by <a href="https://english.casad.cas.cn/members/casm/dots/202404/t20240418_660476.html">Prof. Tong-Yi Zhang</a>, and visited <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a> to work with <a href="https://scholars.cityu.edu.hk/en/persons/yangren/">Prof. Yang Ren</a>. My background combines mechanics at <a href="https://www.shu.edu.cn/">Shanghai University</a> and chemical machinery at <a href="https://www.buct.edu.cn/main.htm">Beijing University of Chemical Technology</a>, with research experience at <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>, <a href="https://www.greendynamics.com.au/">GreenDynamics</a>, <a href="https://www.yangtzeailab.com/">AI Lab, The Yangtze River Delta</a>, and <a href="https://www.zhejianglab.org/">Zhejiang Lab</a>.</p>
+  <p>I review for <a href="https://iclr.cc/">ICLR</a>, <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://icml.cc/">ICML</a>, <a href="https://aaai.org/">AAAI</a>, <a href="https://www.kdd.org/">KDD</a>, and journals including <a href="https://www.nature.com/commsmat/">Communications Materials</a>, <a href="https://journals.iucr.org/j/">Journal of Applied Crystallography</a>, <a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence">EAAI</a>, <a href="https://www.sciencedirect.com/journal/results-in-engineering">Results in Engineering</a>, and <a href="https://onlinelibrary.wiley.com/journal/29409497">MGE Advances</a>. Outside research, I enjoy running and strength training.</p>
 
       
 
@@ -100,63 +39,117 @@ portrait_url: /assets/images/photos/bc1-web.jpg
 portrait_url_home: /assets/images/photos/bc1-web.jpg
 portrait_url_layout2: /assets/images/photos/bc2-web.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  Bin Cao
 
 education:
 - name: The Hong Kong University of Science and Technology (Guangzhou) 
+  i18n_key: career.education.hkust
+  link: https://www.hkust-gz.edu.cn/
   logo: /assets/images/badges/hkust.png
   position: >- 
-    Ph.D. in AMAT 
+    Ph.D. in Advanced Materials
  
-  date: Sep. 2023 - May. 2026 
+  date: Sep. 2023 - May 2026
+  start_date: "2023-09"
+  end_date: "2026-05"
 - name: City University of Hong Kong
+  i18n_key: career.education.cityu
+  link: https://www.cityu.edu.hk/
   logo: /assets/images/badges/cityu.png
-  position: >- 
-    Department of Physics <br/>
-    Visiting Research Student
+  position: Visiting Research Student
+  dept: Department of Physics
   date: Jun. 2025 - Dec. 2025
+  start_date: "2025-06"
+  end_date: "2025-12"
 - name: Shanghai University
+  i18n_key: career.education.shu
+  link: https://www.shu.edu.cn/
   logo: /assets/images/badges/shu.png
   position: MPhil in Mechanics
   date: Sep. 2020 - Jun. 2023
+  start_date: "2020-09"
+  end_date: "2023-06"
 - name: Beijing University of Chemical Technology
+  i18n_key: career.education.buct
+  link: https://www.buct.edu.cn/main.htm
   logo: /assets/images/badges/buct.png
   position: B.S. in Chemical Machinery
   date: Sep. 2016 - Jun. 2020
+  start_date: "2016-09"
+  end_date: "2020-06"
 
 
 
 
 
 experience:
+- name: Huawei Noah’s Ark Lab
+  i18n_key: career.experience.huawei
+  link: https://www.noahlab.com.hk/
+  logo: /assets/images/badges/huawei.png
+  position: Research Scientist
+  dept: London Research Center
+  current: true
+
 - name: AI Lab, The Yangtze River Delta
+  i18n_key: career.experience.yangtze
   link: https://www.yangtzeailab.com/
   logo: /assets/images/badges/igdi2.png
-  position: Scientist(internship)
-  date: July. 2026 - Sep 2026 
+  position: Research Scientist (Intern)
+  date: Jul. 2026 - Sep. 2026
+  start_date: "2026-07"
+  end_date: "2026-09"
 
 - name: GreenDynamics
+  i18n_key: career.experience.greendynamics
   link: https://www.greendynamics.com.au/
   logo: /assets/images/badges/greendym.png
   position: MTS Intern
-  date: May. 2026 - June 2026
+  date: May 2026 - Jun. 2026
+  start_date: "2026-05"
+  end_date: "2026-06"
 
 - name: Shanghai AI Lab
+  i18n_key: career.experience.shlab
+  link: https://www.shlab.org.cn/
   logo: /assets/images/badges/ailab.png
   position: Research Intern
   date: Jan. 2026 - Apr. 2026
+  start_date: "2026-01"
+  end_date: "2026-04"
 
 - name: Zhejiang Lab
+  i18n_key: career.experience.zjlab
+  link: https://www.zhejianglab.org/
   logo: /assets/images/badges/zjlab.png
   position: Research Intern
   date: Mar. 2023 - Sep. 2023
+  start_date: "2023-03"
+  end_date: "2023-09"
 
 
 awards:
 
-- name: Outstanding Young Academic Presentation Award (CMC)
+- name: Invited Academic Talk by Promising Young Talent
+  i18n_key: career.awards.young_talent
+  issuer: China Materials Conference
+  date: 2025
+- name: High-Level Academic Poster Award
+  i18n_key: career.awards.poster
+  issuer: China Materials Conference
+  date: 2025
+- name: Best Paper Award (2024)
+  i18n_key: career.awards.best_paper
+  issuer: Journal of Materials Informatics
+  date: 2025
+- name: Outstanding Young Academic Presentation Award
+  i18n_key: career.awards.presentation
+  issuer: China Materials Conference
   date: 2024
-- name: Outstanding Graduate of Shanghai University 
+- name: Outstanding Graduate
+  i18n_key: career.awards.graduate
+  issuer: Shanghai University
   date: 2023
 - name: China National Scholarship
+  i18n_key: career.awards.scholarship
   date: 2022

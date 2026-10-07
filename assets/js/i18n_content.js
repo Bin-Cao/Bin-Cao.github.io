@@ -1,16 +1,20 @@
 (function () {
     var contentTranslations = {
         zh: {
+            "agent.ganjiang.title": "Ganjiang（干将）",
+            "agent.ganjiang.abstract": "干将将物相识别、多相分解和结构精修整合为统一的科学智能体，连接 XMatcher、XQueryer、XDecomposer 与 WPEM，以物理证据检验分析结果，并从经过验证的经验中积累可复用的分析技能。我领导了该项目的开发。",
+            "pub.2026_ganjiang.abstract": "Ganjiang（干将）整合 XMatcher、XQueryer、XDecomposer 和 WPEM，实现粉末衍射中的物相识别、多相分解与结构精修。它通过诊断失败、修订分析技能并在复用前验证改进，实现无需重新训练语言模型的自学习。在 DeltaXRDbench 的模拟与实验数据上，干将在单相及多相识别任务中优于参评方法，将物理证据与可迁移的分析经验连接起来。",
+            "news.2026_ganjiang.title": "我领导开发的自学习 X 射线衍射科学智能体 <strong><a href=\"https://ganjiang.asia/\">Ganjiang（干将）</a></strong> 发布<a href=\"https://arxiv.org/abs/2610.07862\">arXiv 预印本</a>。",
             "agent.baize.title": "白泽 BaiZe",
-            "agent.baize.abstract": "白泽 BaiZe 是一款专为材料科学研究设计的 AI 智能体，支持从文献发现与证据整合，到假设生成、实验设计和科学写作的完整研究流程。它并非只生成答案，而是将科学推理组织为可追溯、可复现的工作流，帮助研究者把开放式材料问题转化为可检验的假设和可执行的实验。白泽开源且本地优先，使文献笔记、研究假设、实验方案和论文等成果能够在项目中留存并持续发展。",
+            "agent.baize.abstract": "白泽 BaiZe 将材料研究问题组织为可追溯的科研工作流，连接文献发现、证据整合、假设生成、实验设计与科学写作。开源、本地优先的工作空间让研究笔记、实验方案与论文在同一项目中持续积累，使后续研究能够建立在已有知识之上。",
             "app.Xchange.title": "Xchange",
-            "app.Xchange.abstract": "Xchange 是一个开放、经人工审核的实验粉末 X 射线衍射（XRD）数据数据库。它也寓意 eXchange：连接数据、洞见与研究人员，共同推动科学进步。",
+            "app.Xchange.abstract": "Xchange 是一个经人工审核的开放实验粉末 X 射线衍射数据库。它将真实测量数据与社区整理相结合，为衍射研究和分析方法开发提供共享的数据资源。",
             "app.ploteverything.title": "PlotEverything",
-            "app.ploteverything.abstract": "PlotEverything 是一个轻量级科学绘图工作台。它帮助用户从表格数据创建出版级图表、显示晶体结构、模拟 XRD 谱图、排版多面板图，并在无需编写绘图代码的情况下导出最终图片。",
+            "app.ploteverything.abstract": "PlotEverything 将数据可视化、晶体结构展示和 XRD 图谱模拟整合在同一科学绘图工作台中。研究者无需编写代码，即可从表格数据生成出版级图表、编排多面板图并导出成稿。",
             "app.tabularlab.title": "TabularLab",
-            "app.tabularlab.abstract": "TabularLab 是一个轻量级表格机器学习工具包。它既可以作为桌面应用使用，也可以在浏览器中打开，支持回归、分类、聚类、可视化、预测和结果导出。",
+            "app.tabularlab.abstract": "TabularLab 在桌面与浏览器工作空间中整合回归、分类、聚类和可视化，将模型构建、预测和结果导出连为一体，让表格机器学习更方便地融入日常科研。",
             "app.xqueryer.title": "XQueryer",
-            "app.xqueryer.abstract": "XQueryer 最初是一个在线晶体结构识别平台，现已逐步发展为综合晶体分析框架，涵盖高通量模拟、单相与多相识别以及衍射谱图精修。",
+            "app.xqueryer.abstract": "XQueryer 在线平台将高通量衍射模拟、单相与多相识别及谱图精修连接为完整的分析流程，通过网页界面让晶体分析研究方法更易于使用。",
             "pub.2022_pub_example_1.abstract": "本研究提出一种由领域知识引导的可解释机器学习策略，并以铁素体-马氏体钢在超临界水中的氧化行为为例进行验证。",
             "pub.2023_no_first_1.abstract": "TCLR 算法利用暴露时间和温度两个实验特征，从复杂高维空间中提取活化能、时间指数和前因子谱，并结合元素特征形成具有高预测精度的通用可解释公式。",
             "pub.2023_no_first_2.abstract": "本工作首次通过阳离子交换成功合成正交相 (Ru, Mn)2O3 电催化剂。该材料在酸性析氧反应中表现出优异性能，在 10 mA cm-2 下过电位仅 168 mV，并具有 40 小时稳定性。",
@@ -61,6 +65,10 @@
             "news.2026_news4.title": "顺利通过博士答辩，并获得香港科技大学（广州）博士学位。"
         },
         ja: {
+            "agent.ganjiang.title": "Ganjiang（干将）",
+            "agent.ganjiang.abstract": "Ganjiang は XMatcher、XQueryer、XDecomposer、WPEM を統合し、相同定、多相分解、構造精密化を行う科学エージェントです。物理的証拠で解析結果を評価し、検証済みの経験を再利用可能なスキルへ変換します。私はこのプロジェクトの開発を主導しました。",
+            "pub.2026_ganjiang.abstract": "Ganjiang は XMatcher、XQueryer、XDecomposer、WPEM を統合し、粉末回折から相同定、多相分解、構造精密化を行います。失敗を診断し、改訂した解析スキルを再利用前に検証することで、言語モデルを再訓練せずに学習します。DeltaXRDbench のシミュレーションおよび実験データで、単相・多相同定の評価対象手法を上回る性能を示しました。",
+            "news.2026_ganjiang.title": "私が開発を主導した自己学習型 X 線回折科学エージェント <strong><a href=\"https://ganjiang.asia/\">Ganjiang</a></strong> の<a href=\"https://arxiv.org/abs/2610.07862\">プレプリント</a>を arXiv で公開しました。",
             "agent.baize.title": "白泽 BaiZe",
             "agent.baize.abstract": "白泽 BaiZe は、材料科学研究のために設計された AI エージェントです。文献探索と証拠の統合から、仮説生成、実験設計、科学論文執筆まで、研究ワークフロー全体を支援します。単に回答を生成するのではなく、科学的推論を追跡可能で再現性のあるワークフローとして整理し、開かれた材料科学の問いを検証可能な仮説と実行可能な実験へと導きます。オープンソースかつローカルファーストであり、文献ノート、仮説、実験プロトコル、論文などの研究成果をプロジェクト内に保持し、継続的に発展させられます。",
             "app.Xchange.title": "Xchange",
@@ -88,6 +96,10 @@
             "news.2026_news4.title": "博士論文審査に合格し、香港科技大学（広州）より博士号を取得しました。"
         },
         ko: {
+            "agent.ganjiang.title": "Ganjiang（干将）",
+            "agent.ganjiang.abstract": "Ganjiang은 XMatcher, XQueryer, XDecomposer, WPEM을 연결하여 상 식별, 다상 분해, 구조 정밀화를 수행하는 과학 에이전트입니다. 물리적 증거로 분석 결과를 평가하고 검증된 경험을 재사용 가능한 기술로 전환합니다. 저는 이 프로젝트의 개발을 주도했습니다.",
+            "pub.2026_ganjiang.abstract": "Ganjiang은 XMatcher, XQueryer, XDecomposer, WPEM을 통합해 분말 회절로부터 상 식별, 다상 분해, 구조 정밀화를 수행합니다. 실패를 진단하고 수정한 분석 기술을 재사용 전에 검증하여 언어 모델 재훈련 없이 학습합니다. DeltaXRDbench의 시뮬레이션 및 실험 데이터에서 단상과 다상 식별 모두 평가 대상 방법보다 우수한 성능을 보였습니다.",
+            "news.2026_ganjiang.title": "제가 개발을 주도한 자기 학습형 X선 회절 과학 에이전트 <strong><a href=\"https://ganjiang.asia/\">Ganjiang</a></strong>의 <a href=\"https://arxiv.org/abs/2610.07862\">프리프린트</a>를 arXiv에 공개했습니다.",
             "agent.baize.title": "백택 BaiZe",
             "agent.baize.abstract": "백택 BaiZe는 재료과학 연구를 위해 설계된 AI 에이전트입니다. 문헌 탐색과 근거 종합부터 가설 생성, 실험 설계, 과학 글쓰기까지 전 연구 과정을 지원합니다. 단순히 답변을 생성하는 대신, 과학적 추론을 추적 가능하고 재현 가능한 워크플로로 구성하여 연구자가 개방형 재료과학 문제를 검증 가능한 가설과 실행 가능한 실험으로 전환하도록 돕습니다. 오픈소스이자 로컬 우선 도구로서 문헌 노트, 가설, 실험 프로토콜, 논문 등의 연구 산출물을 프로젝트 안에 보존하고 계속 발전시킬 수 있습니다.",
             "app.Xchange.title": "Xchange",
@@ -115,6 +127,10 @@
             "news.2026_news4.title": "박사 학위 논문 심사를 통과하고 홍콩과학기술대학교(광저우)에서 박사학위를 취득했습니다."
         },
         de: {
+            "agent.ganjiang.title": "Ganjiang (干将)",
+            "agent.ganjiang.abstract": "Ganjiang verbindet XMatcher, XQueryer, XDecomposer und WPEM für Phasenidentifikation, Mehrphasenzerlegung und Strukturverfeinerung. Der wissenschaftliche Agent bewertet Ergebnisse anhand physikalischer Evidenz und entwickelt aus validierten Erfahrungen wiederverwendbare Analysefähigkeiten. Ich leitete die Entwicklung dieses Projekts.",
+            "pub.2026_ganjiang.abstract": "Ganjiang integriert XMatcher, XQueryer, XDecomposer und WPEM zur Phasenidentifikation, Mehrphasenzerlegung und Strukturverfeinerung aus Pulverbeugungsdaten. Der Agent diagnostiziert Fehler und validiert überarbeitete Analysefähigkeiten vor der Wiederverwendung, ohne das Sprachmodell neu zu trainieren. Auf simulierten und experimentellen Daten von DeltaXRDbench übertrifft er die untersuchten Vergleichsmethoden bei der Ein- und Mehrphasenidentifikation.",
+            "news.2026_ganjiang.title": "Der <a href=\"https://arxiv.org/abs/2610.07862\">Preprint</a> zu <strong><a href=\"https://ganjiang.asia/\">Ganjiang</a></strong>, dem selbstlernenden Agenten für Röntgendiffraktion, ist auf arXiv verfügbar. Ich leitete die Entwicklung des Projekts.",
             "agent.baize.title": "BaiZe",
             "agent.baize.abstract": "BaiZe ist ein speziell für die Materialforschung entwickelter KI-Agent. Er unterstützt den gesamten Forschungsablauf – von Literaturrecherche und Evidenzsynthese über Hypothesengenerierung und Versuchsplanung bis zum wissenschaftlichen Schreiben. Statt nur Antworten zu erzeugen, organisiert BaiZe wissenschaftliches Denken als nachvollziehbaren und reproduzierbaren Workflow und hilft Forschenden, offene materialwissenschaftliche Fragen in prüfbare Hypothesen und umsetzbare Experimente zu überführen. BaiZe ist Open Source und Local-First; Forschungsergebnisse wie Literaturnotizen, Hypothesen, Versuchsprotokolle und Manuskripte bleiben im Projekt erhalten und können weiterentwickelt werden.",
             "app.Xchange.title": "Xchange",

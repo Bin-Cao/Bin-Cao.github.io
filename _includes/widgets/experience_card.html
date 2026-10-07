@@ -1,79 +1,51 @@
-<div class="row mt-3">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <div class="row" data-masonry='{"percentPosition": true }'>
-                    {% if site.data.profile.education %}
-                    <div class="col-lg-6">
-                        <div class="mx-2 my-1">
-                            <h6 data-i18n="section.education">Education</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.education %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <div data-i18n="experience.{{ item.name | slugify }}.name">{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div data-i18n="experience.{{ item.name | slugify }}.position">{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
+<div class="career-grid" id="experience">
+    {% if site.data.profile.education %}
+    <section class="career-panel career-education" aria-labelledby="education-heading">
+        <h2 class="career-heading" id="education-heading">
+            <span class="career-heading-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+            <span data-i18n="section.education">Education</span>
+        </h2>
+        <ol class="career-timeline">
+            {% for item in site.data.profile.education %}
+            {% include widgets/career_item.html item=item %}
+            {% endfor %}
+        </ol>
+    </section>
+    {% endif %}
 
-                    {% if site.data.profile.experience %}
-                    <div class="col-lg-6">
-                        <div class="mx-2 my-1">
-                            <h6 data-i18n="section.experience">Experience</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        {% if item.link -%}
-                                        <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
-                                        {%- else -%}
-                                        {{ item.name }}
-                                        {%- endif %}
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
+    {% if site.data.profile.experience %}
+    <section class="career-panel career-research" aria-labelledby="research-heading">
+        <h2 class="career-heading" id="research-heading">
+            <span class="career-heading-icon" aria-hidden="true"><i class="fas fa-flask"></i></span>
+            <span data-i18n="section.experience">Research Experience</span>
+        </h2>
+        <ol class="career-timeline">
+            {% for item in site.data.profile.experience %}
+            {% include widgets/career_item.html item=item %}
+            {% endfor %}
+        </ol>
+    </section>
+    {% endif %}
 
-                    {% if site.data.profile.awards %}
-                    <div class="col-lg-6">
-                        <div class="mx-2 my-1">
-                            <h6 data-i18n="section.awards">Honors & Awards</h6>
-                            <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
-                                <li>
-                                    <div class="d-flex">
-                                        <div>{{ item.name }}</div>
-                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
+    {% if site.data.profile.awards %}
+    <section class="career-panel career-awards" aria-labelledby="awards-heading">
+        <h2 class="career-heading" id="awards-heading">
+            <span class="career-heading-icon" aria-hidden="true"><i class="fas fa-award"></i></span>
+            <span data-i18n="section.awards">Honors &amp; Awards</span>
+        </h2>
+        <ul class="career-awards-list">
+            {% for item in site.data.profile.awards %}
+            <li class="career-award">
+                <time class="career-award-year" datetime="{{ item.date }}">{{ item.date }}</time>
+                <div class="career-award-body">
+                    <h3 class="career-award-name" data-i18n="{{ item.i18n_key }}.name">{{ item.name }}</h3>
+                    {% if item.issuer %}
+                    <p class="career-award-issuer" data-i18n="{{ item.i18n_key }}.issuer">{{ item.issuer }}</p>
                     {% endif %}
-
                 </div>
-
-            </div>
-        </div>
-    </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
 </div>

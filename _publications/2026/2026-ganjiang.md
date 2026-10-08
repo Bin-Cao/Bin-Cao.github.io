@@ -30,6 +30,6 @@ links:
   Paper: https://arxiv.org/abs/2610.07862
   Website: https://ganjiang.asia/
   Blog:
-    url: /blogs/干将科学智能体_论文宣传推送.html
+    url: /blogs/gan-jiang-self-learning-xrd-agent.html
     target: _self
 ---

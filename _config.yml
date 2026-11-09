@@ -32,8 +32,16 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Temporary reference material is copied into assets when needed for the site.
+# Jekyll 3 replaces the default exclusions when this list is set explicitly.
+# Preserve them for GitHub Pages, alongside temporary reference material.
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - 新增参考-后续删除
 
 # timezone: Asia/Shanghai

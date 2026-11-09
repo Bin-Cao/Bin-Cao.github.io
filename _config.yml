@@ -32,6 +32,10 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Temporary reference material is copied into assets when needed for the site.
+exclude:
+  - 新增参考-后续删除
+
 # timezone: Asia/Shanghai
 
 collections:
